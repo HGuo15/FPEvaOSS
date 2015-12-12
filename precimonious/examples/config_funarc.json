@@ -1,0 +1,127 @@
+{"config": [
+	{"localVar": {
+		"function": "cov_check_",
+		"name": "delta",
+		"type": "longdouble"
+	}},
+	{"localVar": {
+		"function": "cov_check_",
+		"name": "diff",
+		"type": "longdouble"
+	}},
+	{"localVar": {
+		"function": "cov_check_par",
+		"name": "delta",
+		"type": "longdouble"
+	}},
+	{"localVar": {
+		"function": "cov_check_par",
+		"name": "diff",
+		"type": "longdouble"
+	}},
+	{"localVar": {
+		"function": "cov_log_",
+		"name": "ld",
+		"type": "longdouble*"
+	}},
+	{"localVar": {
+		"function": "cov_spec_log_",
+		"name": "ld",
+		"type": "longdouble*"
+	}},
+	{"localVar": {
+		"function": "cov_spec_log_",
+		"name": "delta",
+		"type": "longdouble"
+	}},
+	{"localVar": {
+		"function": "cov_spec_log_",
+		"name": "delta_pointer",
+		"type": "longdouble*"
+	}},
+	{"localVar": {
+		"function": "cov_arr_log_",
+		"name": "ld",
+		"type": "longdouble"
+	}},
+	{"localVar": {
+		"function": "cov_arr_log_",
+		"name": "lds_pointer",
+		"type": "longdouble**"
+	}},
+	{"localVar": {
+		"function": "cov_arr_log_",
+		"name": "lds",
+		"type": "longdouble*"
+	}},
+	{"localVar": {
+		"function": "cov_arr_spec_log",
+		"name": "lds",
+		"type": "longdouble*"
+	}},
+	{"localVar": {
+		"function": "cov_arr_spec_log",
+		"name": "delta",
+		"type": "longdouble"
+	}},
+	{"localVar": {
+		"function": "cov_arr_spec_log_",
+		"name": "lds",
+		"type": "longdouble**"
+	}},
+	{"localVar": {
+		"function": "cov_arr_spec_log_",
+		"name": "delta",
+		"type": "longdouble*"
+	}},
+	{"localVar": {
+		"function": "fun",
+		"name": "t1",
+		"type": "longdouble"
+	}},
+	{"localVar": {
+		"function": "fun",
+		"name": "d1",
+		"type": "longdouble"
+	}},
+	{"localVar": {
+		"function": "fun",
+		"name": "x",
+		"type": "longdouble"
+	}},
+	{"localVar": {
+		"function": "main",
+		"name": "ans",
+		"type": "longdouble"
+	}},
+	{"localVar": {
+		"function": "main",
+		"name": "log",
+		"type": "longdouble[10]"
+	}},
+	{"localVar": {
+		"function": "main",
+		"name": "s1",
+		"type": "longdouble"
+	}},
+	{"localVar": {
+		"function": "main",
+		"name": "t1",
+		"type": "longdouble"
+	}},
+	{"localVar": {
+		"function": "main",
+		"name": "t2",
+		"type": "longdouble"
+	}},
+	{"localVar": {
+		"function": "main",
+		"name": "h",
+		"type": "longdouble"
+	}},
+	{"localVar": {
+		"function": "main",
+		"name": "dppi",
+		"type": "longdouble"
+	}}
+]}

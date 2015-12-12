@@ -1,0 +1,3 @@
+_ZN6soplex5Param9s_epsilonE
+_ZN6soplex5Param9s_verboseE
+_ZSt4cerr

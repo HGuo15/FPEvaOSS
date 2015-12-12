@@ -1,0 +1,4 @@
+localVar: sel  at _ZN6soplex9SPxFastRT11selectEnterERdi double -> float
+localVar: max  at _ZN6soplex9SPxFastRT11selectEnterERdi double -> float
+localVar: stab  at _ZN6soplex9SPxFastRT11selectEnterERdi double -> float
+localVar: best  at _ZN6soplex10SPxSteepPR12selectEnterXEd double -> float

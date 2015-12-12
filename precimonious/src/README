@@ -1,0 +1,34 @@
+AdjustOperators.cpp      <AdjustOperators> ("adjust-operators", "Adjusts the precision of operators depending on new types for operands")
+
+ChangePrecision.cpp      <ChangePrecision> ("d2f", "Reduce the precision of a program")
+
+Coverage.cpp             <Coverage>        ("coverage", "Prints Coverage Trace")
+
+CreateCallDependency.cpp <CreateCallDependency> ("create-call-dependency", "Create call depepdency")
+
+CreateConfigFile.cpp     <CreateConfigFile> ("config-file", "Creating a config file with original types")
+
+CreateIDBitcode.cpp      <CreateIDBitcode> ("create-ids", "Create bitcode with ids")
+
+CreateSearchFile.cpp     <CreateSearchFile> ("search-file", "Creating initial search file")
+
+FunctionCalls.cpp        <FunctionCalls> ("function-calls", "Replaces function calls")
+
+Instrument.cpp           <Instrument> ("instrument", "Instruments FP Stores, Loads, Arithmetic Operators and Comparison Operators")
+
+MeasureMetric.cpp        <MeasureMetric> ("measure-metric", "Print software metric information")
+
+Operators.cpp            <Operators> ("operators", "Change the precision of operators")
+
+ParseConfig.cpp          <ParseConfig> ("parse-config", "Parse config file")
+
+PrintFunctionNames.cpp   <PrintFunctionNames> ("print-names", "Printing function names")
+
+PrintVariableNames.cpp   <PrintVariableNames> ("print-vars", "Printing variable names")
+
+RemoveDeadCasting.cpp    <RemoveDeadCasting> ("remove-dead-casting", "Remove casting that is not used")
+
+Structs.cpp              <Structs> ("structs", "Change the precision of struct fields")
+
+Variables.cpp            <Variables> ("variables", "Change the precision of variables")
+

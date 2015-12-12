@@ -1,0 +1,6 @@
+{
+	"globalVar": {
+		"type": "float",
+		"name": "_ZN6soplex5Param9s_epsilonE",
+	},
+}

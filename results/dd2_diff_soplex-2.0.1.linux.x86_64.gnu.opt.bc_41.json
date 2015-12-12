@@ -1,0 +1,5 @@
+localVar: maxabs  at _ZN6soplex9SPxFastRT11selectLeaveERdd double -> float
+localVar: lowstab  at _ZN6soplex9SPxFastRT11selectLeaveERdd double -> float
+localVar: sel  at _ZN6soplex9SPxFastRT11selectLeaveERdd double -> float
+localVar: max  at _ZN6soplex9SPxFastRT11selectLeaveERdd double -> float
+localVar: bestDelta2  at _ZN6soplex9SPxFastRT11selectLeaveERdd double -> float

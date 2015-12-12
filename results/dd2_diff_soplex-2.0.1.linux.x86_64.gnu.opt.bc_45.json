@@ -1,0 +1,5 @@
+localVar: lowstab  at _ZN6soplex9SPxFastRT11selectEnterERdi double -> float
+localVar: maxabs  at _ZN6soplex9SPxFastRT11selectEnterERdi double -> float
+localVar: sel  at _ZN6soplex9SPxFastRT11selectEnterERdi double -> float
+localVar: max  at _ZN6soplex9SPxFastRT11selectEnterERdi double -> float
+localVar: stab  at _ZN6soplex9SPxFastRT11selectEnterERdi double -> float

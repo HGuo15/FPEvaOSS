@@ -1,0 +1,17 @@
+file /home/vagrant/precimonious/src/SConscript,line 34:
+	Configure(confdir = .sconf_temp)
+scons: Configure: Checking LLVM version ... 
+scons: Configure: ".sconf_temp/conftest_0" is up to date.
+scons: Configure: The original builder output was:
+  |/home/vagrant/llvm/build/Release/bin/llvm-config --version > .sconf_temp/conftest_0
+  |
+scons: Configure: (cached) 3.0
+
+scons: Configure: Checking LLVM executables ... 
+scons: Configure: ".sconf_temp/conftest_1" is up to date.
+scons: Configure: The original builder output was:
+  |/home/vagrant/llvm/build/Release/bin/llvm-config --bindir > .sconf_temp/conftest_1
+  |
+scons: Configure: (cached) /home/vagrant/llvm/build/Release/bin
+
+

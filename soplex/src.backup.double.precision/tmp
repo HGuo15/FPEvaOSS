@@ -1,0 +1,447 @@
+   mysoplex.addColReal(LPCol(2.0, dummycol, infinity, 15.0));
+   mysoplex.addColReal(LPCol(3.0, dummycol, infinity, 20.0));
+   mysoplex.addRowReal(LPRow(100.0, row1, infinity));
+   mysoplex.writeFileReal("dump.lp", NULL, NULL, NULL);
+      mysoplex.getPrimalReal(prim);
+      mysoplex.getDualReal(dual);
+      std::cout << "Objective value is " << mysoplex.objValueReal() << ".\n";
+      if( !_isRealLPLoaded )
+         _isRealLPLoaded = true;
+         _basisStatusRows.reSize(numRowsReal());
+         _basisStatusCols.reSize(numColsReal());
+         assert(_isRealLPLoaded);
+      result = _solveRealStable(acceptUnbounded, acceptInfeasible, primalReal, dualReal, _basisStatusRows, _basisStatusCols);
+            sol._dualFarkas = dualReal;
+      sol._primal = primalReal;
+      sol._dual = dualReal;
+            bestViolation = Real(sumMaxViolation);
+         _solver.changeBounds(DVectorReal(modLower), DVectorReal(modUpper));
+         _solver.changeRange(DVectorReal(modSide), DVectorReal(modSide));
+         _solver.changeObj(DVectorReal(modObj));
+         result = _solveRealStable(acceptUnbounded, acceptInfeasible, primalReal, dualReal, _basisStatusRows, _basisStatusCols);
+            sol._dualFarkas = dualReal;
+            sol._primal[c] += Rational(primalReal[c]) / primalScale;
+            sol._dual[r] += Rational(dualReal[r]) / dualScale;
+                  _realLP->addRow(LPRowReal(0.0, DSVectorReal(liftingRowVector), 0.0));
+                  assert(liftingColumnIndex == numColsReal() - 1);
+               _realLP->changeElement(rowIndex, liftingColumnIndex, Real(newValue));
+                  _realLP->addRow(LPRowReal(0.0, DSVectorReal(liftingRowVector), 0.0));
+                  assert(liftingColumnIndex == numColsReal() - 1);
+               _realLP->changeElement(rowIndex, liftingColumnIndex, Real(newValue));
+      _realLP->removeColRange(_beforeLiftCols, numColsReal() - 1);
+      _realLP->removeRowRange(_beforeLiftRows, numRowsReal() - 1);
+         assert(_realLP->spxSense() == SPxLPReal::MAXIMIZE);
+         _realLP->changeSense(SPxLPReal::MINIMIZE);
+         assert(_realLP->spxSense() == SPxLPReal::MINIMIZE);
+         _realLP->changeSense(SPxLPReal::MAXIMIZE);
+      assert(_realLP->spxSense() == SPxLPReal::MINIMIZE);
+      _realLP->addRow(LPRowReal(0, DSVectorReal(obj), 0));
+      assert(_realLP->spxSense() == SPxLPReal::MINIMIZE);
+         assert(lowerReal(c) <= upperReal(c));
+      _realLP->addCol(id, LPColReal(-1.0, DSVectorReal(shiftedSide), 1.0, 0.0));
+         _realLP->changeObj(c, Real(_feasObj[c]));
+         assert(lowerReal(c) <= upperReal(c));
+            _solveRealLPAndRecordStatistics();
+                  basisStatusRows.reSize(numRowsReal());
+                  basisStatusCols.reSize(numColsReal());
+         result = _solveRealForRational(fromScratch, primal, dual, basisStatusRows, basisStatusCols);
+   void SoPlex::_solveReal()
+      _preprocessAndSolveReal(!_hasBasis);
+      _storeSolutionReal();
+   void SoPlex::_evaluateSolutionReal(SPxSimplifier::Result simplificationStatus)
+         if( !_isRealLPLoaded )
+         if( !_isRealLPLoaded )
+            _preprocessAndSolveReal(false);
+         if( !_isRealLPLoaded )
+            _preprocessAndSolveReal(false);
+         if( !_isRealLPLoaded )
+            _preprocessAndSolveReal(false);
+         if( _isRealLPLoaded )
+            _basisStatusRows.reSize(numRowsReal());
+            _basisStatusCols.reSize(numColsReal());
+   void SoPlex::_preprocessAndSolveReal(bool applyPreprocessing)
+      if( _isRealLPLoaded )
+            _realLP = new (_realLP) SPxLPReal(_solver);
+            _isRealLPLoaded = false;
+            assert(_basisStatusRows.size() == numRowsReal());
+            assert(_basisStatusCols.size() == numColsReal());
+            _realLP->~SPxLPReal();
+            _isRealLPLoaded = true;
+         _solveRealLPAndRecordStatistics();
+      _evaluateSolutionReal(simplificationStatus);
+      assert(!_isRealLPLoaded);
+         _basisStatusRows.reSize(numRowsReal());
+         _basisStatusCols.reSize(numColsReal());
+         _basisStatusRows.reSize(numRowsReal());
+         _basisStatusCols.reSize(numColsReal());
+      _preprocessAndSolveReal(false);
+   void SoPlex::_storeSolutionReal()
+      assert(status() != SPxSolver::OPTIMAL || _isRealLPLoaded);
+      _solReal._hasPrimal = (status() == SPxSolver::OPTIMAL
+            && _solver.shift() < 10.0 * realParam(SoPlex::EPSILON_ZERO))) && _isRealLPLoaded;
+      if( _solReal._hasPrimal )
+         _solReal._primal.reDim(_solver.nCols());
+         _solReal._slacks.reDim(_solver.nRows());
+         _solver.getPrimal(_solReal._primal);
+         _solver.getSlacks(_solReal._slacks);
+         _solReal._primalObjVal = _solver.objValue();
+      _solReal._hasPrimalRay = (status() == SPxSolver::UNBOUNDED && _isRealLPLoaded);
+      if( _solReal._hasPrimalRay )
+         _solReal._primalRay.reDim(_solver.nCols());
+         _solver.getPrimalray(_solReal._primalRay);
+      _solReal._hasDual = (status() == SPxSolver::OPTIMAL
+            && _solver.shift() < 10.0 * realParam(SoPlex::EPSILON_ZERO))) && _isRealLPLoaded;
+      if( _solReal._hasDual )
+         _solReal._dual.reDim(_solver.nRows());
+         _solReal._redCost.reDim(_solver.nCols());
+         _solver.getDual(_solReal._dual);
+         _solver.getRedCost(_solReal._redCost);
+         _solReal._dualObjVal = ( _solReal._hasPrimal ? _solReal._primalObjVal : _solver.objValue() );
+      _solReal._hasDualFarkas = (status() == SPxSolver::INFEASIBLE && _isRealLPLoaded);
+      if( _solReal._hasDualFarkas )
+         _solReal._dualFarkas.reDim(_solver.nRows());
+         _solver.getDualfarkas(_solReal._dualFarkas);
+      , _hasSolReal(false)
+      _isRealLPLoaded = true;
+            _realLP = new (_realLP) SPxLPReal(*(rhs._realLP));
+         _isRealLPLoaded = rhs._isRealLPLoaded;
+         _realLP->~SPxLPReal();
+   int SoPlex::numRowsReal() const
+   int SoPlex::numColsReal() const
+   int SoPlex::numNonzerosReal() const
+   LPRowReal::Type SoPlex::rowTypeReal(int i) const
+      _addRowReal(lprow);
+      _addRowsReal(lprowset);
+      _addColReal(lpcol);
+      _addColsReal(lpcolset);
+      _changeRowReal(i, lprow);
+      _changeLhsReal(lhs);
+      _changeLhsReal(i, lhs);
+      _changeRhsReal(rhs);
+      _changeRhsReal(i, rhs);
+      _changeRangeReal(lhs, rhs);
+      _changeRangeReal(i,lhs, rhs);
+      _changeColReal(i, lpcol);
+      _changeLowerReal(lower);
+      _changeLowerReal(i, lower);
+      _changeUpperReal(upper);
+      _changeUpperReal(i, upper);
+      _changeBoundsReal(lower, upper);
+      _changeBoundsReal(i, lower, upper);
+      _changeElementReal(i, j, val);
+   void SoPlex::removeRowReal(int i)
+      _removeRowReal(i);
+   /// #numRowsReal()
+   void SoPlex::removeRowsReal(int perm[])
+      _removeRowsReal(perm);
+   /// remove all rows with indices in array \p idx of size \p n; an array \p perm of size #numRowsReal() may be passed
+   void SoPlex::removeRowsReal(int idx[], int n, int perm[])
+         DataArray< int > p(numRowsReal());
+         _idxToPerm(idx, n, p.get_ptr(), numRowsReal());
+         SoPlex::removeRowsReal(p.get_ptr());
+         _idxToPerm(idx, n, perm, numRowsReal());
+         SoPlex::removeRowsReal(perm);
+   /// removes rows \p start to \p end including both; an array \p perm of size #numRowsReal() may be passed as buffer
+   void SoPlex::removeRowRangeReal(int start, int end, int perm[])
+         DataArray< int > p(numRowsReal());
+         _rangeToPerm(start, end, p.get_ptr(), numRowsReal());
+         SoPlex::removeRowsReal(p.get_ptr());
+         _rangeToPerm(start, end, perm, numRowsReal());
+         SoPlex::removeRowsReal(perm);
+   void SoPlex::removeColReal(int i)
+      _removeColReal(i);
+   /// #numColsReal()
+   void SoPlex::removeColsReal(int perm[])
+      _removeColsReal(perm);
+   /// remove all columns with indices in array \p idx of size \p n; an array \p perm of size #numColsReal() may be
+   void SoPlex::removeColsReal(int idx[], int n, int perm[])
+         DataArray< int > p(numColsReal());
+         _idxToPerm(idx, n, p.get_ptr(), numColsReal());
+         SoPlex::removeColsReal(p.get_ptr());
+         _idxToPerm(idx, n, perm, numColsReal());
+         SoPlex::removeColsReal(perm);
+   /// removes columns \p start to \p end including both; an array \p perm of size #numColsReal() may be passed as
+   void SoPlex::removeColRangeReal(int start, int end, int perm[])
+         DataArray< int > p(numColsReal());
+         _rangeToPerm(start, end, p.get_ptr(), numColsReal());
+         SoPlex::removeColsReal(p.get_ptr());
+         _rangeToPerm(start, end, perm, numColsReal());
+         SoPlex::removeColsReal(perm);
+   void SoPlex::clearLPReal()
+   void SoPlex::syncLPReal()
+         _syncLPReal();
+         _addRowReal(lprow);
+         _addRowsReal(lprowset);
+         _addColReal(lpcol);
+         _addColsReal(lpcolset);
+         _changeRowReal(i, lprow);
+         _changeLhsReal(DVectorReal(lhs));
+         _changeLhsReal(i, Real(lhs));
+         _changeRhsReal(DVectorReal(rhs));
+         _changeRhsReal(i, Real(rhs));
+         _changeRangeReal(DVectorReal(lhs), DVectorReal(rhs));
+         _changeRangeReal(i, Real(lhs), Real(rhs));
+         _changeColReal(i, lpcol);
+         _changeLowerReal(DVectorReal(lower));
+         _changeLowerReal(i, Real(lower));
+         _changeUpperReal(DVectorReal(upper));
+         _changeUpperReal(i, Real(upper));
+         _changeBoundsReal(DVectorReal(lower), DVectorReal(upper));
+         _changeBoundsReal(i, Real(lower), Real(upper));
+         _realLP->changeObj(DVectorReal(obj));
+         _realLP->changeObj(i, Real(obj));
+         _changeElementReal(i, j, Real(val));
+         _removeRowReal(i);
+         _removeRowsReal(perm);
+         _removeColReal(i);
+         _removeColsReal(perm);
+         _solveReal();
+         _syncRealSolution();
+         return _solReal._primalObjVal;
+         _syncRealSolution();
+         return _solReal._dualObjVal;
+      if( hasPrimal() && vector.dim() >= numColsReal() )
+         _syncRealSolution();
+         _solReal.getPrimal(vector);
+      if( hasPrimal() && vector.dim() >= numRowsReal() )
+         _syncRealSolution();
+         _solReal.getSlacks(vector);
+      if( hasPrimalRay() && vector.dim() >= numColsReal() )
+         _syncRealSolution();
+         _solReal.getPrimalRay(vector);
+      if( hasDual() && vector.dim() >= numRowsReal() )
+         _syncRealSolution();
+         _solReal.getDual(vector);
+      if( hasDual() && vector.dim() >= numColsReal() )
+         _syncRealSolution();
+         _solReal.getRedCost(vector);
+      if( hasDualFarkas() && vector.dim() >= numRowsReal() )
+         _syncRealSolution();
+         _solReal.getDualFarkas(vector);
+      _syncRealSolution();
+      assert(primal.dim() == numColsReal());
+      for( int i = numColsReal() - 1; i >= 0; i-- )
+         viol = primal[i] - upperReal(i);
+      _syncRealSolution();
+      assert(primal.dim() == numColsReal());
+      for( int i = numRowsReal() - 1; i >= 0; i-- )
+         viol = activity[i] - rhsReal(i);
+      _syncRealSolution();
+      assert(redcost.dim() == numColsReal());
+      for( int c = numColsReal() - 1; c >= 0; c-- )
+      _syncRealSolution();
+      assert(dual.dim() == numRowsReal());
+      for( int r = numRowsReal() - 1; r >= 0; r-- )
+      for( int c = numColsReal() - 1; c >= 0; c-- )
+      for( int r = numRowsReal() - 1; r >= 0; r-- )
+      assert(row < numRowsReal());
+      if( !hasBasis() || row < 0 || row >= numRowsReal() )
+      else if( _isRealLPLoaded )
+      assert(col < numColsReal());
+      if( col < 0 || col >= numColsReal() )
+         if( lowerReal(col) > -realParam(SoPlex::INFTY) )
+         else if( upperReal(col) < realParam(SoPlex::INFTY) )
+      else if( _isRealLPLoaded )
+         for( int i = numRowsReal() - 1; i >= 0; i-- )
+         for( int i = numColsReal() - 1; i >= 0; i-- )
+            if( lowerReal(i) > -realParam(SoPlex::INFTY) )
+            else if( upperReal(i) < realParam(SoPlex::INFTY) )
+      else if( _isRealLPLoaded )
+         assert(numRowsReal() == _basisStatusRows.size());
+         assert(numColsReal() == _basisStatusCols.size());
+         for( int i = numRowsReal() - 1; i >= 0; i-- )
+         for( int i = numColsReal() - 1; i >= 0; i-- )
+         for( int i = 0; i < numRowsReal(); ++i )
+      else if( !_isRealLPLoaded )
+         assert(numRowsReal() == _basisStatusRows.size());
+         assert(numColsReal() == _basisStatusCols.size());
+         for( int i = 0; i < numRowsReal(); ++i )
+         for( int j = 0; j < numColsReal(); ++j )
+         assert(k == numRowsReal());
+         for( int i = 0; i < numRowsReal(); ++i )
+         for( int i = 0; i < numRowsReal(); ++i )
+         for( int j = 0; j < numColsReal(); ++j )
+         assert(k == numRowsReal());
+      _ensureRealLPLoaded();
+      if( !_isRealLPLoaded )
+      _ensureRealLPLoaded();
+      if( !_isRealLPLoaded )
+      assert(r < numRowsReal());
+      if( !hasBasis() || r < 0 || r >= numRowsReal() )
+      _ensureRealLPLoaded();
+      if( !_isRealLPLoaded )
+         DSVector rhs(numColsReal());
+         SSVector y(numColsReal());
+         spx_alloc(bind, numRowsReal());
+            assert(index < numRowsReal());
+            assert(index < numColsReal());
+         for( int i = 0; i < numColsReal(); ++i )
+               assert(_solver.number(id) < numRowsReal());
+      assert(c < numRowsReal());
+      if( !hasBasis() || c < 0 || c >= numRowsReal() )
+      _ensureRealLPLoaded();
+      if( !_isRealLPLoaded )
+         spx_alloc(bind, numRowsReal());
+            assert(index < numRowsReal());
+            assert(index < numColsReal());
+         for( int i = 0; i < numColsReal(); ++i )
+               assert(_solver.number(id) < numRowsReal());
+      _ensureRealLPLoaded();
+      if( !_isRealLPLoaded )
+         spx_alloc(bind, numRowsReal());
+         for( int i = 0; i < numColsReal(); ++i )
+               assert(_solver.number(id) < numRowsReal());
+         for( int i = 0; i < numRowsReal(); ++i )
+               assert(index < numRowsReal());
+               x[i] = v[index] - (rowVectorReal(index) * Vector(numColsReal(), y.get_ptr()));
+               assert(index < numColsReal());
+      if( _isRealLPLoaded )
+         assert(numRowsReal() == _solver.nRows());
+         assert(numColsReal() == _solver.nCols());
+         _basisStatusRows.reSize(numRowsReal());
+         _basisStatusCols.reSize(numColsReal());
+         for( int i = numRowsReal() - 1; i >= 0; i-- )
+         for( int j = numColsReal() - 1; j >= 0; j-- )
+      if( _isRealLPLoaded )
+         return _readFileReal(filename, rowNames, colNames, intVars);
+   bool SoPlex::writeFileReal(const char* filename, const NameSet* rowNames, const NameSet* colNames, const DIdxSet* intVars) const
+      if( !_isRealLPLoaded )
+         _realLP->~SPxLPReal();
+         _isRealLPLoaded = true;
+      int numRows = numRowsReal();
+      int numCols = numColsReal();
+         if( lowerReal(i) == upperReal(i) )
+         else if( lowerReal(i) <= double(-realParam(SoPlex::INFTY)) && upperReal(i) >= double(realParam(SoPlex::INFTY)) )
+         else if( lowerReal(i) <= double(-realParam(SoPlex::INFTY)) )
+               _basisStatusRows[r] = (lhsReal(r) == rhsReal(r))
+               _basisStatusRows[r] = (lhsReal(r) == rhsReal(r))
+      if( _isRealLPLoaded )
+   void SoPlex::writeStateReal(const char* filename, const NameSet* rowNames, const NameSet* colNames) const
+      writeFileReal(ofname.c_str(), rowNames, colNames, 0);
+         _realLP->changeSense(value == SoPlex::OBJSENSE_MAXIMIZE ? SPxLPReal::MAXIMIZE : SPxLPReal::MINIMIZE);
+      // lower limit on objective value is set in solveReal()
+      // upper limit on objective value is set in solveReal()
+         success &= setRealParam((RealParam)i, _currentSettings->_realParamValues[i], quiet, init);
+               if( sscanf(paramValueString, "%" REAL_FORMAT, &value) == 1 && setRealParam((SoPlex::RealParam)param, value) )
+            << "  Value             : " << objValueReal() << "\n";
+         if( getBoundViolationReal(maxviol, sumviol) )
+         if( getRowViolationReal(maxviol, sumviol) )
+         if( getRedCostViolationReal(maxviol, sumviol) )
+         if( getDualViolationReal(maxviol, sumviol) )
+         << "Objective value     : " << std::scientific << std::setprecision(8) << objValueReal() << std::fixed << "\n";
+      assert(_realLP != &_solver || _isRealLPLoaded);
+      assert(_realLP == &_solver || !_isRealLPLoaded);
+      assert(!_hasBasis || _isRealLPLoaded || _basisStatusRows.size() == numRowsReal());
+      assert(!_hasBasis || _isRealLPLoaded || _basisStatusCols.size() == numColsReal());
+               if( sscanf(paramValueString, "%" REAL_FORMAT, &value) == 1 && setRealParam((SoPlex::RealParam)param, value) )
+      if( _isRealLPLoaded )
+      if( _isRealLPLoaded )
+      if( _isRealLPLoaded )
+      if( _isRealLPLoaded )
+      if( _isRealLPLoaded )
+      if( _isRealLPLoaded )
+         for( int i = numRowsReal() - 1; i >= 0; i-- )
+               _basisStatusRows[i] = (rhsReal(i) < realParam(SoPlex::INFTY)) ? SPxSolver::ON_UPPER : SPxSolver::ZERO;
+      if( _isRealLPLoaded )
+         _basisStatusRows[i] = (rhsReal(i) < realParam(SoPlex::INFTY)) ? SPxSolver::ON_UPPER : SPxSolver::ZERO;
+      if( _isRealLPLoaded )
+         for( int i = numRowsReal() - 1; i >= 0; i-- )
+               _basisStatusRows[i] = (lhsReal(i) > -realParam(SoPlex::INFTY)) ? SPxSolver::ON_LOWER : SPxSolver::ZERO;
+      if( _isRealLPLoaded )
+         _basisStatusRows[i] = (lhsReal(i) > -realParam(SoPlex::INFTY)) ? SPxSolver::ON_LOWER : SPxSolver::ZERO;
+      if( _isRealLPLoaded )
+         for( int i = numRowsReal() - 1; i >= 0; i-- )
+      if( _isRealLPLoaded )
+      if( _isRealLPLoaded )
+      if( _isRealLPLoaded )
+         for( int i = numColsReal() - 1; i >= 0; i-- )
+               _basisStatusCols[i] = (upperReal(i) < realParam(SoPlex::INFTY)) ? SPxSolver::ON_UPPER : SPxSolver::ZERO;
+      if( _isRealLPLoaded )
+         _basisStatusCols[i] = (upperReal(i) < realParam(SoPlex::INFTY)) ? SPxSolver::ON_UPPER : SPxSolver::ZERO;
+      if( _isRealLPLoaded )
+         for( int i = numColsReal() - 1; i >= 0; i-- )
+               _basisStatusCols[i] = (lowerReal(i) > -realParam(SoPlex::INFTY)) ? SPxSolver::ON_LOWER : SPxSolver::ZERO;
+      if( _isRealLPLoaded )
+         _basisStatusCols[i] = (lowerReal(i) > -realParam(SoPlex::INFTY)) ? SPxSolver::ON_LOWER : SPxSolver::ZERO;
+      if( _isRealLPLoaded )
+         for( int i = numColsReal() - 1; i >= 0; i-- )
+      if( _isRealLPLoaded )
+      if( _isRealLPLoaded )
+   void SoPlex::_removeRowReal(int i)
+      if( _isRealLPLoaded )
+   /// #numRowsReal()
+   void SoPlex::_removeRowsReal(int perm[])
+      if( _isRealLPLoaded )
+         for( int i = numRowsReal() - 1; i >= 0 && _hasBasis; i-- )
+               assert(perm[i] < numRowsReal());
+            _basisStatusRows.reSize(numRowsReal());
+   void SoPlex::_removeColReal(int i)
+      if( _isRealLPLoaded )
+   /// #numColsReal()
+   void SoPlex::_removeColsReal(int perm[])
+      if( _isRealLPLoaded )
+         for( int i = numColsReal() - 1; i >= 0 && _hasBasis; i-- )
+               assert(perm[i] < numColsReal());
+            _basisStatusCols.reSize(numColsReal());
+      _solReal.invalidate();
+   void SoPlex::_ensureRealLPLoaded()
+      if( !_isRealLPLoaded )
+         _realLP->~SPxLPReal();
+         _isRealLPLoaded = true;
+            assert(_basisStatusRows.size() == numRowsReal());
+            assert(_basisStatusCols.size() == numColsReal());
+   void SoPlex::_solveRealLPAndRecordStatistics()
+   bool SoPlex::_readFileReal(const char* filename, NameSet* rowNames, NameSet* colNames, DIdxSet* intVars)
+      setIntParam(SoPlex::OBJSENSE, (_realLP->spxSense() == SPxLPReal::MAXIMIZE ? SoPlex::OBJSENSE_MAXIMIZE : SoPlex::OBJSENSE_MINIMIZE), true, true);
+         clearLPReal();
+            _syncLPReal();
+            _syncLPReal();
+   void SoPlex::_syncLPReal(bool time)
+      if( _isRealLPLoaded )
+   void SoPlex::_syncRealSolution()
+         _solRational = _solReal;
+   return x * maxObj() * Real(spxSense());
+void checkSolutionReal(SoPlex& soplex)
+      if( soplex.getBoundViolationReal(boundviol, sumviol) && soplex.getRowViolationReal(rowviol, sumviol) )
+      if( soplex.getRedCostViolationReal(redcostviol, sumviol) && soplex.getDualViolationReal(dualviol, sumviol) )
+      checkSolutionReal(soplex);
+            if( !soplex.setRealParam(SoPlex::TIMELIMIT, atoi(&option[2])) )
+            if( !soplex.setRealParam(SoPlex::FEASTOL, atof(&option[2])) )
+            if( !soplex.setRealParam(SoPlex::OPTTOL, atof(&option[2])) )
+      MSG_INFO1( spxout << "LP has " << soplex.numRowsReal() << " rows "
+         << soplex.numColsReal() << " columns and " << soplex.numNonzerosReal() << " nonzeros.\n\n" );
+         DVector primal(soplex.numColsReal());
+         if( soplex.getPrimalReal(primal) )
+            for( int i = 0; i < soplex.numColsReal(); ++i )
+         DVector dual(soplex.numRowsReal());
+         if( soplex.getDualReal(dual) )
+            for( int i = 0; i < soplex.numRowsReal(); ++i )
+      else if (Real(factor->memory()) > lastFill * Real(nzCount))
+   lastFill   = fillFactor * Real(factor->memory()) / Real(nzCount > 0 ? nzCount : 1);
+   lastNzCount = int(nonzeroFactor * Real(nzCount > 0 ? nzCount : 1));
+   svec *= Real(sense);
+            shiftUBbound(i, (*theFvec)[i] + Real(mult));
+            shiftLBbound(i, (*theFvec)[i] - Real(mult));
+            shiftUCbound(i, (*theCoPvec)[i] + Real(mult));
+            shiftLCbound(i, (*theCoPvec)[i] - Real(mult));
+            shiftUPbound(i, (*thePvec)[i] + Real(mult));
+            shiftLPbound(i, (*thePvec)[i] - Real(mult));
+         p_up[i] = vec[i] + Real(mult);
+         p_low[i] = vec[i] - Real(mult);
+            p_up[i] = vec[i] + Real(mult);
+            p_low[i] = vec[i] - Real(mult);
+         p_up[i] = vec[i] + Real(mult);
+         p_low[i] = vec[i] - Real(mult);
+            p_up[i] = vec[i] + Real(mult);
+            p_low[i] = vec[i] - Real(mult);
+         p_up[i] = vec[i] + Real(mult);
+         p_low[i] = vec[i] - Real(mult);
+            p_up[i] = vec[i] + Real(mult);
+            p_low[i] = vec[i] - Real(mult);
+         p_up[i] = vec[i] + Real(mult);
+         p_low[i] = vec[i] - Real(mult);
+            p_up[i] = vec[i] + Real(mult);
+            p_low[i] = vec[i] - Real(mult);
+   p_vector *= Real(spxSense());
+   //      p[i] += rtie * thesolver->rowVector(i).size() / Real(thesolver->nCols());
+   //      cp[i] += ctie * thesolver->colVector(i).size() / Real(thesolver->nRows());

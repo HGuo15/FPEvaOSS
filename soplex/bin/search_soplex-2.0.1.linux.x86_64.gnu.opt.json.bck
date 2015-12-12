@@ -1,0 +1,12 @@
+{"config": [
+	{"localVar": {
+		"function": "_ZN6soplexL17changeLowerStatusERNS_8SPxBasis4Desc6StatusEddRKS0_i",
+		"name": "upper",
+		"type": ["float", "double"]
+	}},
+	{"localVar": {
+		"function": "_ZN6soplexL17changeLowerStatusERNS_8SPxBasis4Desc6StatusEddRKS0_i",
+		"name": "newLower",
+		"type": ["float", "double"]
+	}}
+]}

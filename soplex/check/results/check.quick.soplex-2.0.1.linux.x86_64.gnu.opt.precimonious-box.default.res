@@ -1,0 +1,48 @@
+
+SoPlex version 2.0.1 [mode: optimized] [precision: 8 byte] [rational: long double] [githash: 51184cf]
+
+name                rows  cols   primalviol     dualviol  iters  flips  solvetime         value      status
+-----------------------------------------------------------------------------------------------------------
+adlittle              56    97  5.68434e-14  2.98428e-13     87      0        0.0    225494.963     optimal
+afiro                 27    32   7.4607e-14  5.55112e-17     16      0        0.0   -464.753143     optimal
+agg                  488   163  4.65661e-10  4.44089e-16     95      0        0.0   -35991767.3     optimal
+beaconfd             173   262  8.06466e-12  8.88178e-16     88      0        0.0    33592.4858     optimal
+bgetam               400   688            -            -    236      0        0.0        1e+100  infeasible
+blend                 74    83  1.98952e-13  8.88178e-16     97      0        0.0   -30.8121498     optimal
+bore3d               233   315  1.13687e-13  2.07098e-13    100      0        0.0    1373.08039     optimal
+box1                 231   261            -            -     80      0        0.0        1e+100  infeasible
+brandy               220   249  9.09495e-13  5.56777e-14    486      0        0.0     1518.5099     optimal
+capri                271   353  6.14619e-13  2.84217e-14    327      0        0.0    2690.01291     optimal
+etamacro             400   688  1.98952e-13  2.28107e-07    717      0        0.0   -755.715233     optimal
+ex72a                197   215            -            -    300      0        0.0        1e+100  infeasible
+finnis               497   614  4.75175e-13  2.52476e-14    505      0        0.0    172791.066     optimal
+forest6               66    95            -            -    156      0        0.0        1e+100  infeasible
+galenet                8     8            -            -      5      0        0.0        1e+100  infeasible
+gams10am             114    61            -            -     19      0        0.0        1e+100  infeasible
+gas11                459   862            -            -    481      0        0.0       -1e+100   unbounded
+grow7                140   301  1.77897e-09  5.68434e-14   1012      0       0.01   -47787811.8     optimal
+israel               174   142  1.16415e-10  7.10543e-15    184      0        0.0   -896644.822     optimal
+kb2                   43    41  2.72848e-12          0.0     56      0        0.0   -1749.90013     optimal
+klein1                54    54            -            -    227      0        0.0        1e+100  infeasible
+lotfi                153   308  5.82077e-11  6.31439e-16    227      0        0.0   -25.2647061     optimal
+recipe                91   180          0.0   2.2031e-16     40      0        0.0      -266.616     optimal
+refinery             323   464            -            -    686      0        0.0        1e+100  infeasible
+sc105                105   103  1.27898e-12          0.0     94      0        0.0   -52.2020612     optimal
+sc205                205   203  4.54747e-13          0.0    209      0        0.0   -52.2020612     optimal
+sc50a                 50    48  5.68434e-14          0.0     46      0        0.0   -64.5750771     optimal
+sc50b                 50    48   1.7053e-13          0.0     50      0        0.0         -70.0     optimal
+scagr25              471   500  3.63798e-12  3.29692e-12    784      0        0.0   -14753433.1     optimal
+scagr7               129   140  9.09495e-13  3.41061e-13    178      0        0.0   -2331389.82     optimal
+scfxm1               330   457  9.09495e-12  3.66374e-14    462      0        0.0     18416.759     optimal
+scorpion             388   358  3.33067e-16          0.0    245      0        0.0    1878.12482     optimal
+scrs8                490  1169  1.77636e-14  2.27374e-12    608      0       0.01    904.296954     optimal
+scsd1                 77   760  5.55112e-17  3.27143e-08     95      0        0.0    8.66666667     optimal
+seba                 515  1028          0.0          0.0      2      0        0.0       15711.6     optimal
+share1b              117   225  1.84425e-10  2.19824e-14    217      0        0.0   -76589.3186     optimal
+share2b               96    79  2.27374e-13  4.44089e-15    115      0        0.0   -415.732241     optimal
+shell                536  1775          0.0          0.0    595      0        0.0  1208825350.0     optimal
+vtp-base             198   203  1.95541e-11  4.54747e-13     78      0        0.0    129831.462     optimal
+woodinfe              35    89            -            -     48      0        0.0        1e+100  infeasible
+
+Results (testset quick, settings default):
+40 total: 30 optimal, 9 infeasible, 1 unbounded, 0 timeouts, 0 inconsistents, 0 fails, 0 aborts

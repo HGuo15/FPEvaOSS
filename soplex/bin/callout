@@ -1,0 +1,415 @@
+Finding dependencies file for  soplex-2.0.1.linux.x86_64.gnu.opt.bc
+Func:main
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZN6soplex12TimerFactory11createTimerENS_5Timer4TYPEE
+  CalledFunc:_ZN6soplex12TimerFactory11createTimerENS_5Timer4TYPEE is not Declaration and inserted.
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZL10printUsagePKPKci
+  CalledFunc:_ZL10printUsagePKPKci is not Declaration and inserted.
+--InvokeInst--
+  CalledFunc:_ZL10printUsagePKPKci
+  CalledFunc:_ZL10printUsagePKPKci is not Declaration and inserted.
+--InvokeInst--
+  CalledFunc:_Znam
+--InvokeInst--
+  CalledFunc:_Znam
+--InvokeInst--
+  CalledFunc:_Znam
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZL10printUsagePKPKci
+  CalledFunc:_ZL10printUsagePKPKci is not Declaration and inserted.
+--InvokeInst--
+  CalledFunc:_Znam
+--InvokeInst--
+  CalledFunc:_Znam
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZL10printUsagePKPKci
+  CalledFunc:_ZL10printUsagePKPKci is not Declaration and inserted.
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZL10printUsagePKPKci
+  CalledFunc:_ZL10printUsagePKPKci is not Declaration and inserted.
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZL10printUsagePKPKci
+  CalledFunc:_ZL10printUsagePKPKci is not Declaration and inserted.
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZL10printUsagePKPKci
+  CalledFunc:_ZL10printUsagePKPKci is not Declaration and inserted.
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZL10printUsagePKPKci
+  CalledFunc:_ZL10printUsagePKPKci is not Declaration and inserted.
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZL10printUsagePKPKci
+  CalledFunc:_ZL10printUsagePKPKci is not Declaration and inserted.
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZL10printUsagePKPKci
+  CalledFunc:_ZL10printUsagePKPKci is not Declaration and inserted.
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZL10printUsagePKPKci
+  CalledFunc:_ZL10printUsagePKPKci is not Declaration and inserted.
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZL10printUsagePKPKci
+  CalledFunc:_ZL10printUsagePKPKci is not Declaration and inserted.
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZL10printUsagePKPKci
+  CalledFunc:_ZL10printUsagePKPKci is not Declaration and inserted.
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZL10printUsagePKPKci
+  CalledFunc:_ZL10printUsagePKPKci is not Declaration and inserted.
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZL10printUsagePKPKci
+  CalledFunc:_ZL10printUsagePKPKci is not Declaration and inserted.
+--InvokeInst--
+  CalledFunc:_ZL10printUsagePKPKci
+  CalledFunc:_ZL10printUsagePKPKci is not Declaration and inserted.
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZL10printUsagePKPKci
+  CalledFunc:_ZL10printUsagePKPKci is not Declaration and inserted.
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZNSo9_M_insertIdEERSoT_
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZNSolsEi
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZNSolsEi
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZNSolsEi
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZN6soplex9spx_allocIPdEEvRT_i
+  CalledFunc:_ZN6soplex9spx_allocIPdEEvRT_i is not Declaration and inserted.
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZNSo9_M_insertIdEERSoT_
+--InvokeInst--
+  CalledFunc:_ZSt16__throw_bad_castv
+--InvokeInst--
+  CalledFunc:_ZNKSt5ctypeIcE13_M_widen_initEv
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZNSo3putEc
+--InvokeInst--
+  CalledFunc:_ZNSo5flushEv
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZNSo9_M_insertIdEERSoT_
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__throw_bad_castv
+--InvokeInst--
+  CalledFunc:_ZNKSt5ctypeIcE13_M_widen_initEv
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZNSo3putEc
+--InvokeInst--
+  CalledFunc:_ZNSo5flushEv
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZN6soplex9spx_allocIPdEEvRT_i
+  CalledFunc:_ZN6soplex9spx_allocIPdEEvRT_i is not Declaration and inserted.
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZNSo9_M_insertIdEERSoT_
+--InvokeInst--
+  CalledFunc:_ZSt16__throw_bad_castv
+--InvokeInst--
+  CalledFunc:_ZNKSt5ctypeIcE13_M_widen_initEv
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZNSo3putEc
+--InvokeInst--
+  CalledFunc:_ZNSo5flushEv
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZNSo9_M_insertIdEERSoT_
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__throw_bad_castv
+--InvokeInst--
+  CalledFunc:_ZNKSt5ctypeIcE13_M_widen_initEv
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZNSo3putEc
+--InvokeInst--
+  CalledFunc:_ZNSo5flushEv
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZN6soplexgtERKNS_8RationalES2_
+  CalledFunc:_ZN6soplexgtERKNS_8RationalES2_ is not Declaration and inserted.
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZN6soplexltERKNS_8RationalERKd
+  CalledFunc:_ZN6soplexltERKNS_8RationalERKd is not Declaration and inserted.
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZN6soplexlsERSoRKNS_8RationalE
+  CalledFunc:_ZN6soplexlsERSoRKNS_8RationalE is not Declaration and inserted.
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZN6soplexgtERKNS_8RationalES2_
+  CalledFunc:_ZN6soplexgtERKNS_8RationalES2_ is not Declaration and inserted.
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZN6soplexltERKNS_8RationalERKd
+  CalledFunc:_ZN6soplexltERKNS_8RationalERKd is not Declaration and inserted.
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZN6soplexlsERSoRKNS_8RationalE
+  CalledFunc:_ZN6soplexlsERSoRKNS_8RationalE is not Declaration and inserted.
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZNSo9_M_insertIdEERSoT_
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZNSo9_M_insertIdEERSoT_
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l
+--InvokeInst--
+  CalledFunc:__cxa_end_catch
+--InvokeInst--
+  CalledFunc:__cxa_end_catch
+Func:_ZL10printUsagePKPKci
+Func:_ZN6soplex12TimerFactory11createTimerENS_5Timer4TYPEE
+Func:_ZN6soplex9spx_allocIPdEEvRT_i
+--InvokeInst--
+  CalledFunc:_ZNSsC1EPKcRKSaIcE
+--InvokeInst--
+  CalledFunc:_ZNSsC1ERKSs
+--InvokeInst--
+  CalledFunc:__cxa_throw
+Func:_ZN6soplexgtERKNS_8RationalES2_
+Func:_ZN6soplexlsERSoRKNS_8RationalE
+Func:_ZN6soplexltERKNS_8RationalERKd

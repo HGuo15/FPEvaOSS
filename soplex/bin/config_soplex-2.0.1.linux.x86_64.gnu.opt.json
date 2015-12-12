@@ -1,0 +1,331 @@
+{"config": [
+	{"globalVar": {
+		"name": "_ZN6soplex5Param9s_epsilonE",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"name": "enterLB",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"name": "enterUB",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"name": "enterTest",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"name": "enterMax",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"name": "enterVal",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"name": "leaveVal",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"name": "enterPric",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"name": "leavebound",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"name": "enterRO",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5leaveEi",
+		"name": "newCoPrhs",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5leaveEi",
+		"name": "leaveMax",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5leaveEi",
+		"name": "newUBbound",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5leaveEi",
+		"name": "enterVal",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5leaveEi",
+		"name": "newLBbound",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5leaveEi",
+		"name": "leavebound",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5leaveEi",
+		"name": "enterBound",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex6SoPlex18_parseSettingsLineEPci",
+		"name": "value12",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex6SoPlex19parseSettingsStringEPc",
+		"name": "value12",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex6SoPlex23printSolutionStatisticsERSo",
+		"name": "sumviol2",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex6SoPlex23printSolutionStatisticsERSo",
+		"name": "maxviol1",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex12SPxDantzigPR12selectEnterXEv",
+		"name": "bestCo",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex12SPxDantzigPR12selectEnterXEv",
+		"name": "best",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex10SPxDevexPR12selectEnterXEd",
+		"name": "bestCo",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex10SPxDevexPR12selectEnterXEd",
+		"name": "best",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT9maxSelectERdS1_S1_d",
+		"name": "best",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT9maxSelectERiRdS2_S2_d",
+		"name": "best",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT9minSelectERdS1_S1_d",
+		"name": "best",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT9minSelectERiRdS2_S2_d",
+		"name": "best",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectLeaveERdd",
+		"name": "bestDelta",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectLeaveERdd",
+		"name": "maxabs",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectLeaveERdd",
+		"name": "lowstab",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectLeaveERdd",
+		"name": "sel",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectLeaveERdd",
+		"name": "max",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectLeaveERdd",
+		"name": "bestDelta2",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectLeaveERdd",
+		"name": "stab1",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectLeaveERdd",
+		"name": "stab",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectEnterERdi",
+		"name": "bestDelta1",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectEnterERdi",
+		"name": "stab2",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectEnterERdi",
+		"name": "bestDelta",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectEnterERdi",
+		"name": "lowstab",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectEnterERdi",
+		"name": "maxabs",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectEnterERdi",
+		"name": "sel",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectEnterERdi",
+		"name": "max",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectEnterERdi",
+		"name": "stab",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxMainSM18removeRowSingletonERNS_9SPxLPBaseIdEERKNS_11SVectorBaseIdEERi",
+		"name": "up",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxMainSM18removeRowSingletonERNS_9SPxLPBaseIdEERKNS_11SVectorBaseIdEERi",
+		"name": "lo",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxMainSM12simplifyColsERNS_9SPxLPBaseIdEERb",
+		"name": "lo",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxMainSM12simplifyColsERNS_9SPxLPBaseIdEERb",
+		"name": "rhs",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxMainSM12simplifyColsERNS_9SPxLPBaseIdEERb",
+		"name": "lhs",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxMainSM12simplifyColsERNS_9SPxLPBaseIdEERb",
+		"name": "up",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxMainSM12simplifyColsERNS_9SPxLPBaseIdEERb",
+		"name": "new_obj",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxMainSM9fixColumnERNS_9SPxLPBaseIdEEib",
+		"name": "lhs",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxMainSM9fixColumnERNS_9SPxLPBaseIdEEib",
+		"name": "rhs",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver7unShiftEv",
+		"name": "t_up",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver7unShiftEv",
+		"name": "t_low",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZNK6soplex9SPxSolver16precisionReachedERd",
+		"name": "sumViolRedCost",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZNK6soplex9SPxSolver16precisionReachedERd",
+		"name": "maxViolConst",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZNK6soplex9SPxSolver16precisionReachedERd",
+		"name": "maxViolBounds",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZNK6soplex9SPxSolver16precisionReachedERd",
+		"name": "maxViolRedCost",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZNK6soplex9SPxSolver16precisionReachedERd",
+		"name": "sumViolConst",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZNK6soplex9SPxSolver16precisionReachedERd",
+		"name": "sumViolBounds",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5solveEv",
+		"name": "newpricertol",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex9SPxSolver5solveEv",
+		"name": "newpricertol16",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex10SPxSteepPR12selectEnterXEd",
+		"name": "bestCo",
+		"type": "double"
+	}},
+	{"localVar": {
+		"function": "_ZN6soplex10SPxSteepPR12selectEnterXEd",
+		"name": "best",
+		"type": "double"
+	}}
+]}

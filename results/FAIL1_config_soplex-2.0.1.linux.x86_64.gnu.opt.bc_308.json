@@ -1,0 +1,331 @@
+{
+	"globalVar": {
+		"type": "float",
+		"name": "_ZN6soplex5Param9s_epsilonE",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"type": "float",
+		"name": "enterLB",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"type": "float",
+		"name": "enterUB",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"type": "float",
+		"name": "enterTest",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"type": "float",
+		"name": "enterMax",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"type": "float",
+		"name": "enterVal",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"type": "float",
+		"name": "leaveVal",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"type": "float",
+		"name": "enterPric",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"type": "float",
+		"name": "leavebound",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5enterERNS_5SPxIdE",
+		"type": "float",
+		"name": "enterRO",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5leaveEi",
+		"type": "float",
+		"name": "newCoPrhs",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5leaveEi",
+		"type": "float",
+		"name": "leaveMax",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5leaveEi",
+		"type": "float",
+		"name": "newUBbound",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5leaveEi",
+		"type": "float",
+		"name": "enterVal",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5leaveEi",
+		"type": "float",
+		"name": "newLBbound",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5leaveEi",
+		"type": "float",
+		"name": "leavebound",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5leaveEi",
+		"type": "float",
+		"name": "enterBound",
+	},
+	"localVar": {
+		"function": "_ZN6soplex6SoPlex18_parseSettingsLineEPci",
+		"type": "float",
+		"name": "value12",
+	},
+	"localVar": {
+		"function": "_ZN6soplex6SoPlex19parseSettingsStringEPc",
+		"type": "float",
+		"name": "value12",
+	},
+	"localVar": {
+		"function": "_ZN6soplex6SoPlex23printSolutionStatisticsERSo",
+		"type": "float",
+		"name": "sumviol2",
+	},
+	"localVar": {
+		"function": "_ZN6soplex6SoPlex23printSolutionStatisticsERSo",
+		"type": "float",
+		"name": "maxviol1",
+	},
+	"localVar": {
+		"function": "_ZN6soplex12SPxDantzigPR12selectEnterXEv",
+		"type": "float",
+		"name": "bestCo",
+	},
+	"localVar": {
+		"function": "_ZN6soplex12SPxDantzigPR12selectEnterXEv",
+		"type": "float",
+		"name": "best",
+	},
+	"localVar": {
+		"function": "_ZN6soplex10SPxDevexPR12selectEnterXEd",
+		"type": "float",
+		"name": "bestCo",
+	},
+	"localVar": {
+		"function": "_ZN6soplex10SPxDevexPR12selectEnterXEd",
+		"type": "float",
+		"name": "best",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT9maxSelectERdS1_S1_d",
+		"type": "float",
+		"name": "best",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT9maxSelectERiRdS2_S2_d",
+		"type": "float",
+		"name": "best",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT9minSelectERdS1_S1_d",
+		"type": "float",
+		"name": "best",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT9minSelectERiRdS2_S2_d",
+		"type": "float",
+		"name": "best",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectLeaveERdd",
+		"type": "float",
+		"name": "bestDelta",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectLeaveERdd",
+		"type": "float",
+		"name": "maxabs",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectLeaveERdd",
+		"type": "float",
+		"name": "lowstab",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectLeaveERdd",
+		"type": "float",
+		"name": "sel",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectLeaveERdd",
+		"type": "float",
+		"name": "max",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectLeaveERdd",
+		"type": "float",
+		"name": "bestDelta2",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectLeaveERdd",
+		"type": "float",
+		"name": "stab1",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectLeaveERdd",
+		"type": "float",
+		"name": "stab",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectEnterERdi",
+		"type": "float",
+		"name": "bestDelta1",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectEnterERdi",
+		"type": "float",
+		"name": "stab2",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectEnterERdi",
+		"type": "float",
+		"name": "bestDelta",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectEnterERdi",
+		"type": "float",
+		"name": "lowstab",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectEnterERdi",
+		"type": "float",
+		"name": "maxabs",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectEnterERdi",
+		"type": "float",
+		"name": "sel",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectEnterERdi",
+		"type": "float",
+		"name": "max",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxFastRT11selectEnterERdi",
+		"type": "float",
+		"name": "stab",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxMainSM18removeRowSingletonERNS_9SPxLPBaseIdEERKNS_11SVectorBaseIdEERi",
+		"type": "double",
+		"name": "up",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxMainSM18removeRowSingletonERNS_9SPxLPBaseIdEERKNS_11SVectorBaseIdEERi",
+		"type": "float",
+		"name": "lo",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxMainSM12simplifyColsERNS_9SPxLPBaseIdEERb",
+		"type": "float",
+		"name": "lo",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxMainSM12simplifyColsERNS_9SPxLPBaseIdEERb",
+		"type": "float",
+		"name": "rhs",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxMainSM12simplifyColsERNS_9SPxLPBaseIdEERb",
+		"type": "float",
+		"name": "lhs",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxMainSM12simplifyColsERNS_9SPxLPBaseIdEERb",
+		"type": "float",
+		"name": "up",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxMainSM12simplifyColsERNS_9SPxLPBaseIdEERb",
+		"type": "float",
+		"name": "new_obj",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxMainSM9fixColumnERNS_9SPxLPBaseIdEEib",
+		"type": "float",
+		"name": "lhs",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxMainSM9fixColumnERNS_9SPxLPBaseIdEEib",
+		"type": "float",
+		"name": "rhs",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver7unShiftEv",
+		"type": "float",
+		"name": "t_up",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver7unShiftEv",
+		"type": "float",
+		"name": "t_low",
+	},
+	"localVar": {
+		"function": "_ZNK6soplex9SPxSolver16precisionReachedERd",
+		"type": "float",
+		"name": "sumViolRedCost",
+	},
+	"localVar": {
+		"function": "_ZNK6soplex9SPxSolver16precisionReachedERd",
+		"type": "float",
+		"name": "maxViolConst",
+	},
+	"localVar": {
+		"function": "_ZNK6soplex9SPxSolver16precisionReachedERd",
+		"type": "float",
+		"name": "maxViolBounds",
+	},
+	"localVar": {
+		"function": "_ZNK6soplex9SPxSolver16precisionReachedERd",
+		"type": "float",
+		"name": "maxViolRedCost",
+	},
+	"localVar": {
+		"function": "_ZNK6soplex9SPxSolver16precisionReachedERd",
+		"type": "float",
+		"name": "sumViolConst",
+	},
+	"localVar": {
+		"function": "_ZNK6soplex9SPxSolver16precisionReachedERd",
+		"type": "float",
+		"name": "sumViolBounds",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5solveEv",
+		"type": "float",
+		"name": "newpricertol",
+	},
+	"localVar": {
+		"function": "_ZN6soplex9SPxSolver5solveEv",
+		"type": "float",
+		"name": "newpricertol16",
+	},
+	"localVar": {
+		"function": "_ZN6soplex10SPxSteepPR12selectEnterXEd",
+		"type": "float",
+		"name": "bestCo",
+	},
+	"localVar": {
+		"function": "_ZN6soplex10SPxSteepPR12selectEnterXEd",
+		"type": "float",
+		"name": "best",
+	},
+}

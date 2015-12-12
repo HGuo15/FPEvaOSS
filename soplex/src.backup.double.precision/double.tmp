@@ -1,0 +1,2277 @@
+basevectors.h:   else if( isSetup() && (double(x.size()) * A.memSize() <= shortProductFactor * dim() * A.num()) )
+changesoplex.cpp:            double& v_rhs = (*theFrhs)[i];
+changesoplex.cpp:            double& v_rhs = (*theFrhs)[i];
+changesoplex.cpp:         double x;
+changesoplex.cpp:         double x;
+changesoplex.cpp:void SPxSolver::changeObj(int i, const double& newVal)
+changesoplex.cpp:   double                    newLower,
+changesoplex.cpp:   double                    upper,
+changesoplex.cpp:void SPxSolver::changeLower(int i, const double& newLower)
+changesoplex.cpp:   double                    newUpper,
+changesoplex.cpp:   double                    lower,
+changesoplex.cpp:void SPxSolver::changeUpper(int i, const double& newUpper)
+changesoplex.cpp:void SPxSolver::changeBounds(int i, const double& newLower, const double& newUpper)
+changesoplex.cpp:   double newLhs,
+changesoplex.cpp:   double rhs,
+changesoplex.cpp:void SPxSolver::changeLhs(int i, const double& newLhs)
+changesoplex.cpp:   double newRhs,
+changesoplex.cpp:   double lhs,
+changesoplex.cpp:void SPxSolver::changeRhs(int i, const double& newRhs)
+changesoplex.cpp:void SPxSolver::changeRange(int i, const double& newLhs, const double& newRhs)
+changesoplex.cpp:void SPxSolver::changeElement(int i, int j, const double& val)
+classarray.h:   double memFactor;      ///< memory extension factor.
+classarray.h:   explicit ClassArray(int p_size = 0, int p_max = 0, double p_fac = 1.2)
+clufactor.cpp:static const double verySparseFactor = 0.001;
+clufactor.cpp:static const double verySparseFactor4right = 0.2;
+clufactor.cpp:static const double verySparseFactor4left  = 0.1;
+clufactor.cpp:                          const double val )
+clufactor.cpp:   double *l_rval = u.row.val;
+clufactor.cpp:   double *cval = u.col.val;
+clufactor.cpp:      double *val;
+clufactor.cpp:      double *val;
+clufactor.cpp:void CLUFactor::forestUpdate( int p_col, double* p_work, int num, int *nonz )
+clufactor.cpp:   double x;
+clufactor.cpp:   double *lval;
+clufactor.cpp:   double *cval = u.col.val;
+clufactor.cpp:   double *rval = u.row.val;
+clufactor.cpp:   double l_maxabs = maxabs;
+clufactor.cpp:               double y = p_work[jj];
+clufactor.cpp:void CLUFactor::update( int p_col, double* p_work, const int* p_idx, int num )
+clufactor.cpp:   double* lval;
+clufactor.cpp:   double x, rezi;
+clufactor.cpp:   const double* p_work,
+clufactor.cpp:   double* lval;
+clufactor.cpp:   double x, rezi;
+clufactor.cpp:void CLUFactor::initFactorMatrix( const SVector** vec, const double eps )
+clufactor.cpp:   double x;
+clufactor.cpp:   double pval;
+clufactor.cpp:   double pval;
+clufactor.cpp:void CLUFactor::selectPivots( double threshold )
+clufactor.cpp:   double l_maxabs;
+clufactor.cpp:   double x = REAL( 0.0 ); // This value should never be used.
+clufactor.cpp:                          double pval,
+clufactor.cpp:                          double eps )
+clufactor.cpp:   double x, lx;
+clufactor.cpp:void CLUFactor::eliminatePivot( int prow, int pos, double eps )
+clufactor.cpp:   double pval;
+clufactor.cpp:void CLUFactor::eliminateNucleus( const double eps,
+clufactor.cpp:                                  const double threshold )
+clufactor.cpp:      double*   val = &u.row.val[k];
+clufactor.cpp:   double* val;
+clufactor.cpp:   double* l_rval;
+clufactor.cpp:                        double            threshold,    ///< pivoting threshold
+clufactor.cpp:                        double            eps )         ///< epsilon for zero detection
+clufactor.cpp:void CLUFactor::solveUright( double* wrk, double* vec ) const
+clufactor.cpp:      double x = wrk[c] = diag[r] * vec[r];
+clufactor.cpp:int CLUFactor::solveUrightEps( double* vec, int* nonz, double eps, double* rhs )
+clufactor.cpp:   double *cval;
+clufactor.cpp:   double x;
+clufactor.cpp:   double *val;
+clufactor.cpp:   double* p_work1, double* vec1, double* p_work2, double* vec2 )
+clufactor.cpp:   double *cval;
+clufactor.cpp:   double x1, x2;
+clufactor.cpp:   double* val;
+clufactor.cpp:   double* p_work1, double* vec1, double* p_work2, double* vec2,
+clufactor.cpp:   int* nonz, double eps )
+clufactor.cpp:   double *cval;
+clufactor.cpp:   double x1, x2;
+clufactor.cpp:   double* val;
+clufactor.cpp:void CLUFactor::solveLright( double* vec )
+clufactor.cpp:   double x;
+clufactor.cpp:   double *lval, *val;
+clufactor.cpp:void CLUFactor::solveLright2( double* vec1, double* vec2 )
+clufactor.cpp:   double x2;
+clufactor.cpp:   double x1;
+clufactor.cpp:   double *lval, *val;
+clufactor.cpp:void CLUFactor::solveUpdateRight( double* vec )
+clufactor.cpp:   double x;
+clufactor.cpp:   double *lval, *val;
+clufactor.cpp:void CLUFactor::solveUpdateRight2( double* vec1, double* vec2 )
+clufactor.cpp:   double x1, x2;
+clufactor.cpp:   double *lval;
+clufactor.cpp:   double* val;
+clufactor.cpp:int CLUFactor::solveRight4update( double* vec, int* nonz, double eps,
+clufactor.cpp:                                  double* rhs, double* forest, int* forestNum, int* forestIdx )
+clufactor.cpp:void CLUFactor::solveRight( double* vec, double* rhs )
+clufactor.cpp:int CLUFactor::solveRight2update( double* vec1,
+clufactor.cpp:                                  double* vec2,
+clufactor.cpp:                                  double* rhs1,
+clufactor.cpp:                                  double* rhs2,
+clufactor.cpp:                                  double eps,
+clufactor.cpp:                                  double* forest,
+clufactor.cpp:   double* vec1,
+clufactor.cpp:   double* vec2,
+clufactor.cpp:   double* rhs1,
+clufactor.cpp:   double* rhs2 )
+clufactor.cpp:void CLUFactor::solveUleft( double* p_work, double* vec )
+clufactor.cpp:   double x;
+clufactor.cpp:   double *rval, *val;
+clufactor.cpp:void CLUFactor::solveUleft( double* p_work, double* vec )
+clufactor.cpp:      double x  = vec[c];
+clufactor.cpp:      double y = vec[c];
+clufactor.cpp:   double* p_work1, double* vec1, double* p_work2, double* vec2 )
+clufactor.cpp:   double x1;
+clufactor.cpp:   double x2;
+clufactor.cpp:   double *rval, *val;
+clufactor.cpp:   double* vec1,
+clufactor.cpp:   double* vec2,
+clufactor.cpp:   double /* eps */ )
+clufactor.cpp:   double x1, x2;
+clufactor.cpp:   double *lval, *val;
+clufactor.cpp:   double* vec1,
+clufactor.cpp:   double* vec2,
+clufactor.cpp:   double /* eps */ )
+clufactor.cpp:   double x1, x2;
+clufactor.cpp:   double *rval, *val;
+clufactor.cpp:   double*   lval  = l.val;
+clufactor.cpp:int CLUFactor::solveLleftForest( double* vec, int* /* nonz */, double /* eps */ )
+clufactor.cpp:   double x;
+clufactor.cpp:   double *val, *lval;
+clufactor.cpp:void CLUFactor::solveLleft( double* vec ) const
+clufactor.cpp:   double* val;
+clufactor.cpp:   double* lval  = l.val;
+clufactor.cpp:      double x = vec[r];
+clufactor.cpp:int CLUFactor::solveLleftEps( double* vec, int* nonz, double eps )
+clufactor.cpp:   double x;
+clufactor.cpp:   double *rval, *val;
+clufactor.cpp:   double* lval = l.val;
+clufactor.cpp:void CLUFactor::solveUpdateLeft( double* vec )
+clufactor.cpp:   double x;
+clufactor.cpp:   double *lval, *val;
+clufactor.cpp:void CLUFactor::solveUpdateLeft2( double* vec1, double* vec2 )
+clufactor.cpp:   double x1, x2;
+clufactor.cpp:   double *lval, *val;
+clufactor.cpp:int CLUFactor::solveUpdateLeft( double eps, double* vec, int* nonz, int n )
+clufactor.cpp:   double x, y;
+clufactor.cpp:   double *lval, *val;
+clufactor.cpp:void CLUFactor::solveLeft( double* vec, double* rhs )
+clufactor.cpp:int CLUFactor::solveLeftEps( double* vec, double* rhs, int* nonz, double eps )
+clufactor.cpp:   double* vec1,
+clufactor.cpp:   double* vec2,
+clufactor.cpp:   double eps,
+clufactor.cpp:   double* rhs1,
+clufactor.cpp:   double* rhs2 )
+clufactor.cpp:int CLUFactor::solveUleft( double eps,
+clufactor.cpp:                           double* vec, int* vecidx,
+clufactor.cpp:                           double* rhs, int* rhsidx, int rhsn )
+clufactor.cpp:   double x, y;
+clufactor.cpp:   double *rval, *val;
+clufactor.cpp:void CLUFactor::solveUleftNoNZ( double eps, double* vec,
+clufactor.cpp:                                double* rhs, int* rhsidx, int rhsn )
+clufactor.cpp:   double x, y;
+clufactor.cpp:   double *rval, *val;
+clufactor.cpp:int CLUFactor::solveLleftForest( double eps, double* vec, int* nonz, int n )
+clufactor.cpp:   double x, y;
+clufactor.cpp:   double *val, *lval;
+clufactor.cpp:void CLUFactor::solveLleftForestNoNZ( double* vec )
+clufactor.cpp:   double x;
+clufactor.cpp:   double *val, *lval;
+clufactor.cpp:int CLUFactor::solveLleft( double eps, double* vec, int* nonz, int rn )
+clufactor.cpp:   double x, y;
+clufactor.cpp:   double *rval, *val;
+clufactor.cpp:   double*   lval = l.val;
+clufactor.cpp:void CLUFactor::solveLleftNoNZ( double* vec )
+clufactor.cpp:   double x;
+clufactor.cpp:   double *rval, *val;
+clufactor.cpp:   double* lval = l.val;
+clufactor.cpp:int CLUFactor::vSolveLright( double* vec, int* ridx, int rn, double eps )
+clufactor.cpp:   double x;
+clufactor.cpp:   double *lval, *val;
+clufactor.cpp:   double* vec, int* ridx, int* rnptr, double eps,
+clufactor.cpp:   double* vec2, int* ridx2, int* rn2ptr, double eps2 )
+clufactor.cpp:   double x, y;
+clufactor.cpp:   double x2, y2;
+clufactor.cpp:   double *lval, *val;
+clufactor.cpp:   double* vec, int* ridx, int* rnptr, double eps,
+clufactor.cpp:   double* vec2, int* ridx2, int* rn2ptr, double eps2,
+clufactor.cpp:   double* vec3, int* ridx3, int* rn3ptr, double eps3 )
+clufactor.cpp:   double x, y;
+clufactor.cpp:   double x2, y2;
+clufactor.cpp:   double x3, y3;
+clufactor.cpp:   double *lval, *val;
+clufactor.cpp:int CLUFactor::vSolveUright( double* vec, int* vidx,
+clufactor.cpp:                             double* rhs, int* ridx, int rn, double eps )
+clufactor.cpp:   double *cval;
+clufactor.cpp:   double x, y;
+clufactor.cpp:   double *val;
+clufactor.cpp:void CLUFactor::vSolveUrightNoNZ( double* vec,
+clufactor.cpp:                                  double* rhs, int* ridx, int rn, double eps )
+clufactor.cpp:   double *cval;
+clufactor.cpp:   double x, y;
+clufactor.cpp:   double *val;
+clufactor.cpp:   double* vec, int* vidx, double* rhs, int* ridx, int rn, double eps,
+clufactor.cpp:   double* vec2, double* rhs2, int* ridx2, int rn2, double eps2 )
+clufactor.cpp:   double *cval;
+clufactor.cpp:   double x, y;
+clufactor.cpp:   double x2, y2;
+clufactor.cpp:   double *val;
+clufactor.cpp:int CLUFactor::vSolveUpdateRight( double* vec, int* ridx, int n, double eps )
+clufactor.cpp:   double x, y;
+clufactor.cpp:   double *lval, *val;
+clufactor.cpp:void CLUFactor::vSolveUpdateRightNoNZ( double* vec, double /*eps*/ )
+clufactor.cpp:   double x;
+clufactor.cpp:   double *lval, *val;
+clufactor.cpp:int CLUFactor::vSolveRight4update( double eps,
+clufactor.cpp:                                   double* vec, int* idx,                       /* result */
+clufactor.cpp:                                   double* rhs, int* ridx, int rn,              /* rhs    */
+clufactor.cpp:                                   double* forest, int* forestNum, int* forestIdx )
+clufactor.cpp:      double x;
+clufactor.cpp:      double x;
+clufactor.cpp:int CLUFactor::vSolveRight4update2( double eps,
+clufactor.cpp:                                    double* vec, int* idx,                  /* result1 */
+clufactor.cpp:                                    double* rhs, int* ridx, int rn,         /* rhs1    */
+clufactor.cpp:                                    double* vec2, double eps2,              /* result2 */
+clufactor.cpp:                                    double* rhs2, int* ridx2, int rn2,      /* rhs2    */
+clufactor.cpp:                                    double* forest, int* forestNum, int* forestIdx )
+clufactor.cpp:      double x;
+clufactor.cpp:      double x;
+clufactor.cpp:      double x;
+clufactor.cpp:      /*      double  maxabs; */
+clufactor.cpp:int CLUFactor::vSolveRight4update3( double eps,
+clufactor.cpp:                                    double* vec, int* idx,                 /* result1 */
+clufactor.cpp:                                    double* rhs, int* ridx, int rn,        /* rhs1    */
+clufactor.cpp:                                    double* vec2, double eps2,               /* result2 */
+clufactor.cpp:                                    double* rhs2, int* ridx2, int rn2,     /* rhs2    */
+clufactor.cpp:                                    double* vec3, double eps3,               /* result3 */
+clufactor.cpp:                                    double* rhs3, int* ridx3, int rn3,     /* rhs3    */
+clufactor.cpp:                                    double* forest, int* forestNum, int* forestIdx )
+clufactor.cpp:      double x;
+clufactor.cpp:      double x;
+clufactor.cpp:      double x;
+clufactor.cpp:      double x;
+clufactor.cpp:   double* vec2, double eps2,              /* result2 */
+clufactor.cpp:   double* rhs2, int* ridx2, int rn2 )   /* rhs2    */
+clufactor.cpp:      double x;
+clufactor.cpp:      /*      double  maxabs; */
+clufactor.cpp:int CLUFactor::vSolveLeft( double eps,
+clufactor.cpp:                           double* vec, int* idx,                       /* result */
+clufactor.cpp:                           double* rhs, int* ridx, int rn )           /* rhs    */
+clufactor.cpp:int CLUFactor::vSolveLeft2( double eps,
+clufactor.cpp:                            double* vec, int* idx,                      /* result */
+clufactor.cpp:                            double* rhs, int* ridx, int rn,             /* rhs    */
+clufactor.cpp:                            double* vec2,                               /* result2 */
+clufactor.cpp:                            double* rhs2, int* ridx2, int rn2 )       /* rhs2    */
+clufactor.cpp:int CLUFactor::vSolveLeft3( double eps,
+clufactor.cpp:                            double* vec, int* idx,                      /* result */
+clufactor.cpp:                            double* rhs, int* ridx, int rn,             /* rhs    */
+clufactor.cpp:                            double* vec2,                               /* result2 */
+clufactor.cpp:                            double* rhs2, int* ridx2, int rn2,          /* rhs2    */
+clufactor.cpp:                            double* vec3,                               /* result3 */
+clufactor.cpp:                            double* rhs3, int* ridx3, int rn3 )         /* rhs3    */
+clufactor.cpp:void CLUFactor::vSolveLeftNoNZ( double eps,
+clufactor.cpp:                                double* vec2,                            /* result2 */
+clufactor.cpp:                                double* rhs2, int* ridx2, int rn2 )    /* rhs2    */
+clufactor.h:      double*   s_max;        ///< maximum absolute value per row (or -1) 
+clufactor.h:      Pring*  pivot_col;    ///< column index handlers for double linked list 
+clufactor.h:      Pring*  pivot_row;    ///< row index handlers for double linked list 
+clufactor.h:         double*  val;         ///< hold nonzero values
+clufactor.h:         double *val;          /*!< \brief hold nonzero values: this is only initialized
+clufactor.h:      double *val;           ///< values of L vectors
+clufactor.h:      double *rval;          ///< values of rows of L
+clufactor.h:   double    initMaxabs;        ///< maximum abs number in initail Matrix 
+clufactor.h:   double    maxabs;            ///< maximum abs number in L and U        
+clufactor.h:   double    rowMemMult;        ///< factor of minimum Memory * number of nonzeros 
+clufactor.h:   double    colMemMult;        ///< factor of minimum Memory * number of nonzeros 
+clufactor.h:   double    lMemMult;          ///< factor of minimum Memory * number of nonzeros 
+clufactor.h:   double*   diag;              ///< Array of pivot elements          
+clufactor.h:   double*   work;              ///< Working array: must always be left as 0! 
+clufactor.h:   void solveUright(double* wrk, double* vec) const;
+clufactor.h:   int  solveUrightEps(double* vec, int* nonz, double eps, double* rhs);
+clufactor.h:   void solveUright2(double* work1, double* vec1, double* work2, double* vec2);
+clufactor.h:   int  solveUright2eps(double* work1, double* vec1, double* work2, double* vec2, int* nonz, double eps);
+clufactor.h:   void solveLright2(double* vec1, double* vec2);
+clufactor.h:   void solveUpdateRight(double* vec);
+clufactor.h:   void solveUpdateRight2(double* vec1, double* vec2);
+clufactor.h:   void solveUleft(double* work, double* vec);
+clufactor.h:   void solveUleft2(double* work1, double* vec1, double* work2, double* vec2);
+clufactor.h:   int solveLleft2forest(double* vec1, int* /* nonz */, double* vec2, double /* eps */);
+clufactor.h:   void solveLleft2(double* vec1, int* /* nonz */, double* vec2, double /* eps */);
+clufactor.h:   int solveLleftForest(double* vec, int* /* nonz */, double /* eps */);
+clufactor.h:   void solveLleft(double* vec) const;
+clufactor.h:   int solveLleftEps(double* vec, int* nonz, double eps);
+clufactor.h:   void solveUpdateLeft(double* vec);
+clufactor.h:   void solveUpdateLeft2(double* vec1, double* vec2);
+clufactor.h:   int vSolveLright(double* vec, int* ridx, int rn, double eps);
+clufactor.h:   void vSolveLright2(double* vec, int* ridx, int* rnptr, double eps,
+clufactor.h:      double* vec2, int* ridx2, int* rn2ptr, double eps2);
+clufactor.h:   void vSolveLright3(double* vec, int* ridx, int* rnptr, double eps,
+clufactor.h:      double* vec2, int* ridx2, int* rn2ptr, double eps2,
+clufactor.h:      double* vec3, int* ridx3, int* rn3ptr, double eps3);
+clufactor.h:   int vSolveUright(double* vec, int* vidx, double* rhs, int* ridx, int rn, double eps);
+clufactor.h:   void vSolveUrightNoNZ(double* vec, double* rhs, int* ridx, int rn, double eps);
+clufactor.h:   int vSolveUright2(double* vec, int* vidx, double* rhs, int* ridx, int rn, double eps,
+clufactor.h:      double* vec2, double* rhs2, int* ridx2, int rn2, double eps2);
+clufactor.h:   int vSolveUpdateRight(double* vec, int* ridx, int n, double eps);
+clufactor.h:   void vSolveUpdateRightNoNZ(double* vec, double /*eps*/);
+clufactor.h:   int solveUleft(double eps, double* vec, int* vecidx, double* rhs, int* rhsidx, int rhsn);
+clufactor.h:   void solveUleftNoNZ(double eps, double* vec, double* rhs, int* rhsidx, int rhsn);
+clufactor.h:   int solveLleftForest(double eps, double* vec, int* nonz, int n);
+clufactor.h:   void solveLleftForestNoNZ(double* vec);
+clufactor.h:   int solveLleft(double eps, double* vec, int* nonz, int rn);
+clufactor.h:   void solveLleftNoNZ(double* vec);
+clufactor.h:   int solveUpdateLeft(double eps, double* vec, int* nonz, int n);
+clufactor.h:   void initFactorMatrix(const SVector** vec, const double eps );
+clufactor.h:   void setPivot(const int p_stage, const int p_col, const int p_row, const double val);
+clufactor.h:   void selectPivots(double threshold);
+clufactor.h:   int updateRow(int r, int lv, int prow, int pcol, double pval, double eps);
+clufactor.h:   void eliminatePivot(int prow, int pos, double eps);
+clufactor.h:   void eliminateNucleus(const double eps, const double threshold);
+clufactor.h:   void solveLright(double* vec);
+clufactor.h:   int  solveRight4update(double* vec, int* nonz, double eps, double* rhs,
+clufactor.h:      double* forest, int* forestNum, int* forestIdx);
+clufactor.h:   void solveRight(double* vec, double* rhs);
+clufactor.h:   int  solveRight2update(double* vec1, double* vec2, double* rhs1,
+clufactor.h:      double* rhs2, int* nonz, double eps, double* forest, int* forestNum, int* forestIdx);
+clufactor.h:   void solveRight2(double* vec1, double* vec2, double* rhs1, double* rhs2);
+clufactor.h:   void solveLeft(double* vec, double* rhs);
+clufactor.h:   int solveLeftEps(double* vec, double* rhs, int* nonz, double eps);
+clufactor.h:   int solveLeft2(double* vec1, int* nonz, double* vec2, double eps, double* rhs1, double* rhs2);
+clufactor.h:   int vSolveRight4update(double eps, 
+clufactor.h:      double* vec, int* idx,               /* result       */
+clufactor.h:      double* rhs, int* ridx, int rn,      /* rhs & Forest */
+clufactor.h:      double* forest, int* forestNum, int* forestIdx);
+clufactor.h:   int vSolveRight4update2(double eps,
+clufactor.h:      double* vec, int* idx,              /* result1 */
+clufactor.h:      double* rhs, int* ridx, int rn,     /* rhs1    */
+clufactor.h:      double* vec2, double eps2,            /* result2 */
+clufactor.h:      double* rhs2, int* ridx2, int rn2,  /* rhs2    */
+clufactor.h:      double* forest, int* forestNum, int* forestIdx);
+clufactor.h:   int vSolveRight4update3(double eps,
+clufactor.h:      double* vec, int* idx,              /* result1 */
+clufactor.h:      double* rhs, int* ridx, int rn,     /* rhs1    */
+clufactor.h:      double* vec2, double eps2,            /* result2 */
+clufactor.h:      double* rhs2, int* ridx2, int rn2,  /* rhs2    */
+clufactor.h:      double* vec3, double eps3,            /* result3 */
+clufactor.h:      double* rhs3, int* ridx3, int rn3,  /* rhs3    */
+clufactor.h:      double* forest, int* forestNum, int* forestIdx);
+clufactor.h:   void vSolveRightNoNZ(double* vec2, double eps2,              /* result2 */
+clufactor.h:      double* rhs2, int* ridx2, int rn2);   /* rhs2    */
+clufactor.h:   int vSolveLeft(double eps,
+clufactor.h:      double* vec, int* idx,                      /* result */
+clufactor.h:      double* rhs, int* ridx, int rn);            /* rhs    */
+clufactor.h:   void vSolveLeftNoNZ(double eps,
+clufactor.h:      double* vec,                           /* result */
+clufactor.h:      double* rhs, int* ridx, int rn);       /* rhs    */
+clufactor.h:   int vSolveLeft2(double eps,
+clufactor.h:      double* vec, int* idx,                     /* result */
+clufactor.h:      double* rhs, int* ridx, int rn,            /* rhs    */
+clufactor.h:      double* vec2,                              /* result2 */
+clufactor.h:      double* rhs2, int* ridx2, int rn2);        /* rhs2    */
+clufactor.h:   int vSolveLeft3(double eps,
+clufactor.h:                   double* vec, int* idx,                     /* result */
+clufactor.h:                   double* rhs, int* ridx, int rn,            /* rhs    */
+clufactor.h:                   double* vec2,                              /* result2 */
+clufactor.h:                   double* rhs2, int* ridx2, int rn2,         /* rhs2    */
+clufactor.h:                   double* vec3,                              /* result3 */
+clufactor.h:                   double* rhs3, int* ridx3, int rn3);        /* rhs3    */
+clufactor.h:   void forestUpdate(int col, double* work, int num, int *nonz);
+clufactor.h:   void update(int p_col, double* p_work, const int* p_idx, int num);
+clufactor.h:   void updateNoClear(int p_col, const double* p_work, const int* p_idx, int num);
+clufactor.h:               double threshold,    ///< pivoting threshold                
+clufactor.h:               double eps);         ///< epsilon for zero detection        
+dataarray.h:   double memFactor;     ///< memory extension factor.
+dataarray.h:   explicit DataArray(int p_size = 0, int p_max = 0, double p_fac = 1.2)
+datahashtable.h:   double m_memfactor;  
+datahashtable.h:      double factor  = 2.0)
+dsvectorbase.h:/// Allocate memory for \p n nonzeros (specialization for double).
+dsvectorbase.h:void DSVectorBase<double>::allocMem(int n)
+dsvectorbase.h:   SVectorBase<double>::setMem(n, theelem);
+dsvectorbase.h:/// Destructor (specialization for double).
+dsvectorbase.h:DSVectorBase<double>::~DSVectorBase()
+dsvectorbase.h: *  reset to size() only (specialization for double).
+dsvectorbase.h:void DSVectorBase<double>::setMax(int newmax)
+dsvector.h:typedef DSVectorBase< double > DSVector;
+dsvector.h:typedef DSVectorBase< double > DSVectorReal;
+dvectorbase.h:/// Resets \ref soplex::DVectorBase "DVectorBase"'s memory size to \p newsize (specialization for double).
+dvectorbase.h:void DVectorBase<double>::reSize(int newsize)
+dvectorbase.h:/// Default constructor with \p d as the initial dimension (specialization for double).
+dvectorbase.h:DVectorBase<double>::DVectorBase(int d)
+dvectorbase.h:   : VectorBase<double>(0, 0)
+dvectorbase.h:   assert(DVectorBase<double>::isConsistent());
+dvectorbase.h:/// Copy constructor (specialization for double).
+dvectorbase.h:DVectorBase<double>::DVectorBase(const VectorBase<double>& old)
+dvectorbase.h:   : VectorBase<double>(0, 0)
+dvectorbase.h:   assert(DVectorBase<double>::isConsistent());
+dvectorbase.h:/// Copy constructor (specialization for double).
+dvectorbase.h:DVectorBase<double>::DVectorBase(const DVectorBase<double>& old)
+dvectorbase.h:   : VectorBase<double>(0, 0)
+dvectorbase.h:   assert(DVectorBase<double>::isConsistent());
+dvector.h:typedef DVectorBase< double > DVector;
+dvector.h:typedef DVectorBase< double > DVectorReal;
+enter.cpp:double SPxSolver::test(int i, SPxBasis::Desc::Status stat) const
+enter.cpp:   double x;
+enter.cpp:   double pricingTol = leavetol();
+enter.cpp:                << (double) ninfeasibilities/coDim()
+enter.cpp:double SPxSolver::computePvec(int i)
+enter.cpp:double SPxSolver::computeTest(int i)
+enter.cpp:double SPxSolver::coTest(int i, SPxBasis::Desc::Status stat) const
+enter.cpp:   double x;
+enter.cpp:   double pricingTol = leavetol();
+enter.cpp:                << (double) ninfeasibilities/dim()
+enter.cpp:   double pricingTol = leavetol();
+enter.cpp:   double pricingTol = leavetol();
+enter.cpp:   double& enterTest,
+enter.cpp:   double& enterUB,
+enter.cpp:   double& enterLB,
+enter.cpp:   double& enterVal,
+enter.cpp:   double& enterMax,
+enter.cpp:   double& enterPric,
+enter.cpp:   double& enterRO
+enter.cpp:   double enterMax,
+enter.cpp:   double& leavebound
+enter.cpp:   double leaveVal,
+enter.cpp:   double enterTest,
+enter.cpp:   double enterTest;      // correct test value of entering var
+enter.cpp:   double enterUB;        // upper bound of entering variable
+enter.cpp:   double enterLB;        // lower bound of entering variable
+enter.cpp:   double enterVal;       // current value of entering variable
+enter.cpp:   double enterMax;       // maximum value for entering shift
+enter.cpp:   double enterPric;      // priced value of entering variable
+enter.cpp:   double enterRO;        // rhs/obj of entering variable
+enter.cpp:   double leaveVal = -enterMax;
+enter.cpp:      double leavebound;             // bound on which leaving variable moves
+enter.cpp:         double sign;
+enter.cpp:         double sign;
+idlist.h: * @brief Generic double linked list.
+idlist.h:/**@brief   Generic double linked list.
+idlist.h:   Class IdList implements an intrusive double linked list as a template
+leave.cpp:static const double reject_leave_tol = 1e-10; // = LOWSTAB as defined in spxfastrt.cpp
+leave.cpp:   double theeps = entertol();
+leave.cpp:                << (double) ninfeasibilities/dim()
+leave.cpp:   double theeps = entertol();
+leave.cpp:      double eps = epsilon();
+leave.cpp:   double& leaveMax,
+leave.cpp:   double& leavebound,
+leave.cpp:   double leaveMax,
+leave.cpp:   double& enterBound,
+leave.cpp:   double& newUBbound,
+leave.cpp:   double& newLBbound,
+leave.cpp:   double& newCoPrhs
+leave.cpp:   double leaveMax;       // maximium lambda of leaving var
+leave.cpp:   double leavebound;     // current fVec value of leaving var
+leave.cpp:      double enterVal = leaveMax;
+leave.cpp:                     double sign;
+leave.cpp:                     double sign;
+leave.cpp:            double enterBound;
+leave.cpp:            double newUBbound;
+leave.cpp:            double newLBbound;
+leave.cpp:            double newCoPrhs;
+lpcol.h:typedef LPColBase< double > LPCol;
+lpcol.h:typedef LPColBase< double > LPColReal;
+lpcolset.h:typedef LPColSetBase< double > LPColSet;
+lpcolset.h:typedef LPColSetBase< double > LPColSetReal;
+lprow.h:typedef LPRowBase< double > LPRow;
+lprow.h:typedef LPRowBase< double > LPRowReal;
+lprowsetbase.h:      if( rhs(i) >= double(infinity) )
+lprowsetbase.h:      if( lhs(i) <= double(-infinity) )
+lprowset.h:typedef LPRowSetBase< double > LPRowSet;
+lprowset.h:typedef LPRowSetBase< double > LPRowSetReal;
+nameset.cpp:NameSet::NameSet(int p_max, int mmax, double fac, double memFac)
+nameset.h:   double factor;
+nameset.h:   double memFactor;
+nameset.h:           double fac = 2,
+nameset.h:           double memFac = 2);
+notimer.h:   virtual double stop()
+notimer.h:   virtual double time() const
+notimer.h:   virtual double lastTime() const
+random.h:   Class Random provides random double variables, i.e. a value variable that
+random.h:   ordinary double by means of an overloaded cast operator Real()%.
+random.h:   double themin;           ///< minimum random number to be returned
+random.h:   double themax;           ///< maximum random number to be returned
+random.h:   /// increases rand seed and returns a pseudo random double value in [0,1).
+random.h:   double next_random ()
+random.h:   double last_random() const
+random.h:      double i = int ((next / RDIVIDE) % RMULT);
+random.h:   double min() const
+random.h:   double max() const
+random.h:   /** When a Random variable is used where a double value is
+random.h:   double last() const
+random.h:   void setMin(double p_min)
+random.h:   void setMax(double p_max)
+random.h:   void setSeed(double seed)
+random.h:   Random(double p_min = 0, double p_max = 1, double p_seed = 0.5)
+rational.cpp:   /// constructor from long double
+rational.cpp:   Private(const long double& r)
+rational.cpp:      mpq_set_d(privatevalue, double(r));
+rational.cpp:   /// constructor from double
+rational.cpp:   Private(const double& r)
+rational.cpp:   /// assignment operator from long double
+rational.cpp:   Private& operator=(const long double& r)
+rational.cpp:      mpq_set_d(this->privatevalue, double(r));
+rational.cpp:   /// assignment operator from double
+rational.cpp:   Private& operator=(const double& r)
+rational.cpp:/// constructor from long double
+rational.cpp:Rational::Rational(const long double& r)
+rational.cpp:/// constructor from double
+rational.cpp:Rational::Rational(const double& r)
+rational.cpp:/// assignment operator from long double
+rational.cpp:Rational& Rational::operator=(const long double &r)
+rational.cpp:/// assignment operator from double
+rational.cpp:Rational& Rational::operator=(const double &r)
+rational.cpp:/// typecasts Rational to double (allows only explicit typecast)
+rational.cpp:Rational::operator double() const
+rational.cpp:/// typecasts Rational to long double (allows only explicit typecast)
+rational.cpp:Rational::operator long double() const
+rational.cpp:   return (long double)mpq_get_d(this->dpointer->privatevalue);
+rational.cpp:/// addition operator for doubles
+rational.cpp:Rational Rational::operator+(const double& d) const
+rational.cpp:/// addition assignment operator for doubles
+rational.cpp:Rational Rational::operator+=(const double& d) const
+rational.cpp:   mpq_t doubleval;
+rational.cpp:   mpq_init(doubleval);
+rational.cpp:   mpq_set_d(doubleval, d);
+rational.cpp:   mpq_add(this->dpointer->privatevalue, this->dpointer->privatevalue, doubleval);
+rational.cpp:   mpq_clear(doubleval);
+rational.cpp:/// subtraction operator for doubles
+rational.cpp:Rational Rational::operator-(const double& d) const
+rational.cpp:/// subtraction assignment operator for doubles
+rational.cpp:Rational Rational::operator-=(const double& d) const
+rational.cpp:   mpq_t doubleval;
+rational.cpp:   mpq_init(doubleval);
+rational.cpp:   mpq_set_d(doubleval, d);
+rational.cpp:   mpq_sub(this->dpointer->privatevalue, this->dpointer->privatevalue, doubleval);
+rational.cpp:   mpq_clear(doubleval);
+rational.cpp:/// multiplication operator for doubles
+rational.cpp:Rational Rational::operator*(const double& d) const
+rational.cpp:/// multiplication assignment operator for doubles
+rational.cpp:Rational Rational::operator*=(const double& d) const
+rational.cpp:   mpq_t doubleval;
+rational.cpp:   mpq_init(doubleval);
+rational.cpp:   mpq_set_d(doubleval, d);
+rational.cpp:   mpq_mul(this->dpointer->privatevalue, this->dpointer->privatevalue, doubleval);
+rational.cpp:   mpq_clear(doubleval);
+rational.cpp:/// division operator for doubles
+rational.cpp:Rational Rational::operator/(const double& d) const
+rational.cpp:/// division assignment operator for doubles
+rational.cpp:Rational Rational::operator/=(const double& d) const
+rational.cpp:   mpq_t doubleval;
+rational.cpp:   mpq_init(doubleval);
+rational.cpp:   mpq_set_d(doubleval, d);
+rational.cpp:   mpq_div(this->dpointer->privatevalue, this->dpointer->privatevalue, doubleval);
+rational.cpp:   mpq_clear(doubleval);
+rational.cpp:/// checks if d is the closest possible double
+rational.cpp:bool Rational::isNextTo(const double& d)
+rational.cpp:   // get intervall [a,b] of doubles that the Rational is in
+rational.cpp:   double x = mpq_get_d(this->dpointer->privatevalue);
+rational.cpp:   double a;
+rational.cpp:   double b;
+rational.cpp:/// checks if d is exactly equal to the Rational and if not, if it is one of the two adjacent doubles
+rational.cpp:bool Rational::isAdjacentTo(const double& d)
+rational.cpp:   double x = mpq_get_d(this->dpointer->privatevalue);
+rational.cpp:   double a;
+rational.cpp:   double b;
+rational.cpp:   // the rational value is representable in double precision
+rational.cpp:      sstream << std::setprecision(20) << double(r);
+rational.cpp:/// equality operator for Rational and double
+rational.cpp:bool operator==(const Rational& r, const double& s)
+rational.cpp:/// inequality operator for Rational and double
+rational.cpp:bool operator!=(const Rational& r, const double& s)
+rational.cpp:/// less than operator for Rational and double
+rational.cpp:bool operator<(const Rational& r, const double& s)
+rational.cpp:/// less than or equal to operator for Rational and double
+rational.cpp:bool operator<=(const Rational& r, const double& s)
+rational.cpp:/// greater than operator for Rational and double
+rational.cpp:bool operator>(const Rational& r, const double& s)
+rational.cpp:/// greater than or equal to operator for Rational and double
+rational.cpp:bool operator>=(const Rational& r, const double& s)
+rational.cpp:/// equality operator for double and Rational
+rational.cpp:bool operator==(const double& r, const Rational& s)
+rational.cpp:/// inequality operator double and Rational
+rational.cpp:bool operator!=(const double& r, const Rational& s)
+rational.cpp:/// less than operator double and Rational
+rational.cpp:bool operator<(const double& r, const Rational& s)
+rational.cpp:/// less than or equal to operator double and Rational
+rational.cpp:bool operator<=(const double& r, const Rational& s)
+rational.cpp:/// greater than operator double and Rational
+rational.cpp:bool operator>(const double& r, const Rational& s)
+rational.cpp:/// greater than or equal to operator double and Rational
+rational.cpp:bool operator>=(const double& r, const Rational& s)
+rational.cpp:/// addition operator for double and Rational
+rational.cpp:Rational operator+(const double& d, const Rational& r)
+rational.cpp:/// subtraction operator for double and Rational
+rational.cpp:Rational operator-(const double& d, const Rational& r)
+rational.cpp:/// multiplication operator for double and Rational
+rational.cpp:Rational operator*(const double& d, const Rational& r)
+rational.cpp:/// division operator for double and Rational
+rational.cpp:Rational operator/(const double& d, const Rational& r)
+rational.cpp:   long double privatevalue;
+rational.cpp:   /// constructor from long double
+rational.cpp:   Private(const long double& r)
+rational.cpp:   /// constructor from double
+rational.cpp:   Private(const double& r)
+rational.cpp:   /// assignment operator from long double
+rational.cpp:   Private& operator=(const long double& r)
+rational.cpp:   /// assignment operator from double
+rational.cpp:   Private& operator=(const double& r)
+rational.cpp:      this->privatevalue = (long double)(r);
+rational.cpp:      this->privatevalue = (long double)(i);
+rational.cpp:/// constructor from long double
+rational.cpp:Rational::Rational(const long double& r)
+rational.cpp:/// constructor from double
+rational.cpp:Rational::Rational(const double& r)
+rational.cpp:/// assignment operator from long double
+rational.cpp:Rational& Rational::operator=(const long double &r)
+rational.cpp:/// assignment operator from double
+rational.cpp:Rational& Rational::operator=(const double &r)
+rational.cpp:/// typecasts Rational to double (allows only explicit typecast)
+rational.cpp:Rational::operator double() const
+rational.cpp:   return (double)this->dpointer->privatevalue;
+rational.cpp:/// typecasts Rational to long double (allows only explicit typecast)
+rational.cpp:Rational::operator long double() const
+rational.cpp:/// addition operator for doubles
+rational.cpp:Rational Rational::operator+(const double& d) const
+rational.cpp:/// addition assignment operator for doubles
+rational.cpp:Rational Rational::operator+=(const double& d) const
+rational.cpp:/// subtraction operator for doubles
+rational.cpp:Rational Rational::operator-(const double& d) const
+rational.cpp:/// subtraction assignment operator for doubles
+rational.cpp:Rational Rational::operator-=(const double& d) const
+rational.cpp:/// multiplication operator for doubles
+rational.cpp:Rational Rational::operator*(const double& d) const
+rational.cpp:/// multiplication assignment operator for doubles
+rational.cpp:Rational Rational::operator*=(const double& d) const
+rational.cpp:/// division operator for doubles
+rational.cpp:Rational Rational::operator/(const double& d) const
+rational.cpp:/// division assignment operator for doubles
+rational.cpp:Rational Rational::operator/=(const double& d) const
+rational.cpp:/// checks if d is the closest possible double
+rational.cpp:bool Rational::isNextTo(const double& d)
+rational.cpp:/// checks if d is exactly equal to the Rational and if not, if it is one of the two adjacent doubles
+rational.cpp:bool Rational::isAdjacentTo(const double& d)
+rational.cpp:   return (double(this->dpointer->privatevalue) == d);
+rational.cpp:   return sizeof(long double);
+rational.cpp:/// equality operator for Rational and double
+rational.cpp:bool operator==(const Rational& r, const double& s)
+rational.cpp:/// inequality operator for Rational and double
+rational.cpp:bool operator!=(const Rational& r, const double& s)
+rational.cpp:/// less than operator for Rational and double
+rational.cpp:bool operator<(const Rational& r, const double& s)
+rational.cpp:/// less than or equal to operator for Rational and double
+rational.cpp:bool operator<=(const Rational& r, const double& s)
+rational.cpp:/// greater than operator for Rational and double
+rational.cpp:bool operator>(const Rational& r, const double& s)
+rational.cpp:/// greater than or equal to operator for Rational and double
+rational.cpp:bool operator>=(const Rational& r, const double& s)
+rational.cpp:/// equality operator for double and Rational
+rational.cpp:bool operator==(const double& r, const Rational& s)
+rational.cpp:/// inequality operator double and Rational
+rational.cpp:bool operator!=(const double& r, const Rational& s)
+rational.cpp:/// less than operator double and Rational
+rational.cpp:bool operator<(const double& r, const Rational& s)
+rational.cpp:/// less than or equal to operator double and Rational
+rational.cpp:bool operator<=(const double& r, const Rational& s)
+rational.cpp:/// greater than operator double and Rational
+rational.cpp:bool operator>(const double& r, const Rational& s)
+rational.cpp:/// greater than or equal to operator double and Rational
+rational.cpp:bool operator>=(const double& r, const Rational& s)
+rational.cpp:/// addition operator for double and Rational
+rational.cpp:Rational operator+(const double& d, const Rational& r)
+rational.cpp:/// subtraction operator for double and Rational
+rational.cpp:Rational operator-(const double& d, const Rational& r)
+rational.cpp:/// multiplication operator for double and Rational
+rational.cpp:Rational operator*(const double& d, const Rational& r)
+rational.cpp:/// division operator for double and Rational
+rational.cpp:Rational operator/(const double& d, const Rational& r)
+rational.h: * We wrap mpq_class so that we can replace it by a double type if GMP is not available.
+rational.h:      /// constructor from long double
+rational.h:      Rational(const long double& r);
+rational.h:      /// constructor from double
+rational.h:      Rational(const double& r);
+rational.h:      /// assignment operator from long double
+rational.h:      Rational& operator=(const long double &r);
+rational.h:      /// assignment operator from double
+rational.h:      Rational& operator=(const double &r);
+rational.h:      /// typecasts Rational to double (only allows explicit typecasting)
+rational.h:      explicit operator double() const;
+rational.h:      /// typecasts Rational to long double (only allows explicit typecasting)
+rational.h:      explicit operator long double() const;
+rational.h:      /// addition operator for doubles
+rational.h:      Rational operator+(const double& r) const;
+rational.h:      /// addition assignment operator  for doubles
+rational.h:      Rational operator+=(const double& r) const;
+rational.h:      /// subtraction operator for doubles
+rational.h:      Rational operator-(const double& r) const;
+rational.h:      /// subtraction assignment operator for doubles
+rational.h:      Rational operator-=(const double& r) const;
+rational.h:      /// multiplication operator for doubles
+rational.h:      Rational operator*(const double& r) const;
+rational.h:      /// multiplication assignment operator for doubles
+rational.h:      Rational operator*=(const double& r) const;
+rational.h:      /// division operator for doubles
+rational.h:      Rational operator/(const double& r) const;
+rational.h:      /// division assignment operator for doubles
+rational.h:      Rational operator/=(const double& r) const;
+rational.h:      //**@name Methods for checking exactness of doubles  */
+rational.h:      /// checks if \p d is the closest number that can be represented by double
+rational.h:      bool isNextTo(const double& d);
+rational.h:      /// checks if \p d is exactly equal to the Rational and if not, if it is one of the two adjacent doubles
+rational.h:      bool isAdjacentTo(const double& d);
+rational.h:      friend bool operator!=(const Rational& r, const double& s);
+rational.h:      friend bool operator==(const Rational& r, const double& s);
+rational.h:      friend bool operator<(const Rational& r, const double& s);
+rational.h:      friend bool operator<=(const Rational& r, const double& s);
+rational.h:      friend bool operator>(const Rational& r, const double& s);
+rational.h:      friend bool operator>=(const Rational& r, const double& s);
+rational.h:      friend bool operator!=(const double& r, const Rational& s);
+rational.h:      friend bool operator==(const double& r, const Rational& s);
+rational.h:      friend bool operator<(const double& r, const Rational& s);
+rational.h:      friend bool operator<=(const double& r, const Rational& s);
+rational.h:      friend bool operator>(const double& r, const Rational& s);
+rational.h:      friend bool operator>=(const double& r, const Rational& s);
+rational.h:      friend Rational operator+(const double& d, const Rational& r);
+rational.h:      friend Rational operator-(const double& d, const Rational& r);
+rational.h:      friend Rational operator*(const double& d, const Rational& r);
+rational.h:      friend Rational operator/(const double& d, const Rational& r);
+rational.h:   /// equality operator for Rational and double
+rational.h:   bool operator==(const Rational& r, const double& s);
+rational.h:   /// inequality operator for Rational and double
+rational.h:   bool operator!=(const Rational& r, const double& s);
+rational.h:   /// less than operator for Rational and double
+rational.h:   bool operator<(const Rational& r, const double& s);
+rational.h:   /// less than or equal to operator for Rational and double
+rational.h:   bool operator<=(const Rational& r, const double& s);
+rational.h:   /// greater than operator for Rational and double
+rational.h:   bool operator>(const Rational& r, const double& s);
+rational.h:   /// greater than or equal to operator for Rational and double
+rational.h:   bool operator>=(const Rational& r, const double& s);
+rational.h:   /// equality operator for double and Rational
+rational.h:   bool operator==(const double& r, const Rational& s);
+rational.h:   /// inequality operator for double and Rational
+rational.h:   bool operator!=(const double& r, const Rational& s);
+rational.h:   /// less than operator for double and Rational
+rational.h:   bool operator<(const double& r, const Rational& s);
+rational.h:   /// less than or equal to operator for double and Rational
+rational.h:   bool operator<=(const double& r, const Rational& s);
+rational.h:   /// greater than operator for double and Rational
+rational.h:   bool operator>(const double& r, const Rational& s);
+rational.h:   /// greater than or equal to operator for double and Rational
+rational.h:   bool operator>=(const double& r, const Rational& s);
+rational.h:   /// addition operator for double and Rational
+rational.h:   Rational operator+(const double& d, const Rational& r);
+rational.h:   /// addition operator for double and Rational
+rational.h:   Rational operator+(const double& d, const Rational& r);
+rational.h:   /// addition operator for double and Rational
+rational.h:   Rational operator+(const double& d, const Rational& r);
+rational.h:   /// addition operator for double and Rational
+rational.h:   Rational operator+(const double& d, const Rational& r);
+rational.h:   typedef double Rational;
+slinsolver.h:   virtual double stability() const = 0;
+slufactor.cpp:   double* svec = ssvec.altValues();
+slufactor.cpp:   double* svec = ssvec.altValues();
+slufactor.cpp:double SLUFactor::stability() const
+slufactor.cpp:static double betterThreshold(double th)
+slufactor.cpp:   double lastStability = stability();
+slufactor.cpp:      double last   = minThreshold;
+slufactor.cpp:      double better = betterThreshold(last);
+slufactor.cpp:      double x = lastThreshold;
+slufactor.h:   double       lastThreshold; ///< pivoting threshold of last factorization
+slufactor.h:   double minThreshold;
+slufactor.h:   double minStability;
+slufactor.h:   double epsilon;
+slufactor.h:   void setMarkowitz(double m)
+slufactor.h:   double markowitz()
+slufactor.h:   double stability() const;
+slufactor.h:   double getFactorTime() const
+slufactor.h:   double getSolveTime() const
+sol.h:   typedef SolBase<double> SolReal;
+solverational.cpp:      double bestViolation = realParam(SoPlex::INFTY);
+solverational.cpp:         if( double(sumMaxViolation) > double(0.9 * bestViolation) )
+solverational.cpp:         if( double(sumMaxViolation) < double(bestViolation) )
+solverational.cpp:         _realLP->changeBounds(c, (double)lowerRational(c), (double)upperRational(c));
+solverational.cpp:         _realLP->changeObj(c, (double)objRational(c));
+solverational.cpp:         _realLP->changeRange(r, (double)lhsRational(r), (double)rhsRational(r));
+solverational.cpp:         if( double(lowerRational(c)) > double(-realParam(SoPlex::INFTY)) )
+solverational.cpp:         if( double(upperRational(c)) < double(realParam(SoPlex::INFTY)) )
+solverational.cpp:            _rationalLP->changeBounds(c, 0, double(upperRational(c)) < double(realParam(SoPlex::INFTY)) ? upperRational(c) - lowerRational(c) : upperRational(c));
+solverational.cpp:            _realLP->changeBounds(c, 0.0, (double)upperRational(c));
+solverational.cpp:            _rationalLP->changeBounds(c, double(lowerRational(c)) > double(-realParam(SoPlex::INFTY)) ? lowerRational(c) - upperRational(c) : lowerRational(c), 0);
+solverational.cpp:            _realLP->changeBounds(c, (double)lowerRational(c), 0.0);
+solverational.cpp:            _realLP->changeBounds(c, (double)lowerRational(c), (double)upperRational(c));
+solverational.cpp:         assert(double(upperRational(c)) >= double(realParam(SoPlex::INFTY)) || double(lowerRational(c)) <= double(-realParam(SoPlex::INFTY))
+solverational.cpp:         _realLP->changeBounds(c, (double)lowerRational(c), (double)upperRational(c));
+solverational.cpp:            if( double(upper[c]) < double(realParam(SoPlex::INFTY)) )
+solverational.cpp:            if( double(lower[c]) > double(-realParam(SoPlex::INFTY)) )
+solverational.cpp:         if( minusRedCost < Rational(0) && lower[colIdx] > -B && double(lower[colIdx]) > double(-realParam(SoPlex::INFTY)) )
+solverational.cpp:         else if( minusRedCost > Rational(0) && upper[colIdx] < B && double(upper[colIdx]) < double(realParam(SoPlex::INFTY)) )
+soplex.cpp:      static double _realParamDefault[SoPlex::REALPARAM_COUNT];
+soplex.cpp:      static double _realParamLower[SoPlex::REALPARAM_COUNT];
+soplex.cpp:      static double _realParamUpper[SoPlex::REALPARAM_COUNT];
+soplex.cpp:      double _realParamValues[SoPlex::REALPARAM_COUNT];
+soplex.cpp:            ///@todo define suitable values depending on double type
+soplex.cpp:            ///@todo define suitable values depending on double type
+soplex.cpp:            ///@todo define suitable values depending on double type
+soplex.cpp:            ///@todo define suitable values depending on double type
+soplex.cpp:            ///@todo define suitable values depending on double type
+soplex.cpp:   double SoPlex::Settings::_realParamLower[SoPlex::REALPARAM_COUNT];
+soplex.cpp:   double SoPlex::Settings::_realParamUpper[SoPlex::REALPARAM_COUNT];
+soplex.cpp:   double SoPlex::Settings::_realParamDefault[SoPlex::REALPARAM_COUNT];
+soplex.cpp:   double SoPlex::minAbsNonzeroReal() const
+soplex.cpp:   double SoPlex::maxAbsNonzeroReal() const
+soplex.cpp:   double SoPlex::rhsReal(int i) const
+soplex.cpp:   double SoPlex::lhsReal(int i) const
+soplex.cpp:   double SoPlex::upperReal(int i) const
+soplex.cpp:   double SoPlex::lowerReal(int i) const
+soplex.cpp:   double SoPlex::objReal(int i) const
+soplex.cpp:   double SoPlex::maxObjReal(int i) const
+soplex.cpp:   void SoPlex::changeLhsReal(int i, const double& lhs)
+soplex.cpp:   void SoPlex::changeRhsReal(int i, const double& rhs)
+soplex.cpp:   void SoPlex::changeRangeReal(int i, const double& lhs, const double& rhs)
+soplex.cpp:   void SoPlex::changeLowerReal(int i, const double& lower)
+soplex.cpp:   void SoPlex::changeUpperReal(int i, const double& upper)
+soplex.cpp:   void SoPlex::changeBoundsReal(int i, const double& lower, const double& upper)
+soplex.cpp:   void SoPlex::changeObjReal(int i, const double& obj)
+soplex.cpp:   void SoPlex::changeElementReal(int i, int j, const double& val)
+soplex.cpp:   double SoPlex::objValueReal()
+soplex.cpp:   bool SoPlex::getBoundViolationReal(double& maxviol, double& sumviol)
+soplex.cpp:         double viol = lowerReal(i) - primal[i];
+soplex.cpp:   bool SoPlex::getRowViolationReal(double& maxviol, double& sumviol)
+soplex.cpp:         double viol = lhsReal(i) - activity[i];
+soplex.cpp:   bool SoPlex::getRedCostViolationReal(double& maxviol, double& sumviol)
+soplex.cpp:   bool SoPlex::getDualViolationReal(double& maxviol, double& sumviol)
+soplex.cpp:   bool SoPlex::getEstimatedCondition(double& condition)
+soplex.cpp:   bool SoPlex::getExactCondition(double& condition)
+soplex.cpp:   bool SoPlex::getBasisInverseRowReal(int r, double* coef)
+soplex.cpp:         memset(coef, 0, (unsigned int)numRowsReal() * sizeof(double));
+soplex.cpp:   bool SoPlex::getBasisInverseColReal(int c, double* coef)
+soplex.cpp:         memset(coef, 0, (unsigned int)numRowsReal() * sizeof(double));
+soplex.cpp:   bool SoPlex::getBasisInverseTimesVecReal(double* rhs, double* sol)
+soplex.cpp:   double SoPlex::solveTime() const
+soplex.cpp:         else if( lowerReal(i) <= double(-realParam(SoPlex::INFTY)) && upperReal(i) >= double(realParam(SoPlex::INFTY)) )
+soplex.cpp:         else if( lowerReal(i) <= double(-realParam(SoPlex::INFTY)) )
+soplex.cpp:   double SoPlex::realParam(const RealParam param) const
+soplex.cpp:   bool SoPlex::setRealParam(const RealParam param, const double value, const bool quiet, const bool init)
+soplex.cpp:               double value;
+soplex.cpp:         double maxviol;
+soplex.cpp:         double sumviol;
+soplex.cpp:      MSG_INFO1( spxout << " [precision: " << (int)sizeof(double) << " byte]" );
+soplex.cpp:      MSG_INFO1( spxout << " [rational: long double]" );
+soplex.cpp:         MSG_ERROR( spxout << "The number of Rows in the double LP does not match the one in the Rational LP."
+soplex.cpp:               << " double LP: " << _realLP->nRows() << "  Rational LP: " << _rationalLP->nRows() << std::endl);
+soplex.cpp:         MSG_ERROR( spxout << "The number of Columns in the double LP does not match the one in the Rational LP."
+soplex.cpp:               << " double LP: " << _realLP->nCols() << "  Rational LP: " << _rationalLP->nCols() << std::endl);
+soplex.cpp:         MSG_ERROR( spxout << "The number of nonZeros in the double LP does not match the one in the Rational LP."
+soplex.cpp:               << " double LP: " << _realLP->nNzos() << "  Rational LP: " << _rationalLP->nNzos() << std::endl);
+soplex.cpp:         MSG_ERROR( spxout << "The dimension of the right hand side vector of the double LP does not match the one of the Rational LP."
+soplex.cpp:               << " double LP: " << _realLP->rhs().dim() << "  Rational LP: " << _rationalLP->rhs().dim() << std::endl);
+soplex.cpp:         MSG_ERROR( spxout << "The dimension of the left hand side vector of the double LP does not match the one of the Rational LP."
+soplex.cpp:               << " double LP: " << _realLP->lhs().dim() << "  Rational LP: " << _rationalLP->lhs().dim() << std::endl);
+soplex.cpp:         MSG_ERROR( spxout << "The dimension of the objective function vector of the double LP does not match the one of the Rational LP."
+soplex.cpp:               << " double LP: " << _realLP->maxObj().dim() << "  Rational LP: " << _rationalLP->maxObj().dim() << std::endl);
+soplex.cpp:            MSG_ERROR( spxout << "The objective function sense of the double LP does not match the one of the Rational LP."
+soplex.cpp:               << " double LP: " << (_realLP->spxSense() == SPxLPReal::MINIMIZE ? "MIN" : "MAX")
+soplex.cpp:         MSG_ERROR( spxout << "The dimension of the upper bound vector of the double LP does not match the one of the Rational LP."
+soplex.cpp:               << " double LP: " << _realLP->upper().dim() << "  Rational LP: " << _rationalLP->upper().dim() << std::endl);
+soplex.cpp:         MSG_ERROR( spxout << "The dimension of the lower bound vector of the double LP does not match the one of the Rational LP."
+soplex.cpp:               << " double LP: " << _realLP->lower().dim() << "  Rational LP: " << _rationalLP->lower().dim() << std::endl);
+soplex.cpp:                           << " double LP: " << _realLP->rhs()[i] << "  Rational LP: " << _rationalLP->rhs()[i] << std::endl);
+soplex.cpp:                           << " double LP: " << _realLP->lhs()[i] << "  Rational LP: " << _rationalLP->lhs()[i] << std::endl);
+soplex.cpp:                           << " double LP: " << _realLP->maxObj()[i] << "  Rational LP: " << _rationalLP->maxObj()[i] << std::endl);
+soplex.cpp:                           << " double LP: " << _realLP->upper()[i] << "  Rational LP: " << _rationalLP->upper()[i] << std::endl);
+soplex.cpp:                           << " double LP: " << _realLP->lower()[i] << "  Rational LP: " << _rationalLP->lower()[i] << std::endl);
+soplex.cpp:                           << " double LP: " << _realLP->colVector(i)[j] << "  Rational LP: " << _rationalLP->colVector(i)[j] << std::endl);
+soplex.cpp:               double value;
+soplex.cpp:   void SoPlex::_changeLhsReal(int i, const double& lhs)
+soplex.cpp:   void SoPlex::_changeRhsReal(int i, const double& rhs)
+soplex.cpp:   void SoPlex::_changeRangeReal(int i, const double& lhs, const double& rhs)
+soplex.cpp:   void SoPlex::_changeLowerReal(int i, const double& lower)
+soplex.cpp:   void SoPlex::_changeUpperReal(int i, const double& upper)
+soplex.cpp:   void SoPlex::_changeBoundsReal(int i, const double& lower, const double& upper)
+soplex.cpp:   void SoPlex::_changeElementReal(int i, int j, const double& val)
+soplex.h:   double minAbsNonzeroReal() const;
+soplex.h:   double maxAbsNonzeroReal() const;
+soplex.h:   double rhsReal(int i) const;
+soplex.h:   double lhsReal(int i) const;
+soplex.h:   double upperReal(int i) const;
+soplex.h:   double lowerReal(int i) const;
+soplex.h:   double objReal(int i) const;
+soplex.h:   double maxObjReal(int i) const;
+soplex.h:   void changeLhsReal(int i, const double& lhs);
+soplex.h:   void changeRhsReal(int i, const double& rhs);
+soplex.h:   void changeRangeReal(int i, const double& lhs, const double& rhs);
+soplex.h:   void changeLowerReal(int i, const double& lower);
+soplex.h:   void changeUpperReal(int i, const double& upper);
+soplex.h:   void changeBoundsReal(int i, const double& lower, const double& upper);
+soplex.h:   void changeObjReal(int i, const double& obj);
+soplex.h:   void changeElementReal(int i, int j, const double& val);
+soplex.h:   double objValueReal();
+soplex.h:   bool getBoundViolationReal(double& maxviol, double& sumviol);
+soplex.h:   bool getRowViolationReal(double& maxviol, double& sumviol);
+soplex.h:   bool getRedCostViolationReal(double& maxviol, double& sumviol);
+soplex.h:   bool getDualViolationReal(double& maxviol, double& sumviol);
+soplex.h:   bool getEstimatedCondition(double& condition);
+soplex.h:   bool getExactCondition(double& condition);
+soplex.h:   bool getBasisInverseRowReal(int r, double* coef);
+soplex.h:   bool getBasisInverseColReal(int c, double* coef);
+soplex.h:   bool getBasisInverseTimesVecReal(double* rhs, double* sol);
+soplex.h:   double solveTime() const;
+soplex.h:   double realParam(const RealParam param) const;
+soplex.h:   bool setRealParam(const RealParam param, const double value, const bool quiet = false, const bool init = false);
+soplex.h:   void _changeLhsReal(int i, const double& lhs);
+soplex.h:   void _changeRhsReal(int i, const double& rhs);
+soplex.h:   void _changeRangeReal(int i, const double& lhs, const double& rhs);
+soplex.h:   void _changeLowerReal(int i, const double& lower);
+soplex.h:   void _changeUpperReal(int i, const double& upper);
+soplex.h:   void _changeBoundsReal(int i, const double& lower, const double& upper);
+soplex.h:   void _changeElementReal(int i, int j, const double& val);
+soplexlegacy.cpp:double SoPlexLegacy::objValue() const
+soplexlegacy.cpp:   double& maxviol,
+soplexlegacy.cpp:   double& sumviol) const
+soplexlegacy.cpp:      double val = 0.0;
+soplexlegacy.cpp:      double viol = 0.0;
+soplexlegacy.cpp:   double& maxviol,
+soplexlegacy.cpp:   double& sumviol) const
+soplexlegacy.cpp:      double viol = 0.0;
+soplexlegacy.h:   virtual void setTerminationTime(double time = infinity)
+soplexlegacy.h:   inline double terminationTime() const
+soplexlegacy.h:   virtual void setTerminationValue(double val = infinity)
+soplexlegacy.h:   inline double terminationValue() const
+soplexlegacy.h:   virtual double feastol() const
+soplexlegacy.h:   virtual double opttol() const
+soplexlegacy.h:   virtual double delta() const
+soplexlegacy.h:   virtual void setFeastol(double d)
+soplexlegacy.h:   virtual void setOpttol(double d)
+soplexlegacy.h:   virtual void setDelta(double d)
+soplexlegacy.h:   virtual double objValue() const;
+soplexlegacy.h:   virtual void qualConstraintViolation(double& maxviol, double& sumviol) const;
+soplexlegacy.h:   virtual void qualBoundViolation(double& maxviol, double& sumviol) const;
+soplexlegacy.h:   virtual void qualSlackViolation(double& maxviol, double& sumviol) const;
+soplexlegacy.h:   virtual void qualRedCostViolation(double& maxviol, double& sumviol) const;
+soplexlegacy.h:   virtual double getFactorTime() const
+soplexlegacy.h:   virtual double getSolveTime() const
+soplexmain.cpp:      double boundviol;
+soplexmain.cpp:      double rowviol;
+soplexmain.cpp:      double sumviol;
+soplexmain.cpp:            double maxviol = boundviol > rowviol ? boundviol : rowviol;
+soplexmain.cpp:      double redcostviol;
+soplexmain.cpp:      double dualviol;
+soplexmain.cpp:      double sumviol;
+soplexmain.cpp:            double maxviol = redcostviol > dualviol ? redcostviol : dualviol;
+soplexmain.cpp:      double maxviol;
+soplexmain.cpp:      double sumviol;
+soplexmain.cpp:            double rayobjval = 0.0;
+soplexmain.cpp:            double lhs;
+soplexmain.cpp:            double rhs;
+soplexmain.cpp:      double                      timelimit      = -1.0;
+soplexmain.cpp:      double                      delta          = DEFAULT_BND_VIOL;
+soplexmain.cpp:      double                      feastol        = DEFAULT_BND_VIOL;
+soplexmain.cpp:      double                      opttol         = DEFAULT_BND_VIOL;
+soplexmain.cpp:      double                      epsilon        = DEFAULT_EPS_ZERO;
+soplexmain.cpp:      double                      epsilon_factor = DEFAULT_EPS_FACTOR;
+soplexmain.cpp:      double                      epsilon_update = DEFAULT_EPS_UPDATE;
+spxautopr.cpp:void SPxAutoPR::setEpsilon(double eps)
+spxautopr.h:   void setEpsilon(double eps);
+spxbasis.cpp:         double val = baseVec(i).value(j);
+spxbasis.cpp:double SPxBasis::condition(int maxiters, double tolerance)
+spxbasis.cpp:   double norm;
+spxbasis.cpp:   double norminv;
+spxbasis.cpp:   double norm1;
+spxbasis.cpp:   double norm2;
+spxbasis.cpp:   norm1 = 1.0 / (double) dimension;
+spxbasis.cpp:   norm1 = 1.0 / (double) dimension;
+spxbasis.h:   double   nonzeroFactor;
+spxbasis.h:   double   fillFactor;
+spxbasis.h:   double   lastFill;      ///< fill ratio that occured during last factorization
+spxbasis.h:   double   minStab;       ///< minimum stability
+spxbasis.h:   double condition(int maxiters = 10, double tolerance = 1e-6);
+spxbasis.h:   double getEstimatedCondition()
+spxbasis.h:   double getExactCondition()
+spxbasis.h:   double stability() const
+spxbasis.h:   double getTotalUpdateTime() const
+spxboundflippingrt.cpp:      double range;
+spxboundflippingrt.cpp:      double upper;
+spxboundflippingrt.cpp:      double lower;
+spxboundflippingrt.cpp:   const double*           upd,                /**< pointer to update values of current vector */
+spxboundflippingrt.cpp:   const double*           vec,                /**< pointer to values of current vector */
+spxboundflippingrt.cpp:   const double*           upp,                /**< pointer to upper bound/rhs of current vector */
+spxboundflippingrt.cpp:   const double*           low,                /**< pointer to lower bound/lhs of current vector */
+spxboundflippingrt.cpp:   double minVal;
+spxboundflippingrt.cpp:   double curVal;
+spxboundflippingrt.cpp:      double x = upd[i];
+spxboundflippingrt.cpp:            double y = upp[i] - vec[i];
+spxboundflippingrt.cpp:            double y = low[i] - vec[i];
+spxboundflippingrt.cpp:   const double*           upd,                /**< pointer to update values of current vector */
+spxboundflippingrt.cpp:   const double*           vec,                /**< pointer to values of current vector */
+spxboundflippingrt.cpp:   const double*           upp,                /**< pointer to upper bound/rhs of current vector */
+spxboundflippingrt.cpp:   const double*           low,                /**< pointer to lower bound/lhs of current vector */
+spxboundflippingrt.cpp:   double minVal;
+spxboundflippingrt.cpp:   double curVal;
+spxboundflippingrt.cpp:      double x = upd[i];
+spxboundflippingrt.cpp:            double y = low[i] - vec[i];
+spxboundflippingrt.cpp:            double y = upp[i] - vec[i];
+spxboundflippingrt.cpp:   double&                 val,
+spxboundflippingrt.cpp:   double                  stab,
+spxboundflippingrt.cpp:   double                  degeneps,
+spxboundflippingrt.cpp:   const double*           upd,
+spxboundflippingrt.cpp:   const double*           vec,
+spxboundflippingrt.cpp:   const double*           low,
+spxboundflippingrt.cpp:   const double*           upp,
+spxboundflippingrt.cpp:   double                  max
+spxboundflippingrt.cpp:      double x = upd[idx];
+spxboundflippingrt.cpp:      double x = upd[idx];
+spxboundflippingrt.cpp:   double&                 val,
+spxboundflippingrt.cpp:   double                  stab,
+spxboundflippingrt.cpp:   double                  degeneps,
+spxboundflippingrt.cpp:   const double*           upd,
+spxboundflippingrt.cpp:   const double*           vec,
+spxboundflippingrt.cpp:   const double*           low,
+spxboundflippingrt.cpp:   const double*           upp,
+spxboundflippingrt.cpp:   double                  max
+spxboundflippingrt.cpp:   double x = upd[idx];
+spxboundflippingrt.cpp:   double&                 val,
+spxboundflippingrt.cpp:   const double*  pvec = thesolver->pVec().get_const_ptr();
+spxboundflippingrt.cpp:   const double*  pupd = thesolver->pVec().delta().values();
+spxboundflippingrt.cpp:   const double*  lpb  = thesolver->lpBound().get_const_ptr();
+spxboundflippingrt.cpp:   const double*  upb  = thesolver->upBound().get_const_ptr();
+spxboundflippingrt.cpp:   const double*  cvec = thesolver->coPvec().get_const_ptr();
+spxboundflippingrt.cpp:   const double*  cupd = thesolver->coPvec().delta().values();
+spxboundflippingrt.cpp:   const double*  lcb  = thesolver->lcBound().get_const_ptr();
+spxboundflippingrt.cpp:   const double*  ucb  = thesolver->ucBound().get_const_ptr();
+spxboundflippingrt.cpp:   double max;
+spxboundflippingrt.cpp:   double moststable;
+spxboundflippingrt.cpp:   double slope;
+spxboundflippingrt.cpp:   double degeneps;
+spxboundflippingrt.cpp:   double stab;
+spxboundflippingrt.cpp:            double absupd = fabs(pupd[i]);
+spxboundflippingrt.cpp:            double absupd = fabs(cupd[i]);
+spxboundflippingrt.cpp:   double bestDelta = breakpoints[npassedBp].val;  // best step length (after bound flips)
+spxboundflippingrt.cpp:      double stableDelta = 0;
+spxboundflippingrt.cpp:         double x = pupd[idx];
+spxboundflippingrt.cpp:         double x = cupd[idx];
+spxboundflippingrt.cpp:   double&                 val,
+spxboundflippingrt.cpp:   double                  enterTest
+spxboundflippingrt.cpp:   const double*  vec = thesolver->fVec().get_const_ptr();         /**< pointer to values of current vector */
+spxboundflippingrt.cpp:   const double*  upd = thesolver->fVec().delta().values();        /**< pointer to update values of current vector */
+spxboundflippingrt.cpp:   const double*  lb  = thesolver->lbBound().get_const_ptr();      /**< pointer to lower bound/lhs of current vector */
+spxboundflippingrt.cpp:   const double*  ub  = thesolver->ubBound().get_const_ptr();      /**< pointer to upper bound/rhs of current vector */
+spxboundflippingrt.cpp:   double max;
+spxboundflippingrt.cpp:   double moststable;
+spxboundflippingrt.cpp:   double slope;
+spxboundflippingrt.cpp:   double degeneps;
+spxboundflippingrt.cpp:   double stab;
+spxboundflippingrt.cpp:      double upper;
+spxboundflippingrt.cpp:      double lower;
+spxboundflippingrt.cpp:      double absupd = fabs(upd[breakpointidx]);
+spxboundflippingrt.cpp:   double bestDelta = breakpoints[npassedBp].val;  // best step length (after bound flips)
+spxboundflippingrt.cpp:      double stableDelta = 0;
+spxboundflippingrt.cpp:      double x = upd[breakpointidx];
+spxboundflippingrt.h:      double               val;                /**< breakpoint value (step length) */
+spxboundflippingrt.h:      double operator() (
+spxboundflippingrt.h:   double                  flipPotential;      /**< tracks bound flip history and decides which ratio test to use */
+spxboundflippingrt.h:      const double*        upd,                /**< pointer to update values of current vector */
+spxboundflippingrt.h:      const double*        vec,                /**< pointer to values of current vector */
+spxboundflippingrt.h:      const double*        upp,                /**< pointer to upper bound/rhs of current vector */
+spxboundflippingrt.h:      const double*        low,                /**< pointer to lower bound/lhs of current vector */
+spxboundflippingrt.h:      const double*        upd,                /**< pointer to update values of current vector */
+spxboundflippingrt.h:      const double*        vec,                /**< pointer to values of current vector */
+spxboundflippingrt.h:      const double*        upp,                /**< pointer to upper bound/rhs of current vector */
+spxboundflippingrt.h:      const double*        low,                /**< pointer to lower bound/lhs of current vector */
+spxboundflippingrt.h:      double&              val,
+spxboundflippingrt.h:      double               stab,
+spxboundflippingrt.h:      double               degeneps,
+spxboundflippingrt.h:      const double*        upd,
+spxboundflippingrt.h:      const double*        vec,
+spxboundflippingrt.h:      const double*        low,
+spxboundflippingrt.h:      const double*        upp,
+spxboundflippingrt.h:      double               max
+spxboundflippingrt.h:      double&              val,
+spxboundflippingrt.h:      double               stab,
+spxboundflippingrt.h:      double               degeneps,
+spxboundflippingrt.h:      const double*        upd,
+spxboundflippingrt.h:      const double*        vec,
+spxboundflippingrt.h:      const double*        low,
+spxboundflippingrt.h:      const double*        upp,
+spxboundflippingrt.h:      double               max
+spxboundflippingrt.h:      double&              val,
+spxboundflippingrt.h:      double               enterTest
+spxboundflippingrt.h:      double&              val,
+spxbounds.cpp:   double&                  upp,
+spxbounds.cpp:   double&                  lw) const
+spxbounds.cpp:      double viol_max = (1 + iterCount) * entertol();
+spxbounds.cpp:      double viol_max = (1 + iterCount) * leavetol();
+spxdantzigpr.cpp:   //    const double* up  = thesolver->ubBound();
+spxdantzigpr.cpp:   //    const double* low = thesolver->lbBound();
+spxdantzigpr.cpp:   double best = -theeps;
+spxdantzigpr.cpp:      double x = thesolver->fTest()[i];
+spxdantzigpr.cpp:   double best   = -theeps;
+spxdantzigpr.cpp:   double x;
+spxdantzigpr.cpp:   double best;
+spxdantzigpr.cpp:   double bestCo;
+spxdantzigpr.cpp:SPxId SPxDantzigPR::selectEnterSparseDim(double& best,SPxId& enterId)
+spxdantzigpr.cpp:   double x;
+spxdantzigpr.cpp:SPxId SPxDantzigPR::selectEnterSparseCoDim(double& best,SPxId& enterId)
+spxdantzigpr.cpp:   double x;
+spxdantzigpr.cpp:SPxId SPxDantzigPR::selectEnterDenseDim(double& best,SPxId& enterId)
+spxdantzigpr.cpp:   double x;
+spxdantzigpr.cpp:SPxId SPxDantzigPR::selectEnterDenseCoDim(double& best,SPxId& enterId)
+spxdantzigpr.cpp:   double x;
+spxdantzigpr.h:   SPxId                 selectEnterSparseDim(double& best,SPxId& id);    /**< sparse pricing method for entering Simplex (slack variables)*/
+spxdantzigpr.h:   SPxId                 selectEnterSparseCoDim(double& best, SPxId& id); /**< sparse pricing method for entering Simplex */
+spxdantzigpr.h:   SPxId                 selectEnterDenseDim(double& best, SPxId& id);    /**< selectEnter() in dense case (slack variables) */
+spxdantzigpr.h:   SPxId                 selectEnterDenseCoDim(double& best,SPxId& id);   /**< selectEnter() in dense case */
+spxdefaultrt.cpp:int SPxDefaultRT::selectLeave(double& val, double)
+spxdefaultrt.cpp:   const double*   vec = solver()->fVec().get_const_ptr();
+spxdefaultrt.cpp:   const double*   upd = solver()->fVec().delta().values();
+spxdefaultrt.cpp:   const double*   ub  = solver()->ubBound().get_const_ptr();
+spxdefaultrt.cpp:   const double*   lb  = solver()->lbBound().get_const_ptr();
+spxdefaultrt.cpp:   double epsilon = solver()->epsilon();
+spxdefaultrt.cpp:   double x;
+spxdefaultrt.cpp:               double y = (ub[i] - vec[i] + delta) / x;
+spxdefaultrt.cpp:               double y = (lb[i] - vec[i] - delta) / x;
+spxdefaultrt.cpp:               double y = (ub[i] - vec[i] + delta) / x;
+spxdefaultrt.cpp:               double y = (lb[i] - vec[i] - delta) / x;
+spxdefaultrt.cpp:SPxId SPxDefaultRT::selectEnter(double& max, int)
+spxdefaultrt.cpp:   const double*   pvec = solver()->pVec().get_const_ptr();
+spxdefaultrt.cpp:   const double*   pupd = solver()->pVec().delta().values();
+spxdefaultrt.cpp:   const double*   lpb  = solver()->lpBound().get_const_ptr();
+spxdefaultrt.cpp:   const double*   upb  = solver()->upBound().get_const_ptr();
+spxdefaultrt.cpp:   const double*   cvec = solver()->coPvec().get_const_ptr();
+spxdefaultrt.cpp:   const double*   cupd = solver()->coPvec().delta().values();
+spxdefaultrt.cpp:   const double*   lcb  = solver()->lcBound().get_const_ptr();
+spxdefaultrt.cpp:   const double*   ucb  = solver()->ucBound().get_const_ptr();
+spxdefaultrt.cpp:   double epsilon = solver()->epsilon();
+spxdefaultrt.cpp:   double val     = max;
+spxdefaultrt.cpp:   double  x;
+spxdefaultrt.cpp:               double y = (upb[i] - pvec[i] + delta) / x;
+spxdefaultrt.cpp:               double y = (lpb[i] - pvec[i] - delta) / x;
+spxdefaultrt.cpp:               double y = (ucb[i] - cvec[i] + delta) / x;
+spxdefaultrt.cpp:               double y = (lcb[i] - cvec[i] - delta) / x;
+spxdefaultrt.cpp:               double y = (lpb[i] - pvec[i] - delta) / x;
+spxdefaultrt.cpp:               double y = (upb[i] - pvec[i] + delta) / x;
+spxdefaultrt.cpp:               double y = (lcb[i] - cvec[i] - delta) / x;
+spxdefaultrt.cpp:               double y = (ucb[i] - cvec[i] + delta) / x;
+spxdefaultrt.h:   virtual int selectLeave(double& val, double);
+spxdefaultrt.h:   virtual SPxId selectEnter(double& val, int);
+spxdefines.cpp:const double infinity                 = DEFAULT_INFINITY;
+spxdefines.cpp:double Param::s_epsilon               = DEFAULT_EPS_ZERO;
+spxdefines.cpp:double Param::s_epsilon_factorization = DEFAULT_EPS_FACTOR;
+spxdefines.cpp:double Param::s_epsilon_update        = DEFAULT_EPS_UPDATE;
+spxdefines.cpp:double Param::s_epsilon_pivot         = DEFAULT_EPS_PIVOT;
+spxdefines.cpp:void Param::setEpsilon(double eps)
+spxdefines.cpp:void Param::setEpsilonFactorization(double eps)
+spxdefines.cpp:void Param::setEpsilonUpdate(double eps)
+spxdefines.cpp:void Param::setEpsilonPivot(double eps)
+spxdefines.h: * If \c WITH_LONG_DOUBLE is defined, all double numbers are of type
+spxdefines.h: * long double instead of just double.
+spxdefines.h: * Long double support, Parameters and Epsilons
+spxdefines.h:typedef long double Real;
+spxdefines.h:typedef double Real;
+spxdefines.h:extern const double infinity;
+spxdefines.h:   static double s_epsilon;
+spxdefines.h:   static double s_epsilon_factorization;
+spxdefines.h:   static double s_epsilon_update;
+spxdefines.h:   static double s_epsilon_pivot;
+spxdefines.h:   inline static double epsilon()
+spxdefines.h:   static void setEpsilon(double eps);
+spxdefines.h:   inline static double epsilonFactorization()
+spxdefines.h:   static void setEpsilonFactorization(double eps);
+spxdefines.h:   inline static double epsilonUpdate()
+spxdefines.h:   static void setEpsilonUpdate(double eps);
+spxdefines.h:   inline static double epsilonPivot()
+spxdefines.h:   static void setEpsilonPivot(double eps);
+spxdefines.h:inline double abs(double a)
+spxdefines.h:inline double maxAbs(double a, double b)
+spxdefines.h:   const double absa = fabs(a);
+spxdefines.h:   const double absb = fabs(b);
+spxdefines.h:inline double relDiff(double a, double b)
+spxdefines.h:inline bool EQ(double a, double b, double eps = Param::epsilon())
+spxdefines.h:inline bool NE(double a, double b, double eps = Param::epsilon())
+spxdefines.h:inline bool LT(double a, double b, double eps = Param::epsilon())
+spxdefines.h:inline bool LE(double a, double b, double eps = Param::epsilon())
+spxdefines.h:inline bool GT(double a, double b, double eps = Param::epsilon())
+spxdefines.h:inline bool GE(double a, double b, double eps = Param::epsilon())
+spxdefines.h:inline bool isZero(double a, double eps = Param::epsilon())
+spxdefines.h:inline bool isNotZero(double a, double eps = Param::epsilon())
+spxdefines.h:inline bool EQrel(double a, double b, double eps = Param::epsilon())
+spxdefines.h:inline bool NErel(double a, double b, double eps = Param::epsilon())
+spxdefines.h:inline bool LTrel(double a, double b, double eps = Param::epsilon())
+spxdefines.h:inline bool LErel(double a, double b, double eps = Param::epsilon())
+spxdefines.h:inline bool GTrel(double a, double b, double eps = Param::epsilon())
+spxdefines.h:inline bool GErel(double a, double b, double eps = Param::epsilon())
+spxdevexpr.cpp:int SPxDevexPR::buildBestPriceVectorLeave( double feastol )
+spxdevexpr.cpp:   double fTesti;
+spxdevexpr.cpp:   const double* fTest = thesolver->fTest().get_const_ptr();
+spxdevexpr.cpp:   const double* cpen = coPenalty.get_const_ptr();
+spxdevexpr.cpp:int SPxDevexPR::selectLeaveX(double feastol, int start, int incr)
+spxdevexpr.cpp:   double x;
+spxdevexpr.cpp:   const double* fTest = thesolver->fTest().get_const_ptr();
+spxdevexpr.cpp:   const double* cpen = coPenalty.get_const_ptr();
+spxdevexpr.cpp:   double best = 0;
+spxdevexpr.cpp:int SPxDevexPR::selectLeaveSparse(double feastol)
+spxdevexpr.cpp:   double x;
+spxdevexpr.cpp:   const double* fTest = thesolver->fTest().get_const_ptr();
+spxdevexpr.cpp:   const double* cpen = coPenalty.get_const_ptr();
+spxdevexpr.cpp:   double best = 0;
+spxdevexpr.cpp:   double fTesti;
+spxdevexpr.cpp:   double coPeni;
+spxdevexpr.cpp:int SPxDevexPR::selectLeaveHyper(double feastol)
+spxdevexpr.cpp:   double x;
+spxdevexpr.cpp:   const double* fTest = thesolver->fTest().get_const_ptr();
+spxdevexpr.cpp:   const double* cpen = coPenalty.get_const_ptr();
+spxdevexpr.cpp:   double best = 0;
+spxdevexpr.cpp:   double leastBest = infinity;
+spxdevexpr.cpp:   double fTesti;
+spxdevexpr.cpp:   double coPeni;
+spxdevexpr.cpp:      double x;
+spxdevexpr.cpp:      const double* rhoVec = thesolver->fVec().delta().values();
+spxdevexpr.cpp:      double rhov_1 = 1 / rhoVec[n];
+spxdevexpr.cpp:      double beta_q = thesolver->coPvec().delta().length2() * rhov_1 * rhov_1;
+spxdevexpr.cpp:SPxId SPxDevexPR::buildBestPriceVectorEnterDim( double& best, double feastol )
+spxdevexpr.cpp:   double x;
+spxdevexpr.cpp:   const double* coTest = thesolver->coTest().get_const_ptr();
+spxdevexpr.cpp:   const double* cpen = coPenalty.get_const_ptr();
+spxdevexpr.cpp:SPxId SPxDevexPR::buildBestPriceVectorEnterCoDim( double& best, double feastol )
+spxdevexpr.cpp:   double x;
+spxdevexpr.cpp:   const double* test = thesolver->test().get_const_ptr();
+spxdevexpr.cpp:   const double* pen = penalty.get_const_ptr();
+spxdevexpr.cpp:SPxId SPxDevexPR::selectEnterX(double tol)
+spxdevexpr.cpp:   double best;
+spxdevexpr.cpp:   double bestCo;
+spxdevexpr.cpp:SPxId SPxDevexPR::selectEnterHyperDim(double& best, double feastol)
+spxdevexpr.cpp:   const double* cTest = thesolver->coTest().get_const_ptr();
+spxdevexpr.cpp:   const double* cpen = coPenalty.get_const_ptr();
+spxdevexpr.cpp:   double leastBest = infinity;
+spxdevexpr.cpp:   double coTesti;
+spxdevexpr.cpp:   double coPeni;
+spxdevexpr.cpp:   double x;
+spxdevexpr.cpp:SPxId SPxDevexPR::selectEnterHyperCoDim(double& best, double feastol)
+spxdevexpr.cpp:   const double* test = thesolver->test().get_const_ptr();
+spxdevexpr.cpp:   const double* pen = penalty.get_const_ptr();
+spxdevexpr.cpp:   double leastBest = infinity;
+spxdevexpr.cpp:   double testi;
+spxdevexpr.cpp:   double peni;
+spxdevexpr.cpp:   double x;
+spxdevexpr.cpp:SPxId SPxDevexPR::selectEnterSparseDim(double& best, double feastol)
+spxdevexpr.cpp:   const double* cTest = thesolver->coTest().get_const_ptr();
+spxdevexpr.cpp:   const double* cpen = coPenalty.get_const_ptr();
+spxdevexpr.cpp:   double coTesti;
+spxdevexpr.cpp:   double coPeni;
+spxdevexpr.cpp:   double x;
+spxdevexpr.cpp:SPxId SPxDevexPR::selectEnterSparseCoDim(double& best, double feastol)
+spxdevexpr.cpp:   const double* test = thesolver->test().get_const_ptr();
+spxdevexpr.cpp:   const double* pen = penalty.get_const_ptr();
+spxdevexpr.cpp:   double testi;
+spxdevexpr.cpp:   double peni;
+spxdevexpr.cpp:   double x;
+spxdevexpr.cpp:SPxId SPxDevexPR::selectEnterDenseDim(double& best, double feastol, int start, int incr)
+spxdevexpr.cpp:   const double* cTest = thesolver->coTest().get_const_ptr();
+spxdevexpr.cpp:   const double* cpen = coPenalty.get_const_ptr();
+spxdevexpr.cpp:   double x;
+spxdevexpr.cpp:SPxId SPxDevexPR::selectEnterDenseCoDim(double& best, double feastol, int start, int incr)
+spxdevexpr.cpp:   const double* test = thesolver->test().get_const_ptr();
+spxdevexpr.cpp:   const double* pen = penalty.get_const_ptr();
+spxdevexpr.cpp:   double x;
+spxdevexpr.cpp:      const double* pVec = thesolver->pVec().delta().values();
+spxdevexpr.cpp:      const double* coPvec = thesolver->coPvec().delta().values();
+spxdevexpr.cpp:      double xi_p = 1 / thesolver->fVec().delta()[n];
+spxdevexpr.h:   double  last;           ///< penalty, selected at last iteration.
+spxdevexpr.h:   int buildBestPriceVectorLeave(double feastol);
+spxdevexpr.h:   int selectLeaveX(double feastol, int start = 0, int incr = 1);
+spxdevexpr.h:   int selectLeaveSparse(double feastol);
+spxdevexpr.h:   int selectLeaveHyper(double feastol);
+spxdevexpr.h:   SPxId buildBestPriceVectorEnterDim(double& best, double feastol);
+spxdevexpr.h:   SPxId buildBestPriceVectorEnterCoDim(double& best, double feastol);
+spxdevexpr.h:   SPxId selectEnterX(double tol);
+spxdevexpr.h:   SPxId selectEnterSparseDim(double& best, double feastol);
+spxdevexpr.h:   SPxId selectEnterSparseCoDim(double& best, double feastol);
+spxdevexpr.h:   SPxId selectEnterDenseDim(double& best, double feastol, int start = 0, int incr = 1);
+spxdevexpr.h:   SPxId selectEnterDenseCoDim(double& best, double feastol, int start = 0, int incr = 1);
+spxdevexpr.h:   SPxId selectEnterHyperDim(double& best, double feastol);
+spxdevexpr.h:   SPxId selectEnterHyperCoDim(double& best, double feastol);
+spxequilisc.cpp:double SPxEquiliSC::computeScale(double /*mini*/, double maxi) const
+spxequilisc.cpp:   double colratio = maxColRatio(lp);
+spxequilisc.cpp:   double rowratio = maxRowRatio(lp);
+spxequilisc.h:   virtual double computeScale(double /*mini*/, double maxi) const;
+spxfastrt.cpp:double SPxFastRT::minStability(double maxabs)
+spxfastrt.cpp:   double& val,                                /* on return: maximum step length */
+spxfastrt.cpp:   double& maxabs,                             /* on return: maximum absolute value in upd vector */
+spxfastrt.cpp:   double x, y, max;
+spxfastrt.cpp:   double u, l;
+spxfastrt.cpp:   double mabs = maxabs;
+spxfastrt.cpp:   const double* up = upBound.get_const_ptr();
+spxfastrt.cpp:   const double* low = lowBound.get_const_ptr();
+spxfastrt.cpp:   const double* vec = update.get_const_ptr();
+spxfastrt.cpp:   const double* upd = update.delta().values();
+spxfastrt.cpp:      double* uval = update.delta().altValues();
+spxfastrt.cpp:      const double* uend = uval + update.dim();
+spxfastrt.cpp:   double& val,
+spxfastrt.cpp:   double& maxabs,
+spxfastrt.cpp:   double x, y, max;
+spxfastrt.cpp:   double u, l;
+spxfastrt.cpp:   double mabs = maxabs;
+spxfastrt.cpp:   const double* up = upBound.get_const_ptr();
+spxfastrt.cpp:   const double* low = lowBound.get_const_ptr();
+spxfastrt.cpp:   const double* vec = update.get_const_ptr();
+spxfastrt.cpp:   const double* upd = update.delta().values();
+spxfastrt.cpp:      double* uval = update.delta().altValues();
+spxfastrt.cpp:      const double* uend = uval + update.dim();
+spxfastrt.cpp:   double& val,
+spxfastrt.cpp:   double& maxabs)
+spxfastrt.cpp:   double& val,
+spxfastrt.cpp:   double& maxabs)
+spxfastrt.cpp:   double& max,                                /* on return: maximum step length */
+spxfastrt.cpp:   double& maxabs)                             /* on return: maximum absolute value in delta vector */
+spxfastrt.cpp:   double& max,
+spxfastrt.cpp:   double& maxabs)
+spxfastrt.cpp:   double& val,
+spxfastrt.cpp:   double& stab,
+spxfastrt.cpp:   double& best,
+spxfastrt.cpp:   double& bestDelta,
+spxfastrt.cpp:   double max,
+spxfastrt.cpp:   double x, y;
+spxfastrt.cpp:   const double* up = upBound.get_const_ptr();
+spxfastrt.cpp:   const double* low = lowBound.get_const_ptr();
+spxfastrt.cpp:   const double* vec = update.get_const_ptr();
+spxfastrt.cpp:   const double* upd = update.delta().values();
+spxfastrt.cpp:   double& val,
+spxfastrt.cpp:   double& stab,
+spxfastrt.cpp:   double& best,
+spxfastrt.cpp:   double& bestDelta,
+spxfastrt.cpp:   double max,
+spxfastrt.cpp:   double x, y;
+spxfastrt.cpp:   const double* up = upBound.get_const_ptr();
+spxfastrt.cpp:   const double* low = lowBound.get_const_ptr();
+spxfastrt.cpp:   const double* vec = update.get_const_ptr();
+spxfastrt.cpp:   const double* upd = update.delta().values();
+spxfastrt.cpp:   double& val,
+spxfastrt.cpp:   double& stab,
+spxfastrt.cpp:   double& bestDelta,
+spxfastrt.cpp:   double max)
+spxfastrt.cpp:   double best = -infinity;
+spxfastrt.cpp:   double& val,
+spxfastrt.cpp:   double& stab,
+spxfastrt.cpp:   double& bestDelta,
+spxfastrt.cpp:   double max
+spxfastrt.cpp:   double best = -infinity;
+spxfastrt.cpp:   double& val,
+spxfastrt.cpp:   double& stab,
+spxfastrt.cpp:   double& bestDelta,
+spxfastrt.cpp:   double max)
+spxfastrt.cpp:   double best = infinity;
+spxfastrt.cpp:   double& val,
+spxfastrt.cpp:   double& stab,
+spxfastrt.cpp:   double& bestDelta,
+spxfastrt.cpp:   double max)
+spxfastrt.cpp:   double best = infinity;
+spxfastrt.cpp:bool SPxFastRT::maxShortLeave(double& sel, int leave, double maxabs)
+spxfastrt.cpp:bool SPxFastRT::minShortLeave(double& sel, int leave, double maxabs)
+spxfastrt.cpp:bool SPxFastRT::maxReLeave(double& sel, int leave, double maxabs)
+spxfastrt.cpp:      double x = vec.delta()[leave];
+spxfastrt.cpp:bool SPxFastRT::minReLeave(double& sel, int leave, double maxabs)
+spxfastrt.cpp:      double x = vec.delta()[leave];
+spxfastrt.cpp:int SPxFastRT::selectLeave(double& val, double)
+spxfastrt.cpp:   double maxabs, max, sel;
+spxfastrt.cpp:   double lowstab = LOWSTAB;
+spxfastrt.cpp:            double stab, bestDelta;
+spxfastrt.cpp:            double stab, bestDelta;
+spxfastrt.cpp:   double& sel,
+spxfastrt.cpp:   double maxabs,
+spxfastrt.cpp:   double x, d;
+spxfastrt.cpp:   double& sel,
+spxfastrt.cpp:   double maxabs,
+spxfastrt.cpp:   double x, d;
+spxfastrt.cpp:   double max,
+spxfastrt.cpp:   double maxabs) const
+spxfastrt.cpp:         double x = thesolver->coPvec().delta()[nr];
+spxfastrt.cpp:         double x = thesolver->pVec().delta()[nr];
+spxfastrt.cpp:SPxId SPxFastRT::selectEnter(double& val, int)
+spxfastrt.cpp:   double max, sel;
+spxfastrt.cpp:   double maxabs = 0.0;
+spxfastrt.cpp:   double lowstab = LOWSTAB;
+spxfastrt.cpp:            double bestDelta, stab;
+spxfastrt.cpp:            double bestDelta, stab;
+spxfastrt.cpp:         double x;
+spxfastrt.h:   double minStab;
+spxfastrt.h:   double epsilon;
+spxfastrt.h:   double fastDelta;
+spxfastrt.h:   double minStability(double maxabs);
+spxfastrt.h:   int maxDelta(double& val, double& maxabs, UpdateVector& update,
+spxfastrt.h:   int maxDelta(double& val, double& maxabs);
+spxfastrt.h:   SPxId maxDelta(int& nr, double& val, double& maxabs);
+spxfastrt.h:   int minDelta(double& val, double& maxabs, UpdateVector& update,
+spxfastrt.h:   int minDelta(double& val, double& maxabs);
+spxfastrt.h:   SPxId minDelta(int& nr, double& val, double& maxabs);
+spxfastrt.h:   int maxSelect(double& val, double& stab, double& best, double& bestDelta,
+spxfastrt.h:      double max, const UpdateVector& upd, const Vector& low,
+spxfastrt.h:   int maxSelect(double& val, double& stab, double& bestDelta, double max);
+spxfastrt.h:   SPxId maxSelect(int& nr, double& val, double& stab,
+spxfastrt.h:      double& bestDelta, double max);
+spxfastrt.h:   int minSelect(double& val, double& stab, double& best, double& bestDelta,
+spxfastrt.h:      double max, const UpdateVector& upd, const Vector& low,
+spxfastrt.h:   int minSelect(double& val, double& stab,
+spxfastrt.h:      double& bestDelta, double max);
+spxfastrt.h:   SPxId minSelect(int& nr, double& val, double& stab,
+spxfastrt.h:      double& bestDelta, double max);
+spxfastrt.h:   bool minShortLeave(double& sel, int leave, double maxabs);
+spxfastrt.h:   bool maxShortLeave(double& sel, int leave, double maxabs);
+spxfastrt.h:   bool minReLeave(double& sel, int leave, double maxabs);
+spxfastrt.h:   bool maxReLeave(double& sel, int leave, double maxabs);
+spxfastrt.h:   bool minReEnter(double& sel, double maxabs, const SPxId& id, int nr);
+spxfastrt.h:   bool maxReEnter(double& sel, double maxabs, const SPxId& id, int nr);
+spxfastrt.h:   bool shortEnter(const SPxId& enterId, int nr, double max, double maxabs) const;
+spxfastrt.h:   virtual int selectLeave(double& val, double);
+spxfastrt.h:   virtual SPxId selectEnter(double& val, int);
+spxfastrt.h:   virtual void setDelta(double newDelta)
+spxfastrt.h:   virtual double getDelta()
+spxgeometsc.cpp:SPxGeometSC::SPxGeometSC(int maxIters, double minImpr, double goodEnough)
+spxgeometsc.cpp:double SPxGeometSC::computeScale(double mini, double maxi) const
+spxgeometsc.cpp:   double pstart = 0.0;
+spxgeometsc.cpp:   double p0     = 0.0;
+spxgeometsc.cpp:   double p1     = 0.0;
+spxgeometsc.cpp:   double colratio = maxColRatio(lp);
+spxgeometsc.cpp:   double rowratio = maxRowRatio(lp);
+spxgeometsc.h:   const double m_minImprovement;   ///< improvement nesseccary to carry on.
+spxgeometsc.h:   const double m_goodEnoughRatio;  ///< no scaling needed if ratio is less than this.
+spxgeometsc.h:   virtual double computeScale(double mini, double maxi) const;
+spxgeometsc.h:   explicit SPxGeometSC(int maxIters = 8, double minImpr = 0.85, double goodEnough = 1e3);
+spxharrisrt.cpp:double SPxHarrisRT::degenerateEps() const
+spxharrisrt.cpp:   double* /*max*/,             /* max abs value in upd */
+spxharrisrt.cpp:   double* val,             /* initial and chosen value */
+spxharrisrt.cpp:   const double* upd,             /* update vector for vec */
+spxharrisrt.cpp:   const double* vec,             /* current vector */
+spxharrisrt.cpp:   const double* low,             /* lower bounds for vec */
+spxharrisrt.cpp:   const double* up,              /* upper bounds for vec */
+spxharrisrt.cpp:   double epsilon)  const       /* what is 0? */
+spxharrisrt.cpp:   double x;
+spxharrisrt.cpp:   double theval;
+spxharrisrt.cpp:   double themax;
+spxharrisrt.cpp:   double* /*max*/,             /* max abs value in upd */
+spxharrisrt.cpp:   double* val,             /* initial and chosen value */
+spxharrisrt.cpp:   const double* upd,             /* update vector for vec */
+spxharrisrt.cpp:   const double* vec,             /* current vector */
+spxharrisrt.cpp:   const double* low,             /* lower bounds for vec */
+spxharrisrt.cpp:   const double* up,              /* upper bounds for vec */
+spxharrisrt.cpp:   double epsilon) const         /* what is 0? */
+spxharrisrt.cpp:   double x;
+spxharrisrt.cpp:   double theval;
+spxharrisrt.cpp:   double themax;
+spxharrisrt.cpp:int SPxHarrisRT::selectLeave(double& val, double)
+spxharrisrt.cpp:   double stab, x, y;
+spxharrisrt.cpp:   double max;
+spxharrisrt.cpp:   double sel;
+spxharrisrt.cpp:   double lastshift;
+spxharrisrt.cpp:   double useeps;
+spxharrisrt.cpp:   double maxabs = 1;
+spxharrisrt.cpp:   double epsilon  = solver()->epsilon();
+spxharrisrt.cpp:   double degeneps = degenerateEps();
+spxharrisrt.cpp:SPxId SPxHarrisRT::selectEnter(double& val, int)
+spxharrisrt.cpp:   double stab, x, y;
+spxharrisrt.cpp:   double max = 0.0;
+spxharrisrt.cpp:   double sel = 0.0;
+spxharrisrt.cpp:   double lastshift;
+spxharrisrt.cpp:   double cuseeps;
+spxharrisrt.cpp:   double ruseeps;
+spxharrisrt.cpp:   double cmaxabs = 1;
+spxharrisrt.cpp:   double rmaxabs = 1;
+spxharrisrt.cpp:   double minStability = 0.0001;
+spxharrisrt.cpp:   double epsilon      = solver()->epsilon();
+spxharrisrt.cpp:   double degeneps     = degenerateEps();
+spxharrisrt.h:   double degenerateEps() const;
+spxharrisrt.h:      double* /*max*/,        ///< max abs value in \p upd
+spxharrisrt.h:      double* val,            ///< initial and chosen value
+spxharrisrt.h:      const double* upd,      ///< update vector for \p vec
+spxharrisrt.h:      const double* vec,      ///< current vector
+spxharrisrt.h:      const double* low,      ///< lower bounds for \p vec
+spxharrisrt.h:      const double* up,       ///< upper bounds for \p vec
+spxharrisrt.h:      double epsilon          ///< what is 0?
+spxharrisrt.h:      double* /*max*/,        ///< max abs value in \p upd
+spxharrisrt.h:      double* val,            ///< initial and chosen value
+spxharrisrt.h:      const double* upd,      ///< update vector for \p vec
+spxharrisrt.h:      const double* vec,      ///< current vector
+spxharrisrt.h:      const double* low,      ///< lower bounds for \p vec
+spxharrisrt.h:      const double* up,       ///< upper bounds for \p vec
+spxharrisrt.h:      double epsilon          ///< what is 0?
+spxharrisrt.h:   virtual int selectLeave(double& val, double);
+spxharrisrt.h:   virtual SPxId selectEnter(double& val, int);
+spxhybridpr.cpp:void SPxHybridPR::setEpsilon(double eps)
+spxhybridpr.h:   double hybridFactor; 
+spxhybridpr.h:   virtual void setEpsilon(double eps);
+spxlpbase_rational.cpp:            if( double(rset.rhs(idx)) < double(infinity) )
+spxlpbase_rational.cpp:            if( double(rset.lhs(idx)) > double(-infinity) )
+spxlpbase_rational.cpp:               if( double(rset.rhs(idx)) < double(infinity) )
+spxlpbase_rational.cpp:               if( double(rset.lhs(idx)) > double(-infinity) )
+spxlpbase_rational.cpp:            if( (double(rset.lhs(idx)) > -double(infinity)) && (double(rset.rhs_w(idx)) < double(infinity)) )
+spxlpbase_rational.cpp:               if( double(val) >= 0 )
+spxlpbase_rational.cpp:               if( double(rset.lhs(idx)) > -double(infinity) )
+spxlpbase_rational.cpp:               if( (double(rset.lhs(idx)) > -double(infinity)) && (double(rset.rhs(idx)) <  double(infinity)) )
+spxlpbase_rational.cpp:                  if( double(val) >= 0 )
+spxlpbase_rational.cpp:                  if( double(rset.lhs(idx)) > -double(infinity) )
+spxlpbase_rational.cpp:   sidelen = (p_lhs == p_rhs || double(p_lhs) <= double(-infinity)) ? (long long)rationalToString(p_rhs, false).length() : (long long)rationalToString(p_lhs, false).length();
+spxlpbase_rational.cpp:   else if( double(p_lhs) <= double(-infinity) )
+spxlpbase_rational.cpp:      assert(double(p_rhs) >= double(infinity));
+spxlpbase_rational.cpp:      if( double(lhs) > -double(infinity) && double(rhs) < double(infinity) && lhs != rhs )
+spxlpbase_rational.cpp:      else if( double(lower) > -double(infinity) )
+spxlpbase_rational.cpp:         if( double(upper) < double(infinity) )
+spxlpbase_rational.cpp:      else if( double(upper) < double(infinity) )
+spxlpbase_rational.cpp:   if( double(left) > -double(infinity) ) /// This includes ranges
+spxlpbase_rational.cpp:   else if( double(right) <  double(infinity) )
+spxlpbase_rational.cpp:      else if( (double(lhs(i)) > -double(infinity)) && (double(rhs(i)) < double(infinity)) )
+spxlpbase_rational.cpp:      else if( double(lhs(i)) > -double(infinity) )
+spxlpbase_rational.cpp:      else if( double(rhs(i)) <  double(infinity) )
+spxlpbase_rational.cpp:         if( (double(lhs(i)) > -double(infinity)) && (double(rhs(i)) < double(infinity)) )
+spxlpbase_rational.cpp:      if( (double(lower(i)) <= double(-infinity)) && (double(upper(i)) >= double(infinity)) )
+spxlpbase_rational.cpp:         if( double(lower(i)) > -double(infinity) )
+spxlpbase_rational.cpp:         if( double(upper(i)) < double(infinity) )
+spxlpbase_real.cpp: * @brief Saving LPs with double values in a form suitable for SoPlex.
+spxlpbase_real.cpp:static double LPFreadValue(char*& pos)
+spxlpbase_real.cpp:   double        value = 1.0;
+spxlpbase_real.cpp:static int LPFreadColName(char*& pos, NameSet* colnames, LPColSetBase<double>& colset, const LPColBase<double>* emptycol)
+spxlpbase_real.cpp:static double LPFreadInfinity(char*& pos)
+spxlpbase_real.cpp:   double sense = (*pos == '-') ? -1.0 : 1.0;
+spxlpbase_real.cpp:bool SPxLPBase<double>::readLPF(
+spxlpbase_real.cpp:   LPColSetBase<double> cset;              ///< the set of columns read.
+spxlpbase_real.cpp:   LPRowSetBase<double> rset;              ///< the set of rows read.
+spxlpbase_real.cpp:   LPColBase<double> emptycol;             ///< reusable empty column.
+spxlpbase_real.cpp:   LPRowBase<double> row;                  ///< last assembled row.
+spxlpbase_real.cpp:   DSVectorBase<double> vec;               ///< last assembled vector (from row).
+spxlpbase_real.cpp:   double val = 1.0;
+spxlpbase_real.cpp:   SPxLPBase<double>::clear(); // clear the LP.
+spxlpbase_real.cpp:            changeSense(SPxLPBase<double>::MAXIMIZE);
+spxlpbase_real.cpp:            changeSense(SPxLPBase<double>::MINIMIZE);
+spxlpbase_real.cpp:               double pre_sign = 1.0;
+spxlpbase_real.cpp:               double pre_sign = 1.0;
+spxlpbase_real.cpp:static void MPSreadRows(MPSInput& mps, LPRowSetBase<double>& rset, NameSet& rnames)
+spxlpbase_real.cpp:   LPRowBase<double> row;
+spxlpbase_real.cpp:static void MPSreadCols(MPSInput& mps, const LPRowSetBase<double>& rset, const NameSet&  rnames, LPColSetBase<double>& cset, NameSet& cnames, DIdxSet* intvars)
+spxlpbase_real.cpp:   double val;
+spxlpbase_real.cpp:   LPColBase<double> col(rset.num());
+spxlpbase_real.cpp:   DSVectorBase<double> vec;
+spxlpbase_real.cpp:static void MPSreadRhs(MPSInput& mps, LPRowSetBase<double>& rset, const NameSet& rnames)
+spxlpbase_real.cpp:   double val;
+spxlpbase_real.cpp:static void MPSreadRanges(MPSInput& mps,  LPRowSetBase<double>& rset, const NameSet& rnames)
+spxlpbase_real.cpp:   double val;
+spxlpbase_real.cpp:static void MPSreadBounds(MPSInput& mps, LPColSetBase<double>& cset, const NameSet& cnames, DIdxSet* intvars)
+spxlpbase_real.cpp:   double val;
+spxlpbase_real.cpp:bool SPxLPBase<double>::readMPS(
+spxlpbase_real.cpp:   LPRowSetBase<double>& rset = *this;
+spxlpbase_real.cpp:   LPColSetBase<double>& cset = *this;
+spxlpbase_real.cpp:   SPxLPBase<double>::clear(); // clear the LP.
+spxlpbase_real.cpp:      changeSense(mps.objSense() == MPSInput::MINIMIZE ? SPxLPBase<double>::MINIMIZE : SPxLPBase<double>::MAXIMIZE);
+spxlpbase_real.cpp:         *(reinterpret_cast<SVSetBase<double>*>(static_cast<LPRowSetBase<double>*>(this))),
+spxlpbase_real.cpp:         *(reinterpret_cast<SVSetBase<double>*>(static_cast<LPColSetBase<double>*>(this))),
+spxlpbase_real.cpp:   const SPxLPBase<double>& p_lp,
+spxlpbase_real.cpp:   const SPxLPBase<double>& p_lp,
+spxlpbase_real.cpp:   const SPxLPBase<double>&   p_lp,       ///< the LP
+spxlpbase_real.cpp:   const SVectorBase<double>& p_svec )    ///< vector to write
+spxlpbase_real.cpp:      const double coeff = p_svec[j];
+spxlpbase_real.cpp:   const SPxLPBase<double>& p_lp,       ///< the LP
+spxlpbase_real.cpp:   p_output << ((sense == SPxLPBase<double>::MINIMIZE) ? "Minimize\n" : "Maximize\n");
+spxlpbase_real.cpp:   const VectorBase<double>& obj = p_lp.maxObj();
+spxlpbase_real.cpp:   DSVectorBase<double> svec(obj.dim());
+spxlpbase_real.cpp:   const SPxLPBase<double>&   p_lp,       ///< the LP
+spxlpbase_real.cpp:   const SVectorBase<double>& p_svec,     ///< vector of the row
+spxlpbase_real.cpp:   const double&              p_lhs,      ///< lhs of the row
+spxlpbase_real.cpp:   const double&              p_rhs       ///< rhs of the row
+spxlpbase_real.cpp:   const SPxLPBase<double>& p_lp,       ///< the LP
+spxlpbase_real.cpp:      const double lhs = p_lp.lhs(i);
+spxlpbase_real.cpp:      const double rhs = p_lp.rhs(i);
+spxlpbase_real.cpp:   const SPxLPBase<double>&   p_lp,       ///< the LP to write
+spxlpbase_real.cpp:      const double lower = p_lp.lower(j);
+spxlpbase_real.cpp:      const double upper = p_lp.upper(j);
+spxlpbase_real.cpp:   const SPxLPBase<double>&   p_lp,         ///< the LP to write
+spxlpbase_real.cpp:void SPxLPBase<double>::writeLPF(
+spxlpbase_real.cpp:   const double     value1 = 0.0,
+spxlpbase_real.cpp:   const double     value2 = 0.0
+spxlpbase_real.cpp:static double MPSgetRHS(double left, double right)
+spxlpbase_real.cpp:   double rhsval;
+spxlpbase_real.cpp:   const SPxLPBase<double>& lp,
+spxlpbase_real.cpp:void SPxLPBase<double>::writeMPS(
+spxlpbase_real.cpp:         const SVectorBase<double>& col = colVector(i);
+spxlpbase_real.cpp:      double rhsval1 = 0.0;
+spxlpbase_real.cpp:      double rhsval2 = 0.0;
+spxlpbase_real.cpp:      const SVectorBase<double>& col = colVector(i);
+spxlpbase_real.cpp:   if( spxSense() == SPxLPBase<double>::MAXIMIZE )
+spxlpbase_real.cpp:template class SPxLPBase < double >;
+spxlp.h:typedef SPxLPBase< double > SPxLP;
+spxlp.h:typedef SPxLPBase< double > SPxLPReal;
+spxmainsm.cpp:   double slack = 0.0;
+spxmainsm.cpp:   double aij = m_col[m_i];
+spxmainsm.cpp:   double val = m_obj;
+spxmainsm.cpp:   double newLo = (aij > 0) ? m_lhs/aij : m_rhs/aij;  // implicit lhs
+spxmainsm.cpp:   double newUp = (aij > 0) ? m_rhs/aij : m_lhs/aij;  // implicit rhs
+spxmainsm.cpp:   double maxViolation = -1.0;
+spxmainsm.cpp:      double aij   = m_row.value(k);
+spxmainsm.cpp:      double oldLo = m_oldLowers[k];
+spxmainsm.cpp:      double oldUp = m_oldUppers[k];
+spxmainsm.cpp:            double violation = fabs(r[cIdx]/aij);
+spxmainsm.cpp:      double aij = m_row.value(bas_k);
+spxmainsm.cpp:      double multiplier = r[cBasisCandidate]/aij;
+spxmainsm.cpp:      double val = m_objs[bas_k];
+spxmainsm.cpp:   double val = m_obj;
+spxmainsm.cpp:      double minRowUp = infinity;
+spxmainsm.cpp:	 double           val = 0.0;
+spxmainsm.cpp:         double scale = maxAbs(m_lRhs[k], val);
+spxmainsm.cpp:         double z = (m_lRhs[k] / scale) - (val / scale);
+spxmainsm.cpp:         double up = z * scale / row[m_j];
+spxmainsm.cpp:      double maxRowLo = -infinity;
+spxmainsm.cpp:	 double           val = 0.0;
+spxmainsm.cpp:         double scale = maxAbs(m_lRhs[k], val);
+spxmainsm.cpp:         double z = (m_lRhs[k] / scale) - (val / scale);
+spxmainsm.cpp:         double lo = z * scale / row[m_j];
+spxmainsm.cpp:   double aij = m_row[m_j];
+spxmainsm.cpp:   double scale1 = maxAbs(m_lhs, s[m_i]);
+spxmainsm.cpp:   double scale2 = maxAbs(m_rhs, s[m_i]);
+spxmainsm.cpp:   double z1 = (m_lhs / scale1) - (s[m_i] / scale1);
+spxmainsm.cpp:   double z2 = (m_rhs / scale2) - (s[m_i] / scale2);
+spxmainsm.cpp:   double lo = (aij > 0) ? z1 * scale1 / aij : z2 * scale2 / aij;
+spxmainsm.cpp:   double up = (aij > 0) ? z2 * scale2 / aij : z1 * scale1 / aij;
+spxmainsm.cpp:   double val = 0.0;
+spxmainsm.cpp:   double aij = m_row[m_j];
+spxmainsm.cpp:   double scale = maxAbs(m_lRhs, val);
+spxmainsm.cpp:   double z = (m_lRhs / scale) - (val / scale);
+spxmainsm.cpp:      double val  = m_kObj;
+spxmainsm.cpp:      double aik  = m_col[m_i];
+spxmainsm.cpp:      double scale1 = maxAbs(x[m_k], m_loK);
+spxmainsm.cpp:      double scale2 = maxAbs(x[m_k], m_upK);
+spxmainsm.cpp:      double z1 = (x[m_k] / scale1) - (m_loK / scale1);
+spxmainsm.cpp:      double z2 = (x[m_k] / scale2) - (m_upK / scale2);
+spxmainsm.cpp:   double maxVal  = infinity / 5.0;
+spxmainsm.cpp:   double tol = feastol() * 1e-2;
+spxmainsm.cpp:      double lhs = lp.lhs(i);
+spxmainsm.cpp:      double rhs = lp.rhs(i);
+spxmainsm.cpp:      double lo = lp.lower(j);
+spxmainsm.cpp:      double up = lp.upper(j);
+spxmainsm.cpp:         double absBnd = (lo > up) ? lo : up;
+spxmainsm.cpp:            double aij = fabs(col.value(i));
+spxmainsm.cpp:      double obj = lp.obj(j);
+spxmainsm.cpp:         double val;
+spxmainsm.cpp:   double aij = row.value(0);
+spxmainsm.cpp:   double lo  = -infinity;
+spxmainsm.cpp:   double up  =  infinity;
+spxmainsm.cpp:   double oldLo = lp.lower(j);
+spxmainsm.cpp:   double oldUp = lp.upper(j);
+spxmainsm.cpp:      double lhsBnd = 0.0; // minimal activity (finite summands)
+spxmainsm.cpp:      double rhsBnd = 0.0; // maximal activity (finite summands)
+spxmainsm.cpp:         double aij = row.value(k);
+spxmainsm.cpp:            double aij = row.value(k);
+spxmainsm.cpp:                  double lo    = -infinity;
+spxmainsm.cpp:                  double scale = maxAbs(lp.lhs(i), rhsBnd);
+spxmainsm.cpp:                  double z = (lp.lhs(i) / scale) - (rhsBnd / scale);
+spxmainsm.cpp:                  double up    = infinity;
+spxmainsm.cpp:                  double scale = maxAbs(lp.rhs(i), lhsBnd);
+spxmainsm.cpp:                  double z = (lp.rhs(i) / scale) - (lhsBnd / scale);
+spxmainsm.cpp:                  double up    = infinity;
+spxmainsm.cpp:                  double scale = maxAbs(lp.lhs(i), rhsBnd);
+spxmainsm.cpp:                  double z = (lp.lhs(i) / scale) - (rhsBnd / scale);
+spxmainsm.cpp:                  double lo    = -infinity;
+spxmainsm.cpp:                  double scale = maxAbs(lp.rhs(i), lhsBnd);
+spxmainsm.cpp:                  double z = (lp.rhs(i) / scale) - (lhsBnd / scale);
+spxmainsm.cpp:         DataArray<double> lowers(row.size());
+spxmainsm.cpp:         DataArray<double> uppers(row.size());
+spxmainsm.cpp:            double aij = row.value(k);
+spxmainsm.cpp:         DataArray<double> lowers(row.size());
+spxmainsm.cpp:         DataArray<double> uppers(row.size());
+spxmainsm.cpp:            double aij   = row.value(k);
+spxmainsm.cpp:   // 5. free column singleton combined with doubleton equation are
+spxmainsm.cpp:         double val;
+spxmainsm.cpp:         double aij = col.value(0);
+spxmainsm.cpp:            double lhs = -infinity;
+spxmainsm.cpp:            double rhs = +infinity;
+spxmainsm.cpp:         // 5. not free column singleton combined with doubleton equation
+spxmainsm.cpp:                              << " with doubleton equation ->"; )
+spxmainsm.cpp:            double lhs = lp.lhs(i);
+spxmainsm.cpp:            double aik;
+spxmainsm.cpp:            double lo, up;
+spxmainsm.cpp:            double oldLower = lp.lower(k);
+spxmainsm.cpp:            double oldUpper = lp.upper(k);
+spxmainsm.cpp:            double scale1 = maxAbs(lhs, aij * lp.upper(j));
+spxmainsm.cpp:            double scale2 = maxAbs(lhs, aij * lp.lower(j));
+spxmainsm.cpp:            double z1 = (lhs / scale1) - (aij * lp.upper(j) / scale1);
+spxmainsm.cpp:            double z2 = (lhs / scale2) - (aij * lp.lower(j) / scale2);
+spxmainsm.cpp:            double slackVal = lp.lhs(i);
+spxmainsm.cpp:               double sMaxObj = lp.maxObj(j) / aij; // after substituting variable j in objective
+spxmainsm.cpp:               double sLo     = lp.lhs(i);
+spxmainsm.cpp:               double sUp     = lp.rhs(i);
+spxmainsm.cpp:                  double new_obj = lp.obj(k) - (lp.obj(j) * row.value(h) / aij);
+spxmainsm.cpp:         double aij = lp.colVector(j).value(0);
+spxmainsm.cpp:         double bound = lp.maxObj(j) / aij;
+spxmainsm.cpp:         double aij = col.value(k);
+spxmainsm.cpp:      double obj = lp.maxObj(j);
+spxmainsm.cpp:   DataArray<double> scale(lp.nRows());            // scaling factor for each row
+spxmainsm.cpp:   double oldVal;
+spxmainsm.cpp:         double aij = col.value(k);
+spxmainsm.cpp:         double maxLhs    = -infinity;
+spxmainsm.cpp:         double minRhs    = +infinity;
+spxmainsm.cpp:               double scaledLhs, scaledRhs;
+spxmainsm.cpp:               double factor = scale[rowIdx] / scale[i];
+spxmainsm.cpp:            double newLhs = (maxLhs > lp.lhs(rowIdx)) ? maxLhs : lp.lhs(rowIdx);
+spxmainsm.cpp:            double newRhs = (minRhs < lp.rhs(rowIdx)) ? minRhs : lp.rhs(rowIdx);
+spxmainsm.cpp:   DataArray<double> scale(lp.nCols());           // scaling factor for each column
+spxmainsm.cpp:   double oldVal;
+spxmainsm.cpp:         double aij = row.value(k);
+spxmainsm.cpp:                  double cj1 = lp.maxObj(j1);
+spxmainsm.cpp:                  double cj2 = lp.maxObj(j2);
+spxmainsm.cpp:                  double factor = scale[j1] / scale[j2];
+spxmainsm.cpp:                  double objDif = cj1 - cj2 * scale[j1] / scale[j2];
+spxmainsm.cpp:   double lo            = lp.lower(j);
+spxmainsm.cpp:            double y     = lo * col.value(k);
+spxmainsm.cpp:            double scale = maxAbs(lp.rhs(i), y);
+spxmainsm.cpp:            double rhs = (lp.rhs(i) / scale) - (y / scale);
+spxmainsm.cpp:            double y     = lo * col.value(k);
+spxmainsm.cpp:            double scale = maxAbs(lp.lhs(i), y);
+spxmainsm.cpp:            double lhs = (lp.lhs(i) / scale) - (y / scale);
+spxmainsm.cpp:SPxSimplifier::Result SPxMainSM::simplify(SPxLP& lp, double eps, double ftol, double otol, bool keepbounds)
+spxmainsm.cpp:                     << m_stat[DOUBLETON_ROW]        << " singleton columns combined with a doubleton equation\n"
+spxmainsm.h:   - doubleton equations combined with a column singleton
+spxmainsm.h:      static double eps()
+spxmainsm.h:      const double m_lhs;
+spxmainsm.h:      const double m_rhs;
+spxmainsm.h:      const double m_obj;
+spxmainsm.h:      const double m_newLo;
+spxmainsm.h:      const double m_newUp;
+spxmainsm.h:      const double m_oldLo;
+spxmainsm.h:      const double m_oldUp;
+spxmainsm.h:                     double newLo, double newUp, double oldLo, double oldUp)
+spxmainsm.h:      const double      m_lRhs;
+spxmainsm.h:      DataArray<double> m_objs;
+spxmainsm.h:      DataArray<double> m_oldLowers;
+spxmainsm.h:      DataArray<double> m_oldUppers;
+spxmainsm.h:      const double      m_lhs;
+spxmainsm.h:      const double      m_rhs;
+spxmainsm.h:      ForceConstraintPS(const SPxLP& lp, int _i, bool lhsFixed, DataArray<bool>& fixCols, DataArray<double>& lo, DataArray<double>& up)
+spxmainsm.h:      const double m_val;
+spxmainsm.h:      const double m_obj;
+spxmainsm.h:      const double m_lower;
+spxmainsm.h:      const double m_upper;
+spxmainsm.h:      FixVariablePS(const SPxLP& lp, SPxMainSM& simplifier, int _j, const double val, bool correctIdx = true)
+spxmainsm.h:      FixBoundsPS(const SPxLP& lp, int j, double val)
+spxmainsm.h:      const double      m_bnd;
+spxmainsm.h:      const double m_lhs;
+spxmainsm.h:      const double m_rhs;
+spxmainsm.h:      const double m_lower;
+spxmainsm.h:      const double m_upper;
+spxmainsm.h:      const double m_obj;
+spxmainsm.h:      const double m_lRhs;
+spxmainsm.h:      FreeColSingletonPS(const SPxLP& lp, SPxMainSM& simplifier, int _j, int _i, double slackVal)
+spxmainsm.h:   /**@brief   Postsolves doubleton equations combined with a column singleton.
+spxmainsm.h:      const double m_jObj;
+spxmainsm.h:      const double m_kObj;
+spxmainsm.h:      const double m_aij;
+spxmainsm.h:      const double m_newLo;
+spxmainsm.h:      const double m_newUp;
+spxmainsm.h:      const double m_oldLo;
+spxmainsm.h:      const double m_oldUp;
+spxmainsm.h:      const double m_Lo_j;
+spxmainsm.h:      const double m_Up_j;
+spxmainsm.h:      const double m_lhs;
+spxmainsm.h:      const double m_rhs;
+spxmainsm.h:      DoubletonEquationPS(const SPxLP& lp, int _j, int _k, int _i, double oldLo, double oldUp)
+spxmainsm.h:                      const DataArray<double> scale, const DataArray<int> perm, const DataArray<bool> isLhsEqualRhs,
+spxmainsm.h:         double rowScale = scale[_i];
+spxmainsm.h:      const double           m_loJ;
+spxmainsm.h:      const double           m_upJ;
+spxmainsm.h:      const double           m_loK;
+spxmainsm.h:      const double           m_upK;
+spxmainsm.h:      const double           m_scale;
+spxmainsm.h:      DuplicateColsPS(const SPxLP& lp, int _j, int _k, double scale, DataArray<int>  perm, bool isFirst = false, bool isTheLast = false)
+spxmainsm.h:   double                            m_epsilon;    ///< epsilon zero.
+spxmainsm.h:   double                            m_feastol;    ///< primal feasibility tolerance.
+spxmainsm.h:   double                            m_opttol;     ///< dual feasibility tolerance.
+spxmainsm.h:   double epsZero() const
+spxmainsm.h:   double feastol() const
+spxmainsm.h:   double opttol() const
+spxmainsm.h:   virtual Result simplify(SPxLP& lp, double eps, double delta)
+spxmainsm.h:   virtual Result simplify(SPxLP& lp, double eps, double ftol, double otol, bool keepbounds = false);
+spxout.h:   DEFINE_OUTPUT_OPERATOR( double )
+spxout.h:   DEFINE_OUTPUT_OPERATOR( long double )
+spxparmultpr.cpp:   double x;
+spxparmultpr.cpp:      double val;
+spxparmultpr.cpp:      double eps = -theeps;
+spxparmultpr.cpp:      double bestx = -theeps;
+spxparmultpr.cpp:   double x;
+spxparmultpr.cpp:   double best = -theeps;
+spxparmultpr.cpp:   //    const double* up  = thesolver->ubBound();
+spxparmultpr.cpp:   //    const double* low = thesolver->lbBound();
+spxparmultpr.h:      double test;
+spxpricer.h:   double        theeps;
+spxpricer.h:      double val;
+spxpricer.h:      double operator() (
+spxpricer.h:   virtual double epsilon() const
+spxpricer.h:   virtual void setEpsilon(double eps)
+spxproof.cpp:double SPxSolver::provedBound(Vector& dualsol, const Vector& objvec) const
+spxproof.cpp:   double eps = opttol();
+spxproof.cpp:double SPxSolver::provedDualbound() const
+spxquality.cpp:void SPxSolver::qualConstraintViolation(double& maxviol, double& sumviol) const
+spxquality.cpp:      double val = 0.0;         
+spxquality.cpp:      double viol = 0.0;
+spxquality.cpp:   double& maxviol, double& sumviol) const
+spxquality.cpp:      double viol = 0.0;
+spxquality.cpp:void SPxSolver::qualSlackViolation(double& maxviol, double& sumviol) const
+spxquality.cpp:      double val = 0.0;         
+spxquality.cpp:      double viol = fabs(val - slacks[row]);
+spxquality.cpp:void SPxSolver::qualRedCostViolation(double& maxviol, double& sumviol) const
+spxquality.cpp:         double x = coTest()[i];
+spxquality.cpp:         double x = test()[i];
+spxquality.cpp:         double x = fTest()[i];
+spxratiotester.h:   double delta;
+spxratiotester.h:   virtual void setDelta( double newDelta )
+spxratiotester.h:   virtual double getDelta()
+spxratiotester.h:   virtual int selectLeave(double& val, double enterTest) = 0;
+spxratiotester.h:   virtual SPxId selectEnter(double& val, int leaveIdx) = 0;
+spxscaler.cpp:double SPxScaler::computeScale(double /*mini*/, double /*maxi*/) const
+spxscaler.cpp:double SPxScaler::computeScalingVecs(
+spxscaler.cpp:   const DataArray<double>& coScaleval, 
+spxscaler.cpp:   DataArray<double>&       scaleval) 
+spxscaler.cpp:   double pmax = 0.0;
+spxscaler.cpp:      double maxi = 0.0;
+spxscaler.cpp:      double mini = infinity;
+spxscaler.cpp:         double x = fabs(vec.value(j) * coScaleval[vec.index(j)]);
+spxscaler.cpp:      double p = maxi / mini;
+spxscaler.cpp:double SPxScaler::minAbsColscale() const
+spxscaler.cpp:   double mini = infinity;
+spxscaler.cpp:double SPxScaler::maxAbsColscale() const
+spxscaler.cpp:   double maxi = 0.0;
+spxscaler.cpp:double SPxScaler::minAbsRowscale() const
+spxscaler.cpp:   double mini = infinity;
+spxscaler.cpp:double SPxScaler::maxAbsRowscale() const
+spxscaler.cpp:   double maxi = 0.0;
+spxscaler.cpp:double SPxScaler::maxColRatio(const SPxLP& lp) const
+spxscaler.cpp:   double pmax = 0.0;
+spxscaler.cpp:      double           mini = infinity;
+spxscaler.cpp:      double           maxi = 0.0;
+spxscaler.cpp:         double x = fabs(vec.value(j));
+spxscaler.cpp:      double p = maxi / mini;
+spxscaler.cpp:double SPxScaler::maxRowRatio(const SPxLP& lp) const
+spxscaler.cpp:   double pmax = 0.0;
+spxscaler.cpp:      double           mini = infinity;
+spxscaler.cpp:      double           maxi = 0.0;
+spxscaler.cpp:         double x = fabs(vec.value(j));
+spxscaler.cpp:      double p = maxi / mini;
+spxscaler.h:   DataArray < double > m_colscale;  ///< column scaling factors
+spxscaler.h:   DataArray < double > m_rowscale;  ///< row scaling factors
+spxscaler.h:   virtual double computeScale(double mini, double maxi) const;
+spxscaler.h:   virtual double computeScalingVecs( const SVSet* vecset, 
+spxscaler.h:                                    const DataArray<double>& coScaleval, 
+spxscaler.h:                                    DataArray<double>& scaleval );
+spxscaler.h:   virtual double minAbsColscale() const;
+spxscaler.h:   virtual double maxAbsColscale() const;
+spxscaler.h:   virtual double minAbsRowscale() const;
+spxscaler.h:   virtual double maxAbsRowscale() const;
+spxscaler.h:   virtual double maxColRatio(const SPxLP& lp) const;
+spxscaler.h:   virtual double maxRowRatio(const SPxLP& lp) const;
+spxshift.cpp:   double allow = entertol() - epsilon();
+spxshift.cpp:   double allow = leavetol() - epsilon();
+spxshift.cpp:   double eps,
+spxshift.cpp:   double p_delta,
+spxshift.cpp:   const double* vec = uvec.get_const_ptr();
+spxshift.cpp:   const double* upd = uvec.delta().values();
+spxshift.cpp:   double x, l, u;
+spxshift.cpp:   double eps,
+spxshift.cpp:   double p_delta,
+spxshift.cpp:   const double* vec = uvec.get_const_ptr();
+spxshift.cpp:   const double* upd = uvec.delta().values();
+spxshift.cpp:   double x, l, u;
+spxshift.cpp:double SPxSolver::perturbMin(
+spxshift.cpp:   double eps,
+spxshift.cpp:   double p_delta,
+spxshift.cpp:   const double* vec = uvec.get_const_ptr();
+spxshift.cpp:   const double* upd = uvec.delta().values();
+spxshift.cpp:   double x, l, u;
+spxshift.cpp:   double l_theShift = 0;
+spxshift.cpp:double SPxSolver::perturbMax(
+spxshift.cpp:   double eps,
+spxshift.cpp:   double p_delta,
+spxshift.cpp:   const double* vec = uvec.get_const_ptr();
+spxshift.cpp:   const double* upd = uvec.delta().values();
+spxshift.cpp:   double x, l, u;
+spxshift.cpp:   double l_theShift = 0;
+spxshift.cpp:      double t_up, t_low;
+spxshift.cpp:         double eps = entertol();
+spxshift.cpp:         double eps = leavetol();
+spxsimplifier.h:   double        m_objoffset;
+spxsimplifier.h:   virtual double timeUsed() const
+spxsimplifier.h:   virtual Result simplify(SPxLP& lp, double eps, double delta) = 0;
+spxsimplifier.h:   virtual Result simplify(SPxLP& lp, double eps, double feastol, double opttol, bool keepbounds = false) = 0;
+spxsimplifier.h:   virtual double getObjoffset() const
+spxsimplifier.h:   virtual void addObjoffset(const double val)
+spxsolve.cpp:bool SPxSolver::precisionReached(double& newpricertol) const
+spxsolve.cpp:   double maxViolRedCost;
+spxsolve.cpp:   double sumViolRedCost;
+spxsolve.cpp:   double maxViolBounds;
+spxsolve.cpp:   double sumViolBounds;
+spxsolve.cpp:   double maxViolConst;
+spxsolve.cpp:   double sumViolConst;
+spxsolve.cpp:   double  minShift = infinity;
+spxsolve.cpp:   double  lastDelta = 1;
+spxsolve.cpp:   double  stallRefValue;
+spxsolve.cpp:   double  stallRefShift;
+spxsolve.cpp:         double maxpricertol = leavetol();
+spxsolve.cpp:         double minpricertol = 0.01 * maxpricertol;
+spxsolve.cpp:                  double newpricertol = minpricertol;
+spxsolve.cpp:               double maxinfeas = maxInfeas();
+spxsolve.cpp:         double maxpricertol = entertol();
+spxsolve.cpp:         double minpricertol = 0.01 * maxpricertol;
+spxsolve.cpp:                  double newpricertol = minpricertol;
+spxsolve.cpp:               double maxinfeas = maxInfeas();
+spxsolve.cpp:      double    val;
+spxsolve.cpp:   double* p_value,
+spxsolver.cpp:   double tmpfeastol = feastol();
+spxsolver.cpp:   double tmpopttol = opttol();
+spxsolver.cpp:double SPxSolver::maxInfeas() const
+spxsolver.cpp:   double inf = 0.0;
+spxsolver.cpp:double SPxSolver::nonbasicValue() const
+spxsolver.cpp:   double val = 0;
+spxsolver.cpp:double SPxSolver::value() const
+spxsolver.cpp:   double x;
+spxsolver.cpp:void SPxSolver::setFeastol(double d)
+spxsolver.cpp:void SPxSolver::setOpttol(double d)
+spxsolver.cpp:void SPxSolver::setDelta(double d)
+spxsolver.cpp:void SPxSolver::setTerminationTime(double p_time)
+spxsolver.cpp:double SPxSolver::terminationTime() const
+spxsolver.cpp:      double currtime = time();
+spxsolver.cpp:      double avgtimeinterval = (currtime + cumulativeTime()) / (double)(nCallsToTimelim);
+spxsolver.cpp:void SPxSolver::setTerminationValue(double p_value)
+spxsolver.cpp:double SPxSolver::terminationValue() const
+spxsolver.h:   double           theCumulativeTime; ///< cumulative time spent in all calls to method solve()
+spxsolver.h:   double           maxTime;     ///< maximum allowed time.
+spxsolver.h:   double           objLimit;    ///< objective value limit.
+spxsolver.h:   double           m_entertol;  ///< feasibility tolerance maintained during entering algorithm
+spxsolver.h:   double           m_leavetol;  ///< feasibility tolerance maintained during leaving algorithm
+spxsolver.h:   double           theShift;    ///< sum of all shifts applied to any bound.
+spxsolver.h:   double           lastShift;   ///< for forcing feasibility.
+spxsolver.h:   double           instableLeaveVal;
+spxsolver.h:   double           instableEnterVal;
+spxsolver.h:   double           sparsePricingFactor; ///< enable sparse pricing when viols < factor * dim()
+spxsolver.h:   virtual bool precisionReached(double& newpricertol) const;
+spxsolver.h:   virtual double value() const;
+spxsolver.h:   double provedBound(Vector& dualsol, const Vector& objvec) const;
+spxsolver.h:   virtual double provedDualbound() const;
+spxsolver.h:   double epsilon() const
+spxsolver.h:   double entertol() const
+spxsolver.h:   double leavetol() const
+spxsolver.h:   double feastol() const
+spxsolver.h:   double opttol() const
+spxsolver.h:   double delta() const
+spxsolver.h:   void setFeastol(double d);
+spxsolver.h:   void setOpttol(double d);
+spxsolver.h:   void setDelta(double d);
+spxsolver.h:   void setSparsePricingFactor(double fac)
+spxsolver.h:   virtual void changeObj(int i, const double& newVal);
+spxsolver.h:   virtual void changeObj(SPxColId p_id, const double& p_newVal)
+spxsolver.h:   virtual void changeLower(int i, const double& newLower);
+spxsolver.h:   virtual void changeLower(SPxColId p_id, const double& p_newLower)
+spxsolver.h:   virtual void changeUpper(int i, const double& newUpper);
+spxsolver.h:   virtual void changeUpper(SPxColId p_id, const double& p_newUpper)
+spxsolver.h:   virtual void changeBounds(int i, const double& newLower, const double& newUpper);
+spxsolver.h:      SPxColId p_id, const double& p_newLower, const double& p_newUpper)
+spxsolver.h:   virtual void changeLhs(int i, const double& newLhs);
+spxsolver.h:   virtual void changeLhs(SPxRowId p_id, const double& p_newLhs)
+spxsolver.h:   virtual void changeRhs(int i, const double& newRhs);
+spxsolver.h:   virtual void changeRhs(SPxRowId p_id, const double& p_newRhs)
+spxsolver.h:   virtual void changeRange(int i, const double& newLhs, const double& newRhs);
+spxsolver.h:      SPxRowId p_id, const double& p_newLhs, const double& p_newRhs)
+spxsolver.h:   virtual void changeElement(int i, int j, const double& val);
+spxsolver.h:      SPxRowId rid, SPxColId cid, const double& val)
+spxsolver.h:   double computePvec(int i);
+spxsolver.h:   double computeTest(int i);
+spxsolver.h:   void shiftUBbound(int i, double to)
+spxsolver.h:   void shiftLBbound(int i, double to)
+spxsolver.h:   void shiftUPbound(int i, double to)
+spxsolver.h:   void shiftLPbound(int i, double to)
+spxsolver.h:   void shiftUCbound(int i, double to)
+spxsolver.h:   void shiftLCbound(int i, double to)
+spxsolver.h:   virtual double shift() const
+spxsolver.h:   virtual void qualConstraintViolation(double& maxviol, double& sumviol) const;
+spxsolver.h:   virtual void qualBoundViolation(double& maxviol, double& sumviol) const;
+spxsolver.h:   virtual void qualSlackViolation(double& maxviol, double& sumviol) const;
+spxsolver.h:   virtual void qualRedCostViolation(double& maxviol, double& sumviol) const;
+spxsolver.h:      const UpdateVector& vec, Vector& low, Vector& up, double eps, double delta,
+spxsolver.h:      const UpdateVector& vec, Vector& low, Vector& up, double eps, double delta,
+spxsolver.h:   double perturbMin(const UpdateVector& uvec,
+spxsolver.h:      Vector& low, Vector& up, double eps, double delta,
+spxsolver.h:   double perturbMax(const UpdateVector& uvec,
+spxsolver.h:      Vector& low, Vector& up, double eps, double delta,
+spxsolver.h:   virtual double maxInfeas() const;
+spxsolver.h:   double coTest(int i, SPxBasis::Desc::Status stat) const;
+spxsolver.h:   double test(int i, SPxBasis::Desc::Status stat) const;
+spxsolver.h:   double nonbasicValue() const;
+spxsolver.h:      double& leaveMax, double& leavebound, int& leaveNum);
+spxsolver.h:   virtual void getLeaveVals2(double leaveMax, SPxId enterId,
+spxsolver.h:      double& enterBound, double& newUBbound,
+spxsolver.h:      double& newLBbound, double& newCoPrhs);
+spxsolver.h:   virtual void getEnterVals(SPxId id, double& enterTest,
+spxsolver.h:      double& enterUB, double& enterLB, double& enterVal, double& enterMax,
+spxsolver.h:      double& enterPric, SPxBasis::Desc::Status& enterStat, double& enterRO);
+spxsolver.h:      double enterMax, double& leaveBound);
+spxsolver.h:      double leaveVal, const SVector& vec);
+spxsolver.h:      double enterTest, SPxBasis::Desc::Status enterStat);
+spxsolver.h:   void clearDualBounds(SPxBasis::Desc::Status, double&, double&) const;
+spxsolver.h:   virtual void setTerminationTime(double time = infinity);
+spxsolver.h:   virtual double terminationTime() const;
+spxsolver.h:   virtual void setTerminationValue(double value = infinity);
+spxsolver.h:   virtual double terminationValue() const;
+spxsolver.h:   virtual double objValue() const
+spxsolver.h:   getResult( double* value = 0, Vector* primal = 0,
+spxsolver.h:   double time() const
+spxsolver.h:   double cumulativeTime() const
+spxsteeppr.cpp:   double mult, 
+spxsteeppr.cpp:   double /*tie*/, 
+spxsteeppr.cpp:   double /*cotie*/,
+spxsteeppr.cpp:   double shift, 
+spxsteeppr.cpp:   double coshift)
+spxsteeppr.cpp:   DataArray<double>* p;
+spxsteeppr.cpp:   DataArray<double>* cp;
+spxsteeppr.cpp:   // double rtie;
+spxsteeppr.cpp:   // double ctie;
+spxsteeppr.cpp:   double rshift;
+spxsteeppr.cpp:   double cshift;
+spxsteeppr.cpp:      double mult = 1e-8 / Real(1 + thesolver->dim() + thesolver->coDim());
+spxsteeppr.cpp:      // double               delta         = 0.1;   // thesolver->epsilon();
+spxsteeppr.cpp:      double        delta         = 0.1 + 1.0 / thesolver->basis().iteration();
+spxsteeppr.cpp:      double*       coPenalty_ptr = coPenalty.get_ptr();
+spxsteeppr.cpp:      const double* workVec_ptr   = workVec.get_const_ptr();
+spxsteeppr.cpp:      const double* rhoVec        = thesolver->fVec().delta().values();
+spxsteeppr.cpp:      double        rhov_1        = 1.0 / rhoVec[n];
+spxsteeppr.cpp:      double        beta_q        = thesolver->coPvec().delta().length2() * rhov_1 * rhov_1;
+spxsteeppr.cpp:int SPxSteepPR::buildBestPriceVectorLeave( double feastol )
+spxsteeppr.cpp:   double x;
+spxsteeppr.cpp:   const double* fTest = thesolver->fTest().get_const_ptr();
+spxsteeppr.cpp:   const double* cpen = coPenalty.get_const_ptr();
+spxsteeppr.cpp:   const double* prefPtr = leavePref.get_const_ptr();
+spxsteeppr.cpp:int SPxSteepPR::selectLeaveX(double tol)
+spxsteeppr.cpp:   const double* coPenalty_ptr = coPenalty.get_const_ptr();
+spxsteeppr.cpp:   const double* fTest         = thesolver->fTest().get_const_ptr();
+spxsteeppr.cpp:   //    const double* low     = thesolver->lbBound();
+spxsteeppr.cpp:   //    const double* up      = thesolver->ubBound();
+spxsteeppr.cpp:   const double* p             = leavePref.get_const_ptr();
+spxsteeppr.cpp:   double best = -infinity;
+spxsteeppr.cpp:   double x;
+spxsteeppr.cpp:int SPxSteepPR::selectLeaveSparse(double tol)
+spxsteeppr.cpp:   const double* coPenalty_ptr = coPenalty.get_const_ptr();
+spxsteeppr.cpp:   const double* fTest         = thesolver->fTest().get_const_ptr();
+spxsteeppr.cpp:   const double* p             = leavePref.get_const_ptr();
+spxsteeppr.cpp:   double best = -infinity;
+spxsteeppr.cpp:   double x;
+spxsteeppr.cpp:int SPxSteepPR::selectLeaveHyper(double tol)
+spxsteeppr.cpp:   const double* coPen = coPenalty.get_const_ptr();
+spxsteeppr.cpp:   const double* fTest = thesolver->fTest().get_const_ptr();
+spxsteeppr.cpp:   const double* prefPtr  = leavePref.get_const_ptr();
+spxsteeppr.cpp:   double leastBest = infinity;
+spxsteeppr.cpp:   double best = -infinity;
+spxsteeppr.cpp:   double x;
+spxsteeppr.cpp:      double delta = 2 + 1.0 / thesolver->basis().iteration();
+spxsteeppr.cpp:      double* coPenalty_ptr = coPenalty.get_ptr();
+spxsteeppr.cpp:      double* penalty_ptr = penalty.get_ptr();
+spxsteeppr.cpp:      const double* workVec_ptr = workVec.get_const_ptr();
+spxsteeppr.cpp:      const double* pVec = thesolver->pVec().delta().values();
+spxsteeppr.cpp:      const double* coPvec = thesolver->coPvec().delta().values();
+spxsteeppr.cpp:      double xi_p = 1 / thesolver->fVec().delta()[n];
+spxsteeppr.cpp:      double xi_ip, x;
+spxsteeppr.cpp:SPxId SPxSteepPR::buildBestPriceVectorEnterDim( double& best, double feastol )
+spxsteeppr.cpp:   const double* cp            = coPref.get_const_ptr();
+spxsteeppr.cpp:   const double* coTest        = thesolver->coTest().get_const_ptr();
+spxsteeppr.cpp:   const double* coPenalty_ptr = coPenalty.get_const_ptr();
+spxsteeppr.cpp:   double x;
+spxsteeppr.cpp:SPxId SPxSteepPR::buildBestPriceVectorEnterCoDim( double& best, double feastol )
+spxsteeppr.cpp:   const double* p           = pref.get_const_ptr();
+spxsteeppr.cpp:   const double* test        = thesolver->test().get_const_ptr();
+spxsteeppr.cpp:   const double* penalty_ptr = penalty.get_const_ptr();
+spxsteeppr.cpp:   double x;
+spxsteeppr.cpp:SPxId SPxSteepPR::selectEnterX(double tol)
+spxsteeppr.cpp:   double best;
+spxsteeppr.cpp:   double bestCo;
+spxsteeppr.cpp:SPxId SPxSteepPR::selectEnterHyperDim(double& best, double tol)
+spxsteeppr.cpp:   const double* cp            = coPref.get_const_ptr();
+spxsteeppr.cpp:   const double* coTest        = thesolver->coTest().get_const_ptr();
+spxsteeppr.cpp:   const double* coPenalty_ptr = coPenalty.get_const_ptr();
+spxsteeppr.cpp:   double leastBest = infinity;
+spxsteeppr.cpp:   double x;
+spxsteeppr.cpp:SPxId SPxSteepPR::selectEnterHyperCoDim(double& best, double tol)
+spxsteeppr.cpp:   const double* p           = pref.get_const_ptr();
+spxsteeppr.cpp:   const double* test        = thesolver->test().get_const_ptr();
+spxsteeppr.cpp:   const double* penalty_ptr = penalty.get_const_ptr();
+spxsteeppr.cpp:   double leastBest = infinity;
+spxsteeppr.cpp:   double x;
+spxsteeppr.cpp:SPxId SPxSteepPR::selectEnterSparseDim(double& best, double tol)
+spxsteeppr.cpp:   const double* cp            = coPref.get_const_ptr();
+spxsteeppr.cpp:   const double* coTest        = thesolver->coTest().get_const_ptr();
+spxsteeppr.cpp:   const double* coPenalty_ptr = coPenalty.get_const_ptr();
+spxsteeppr.cpp:   double x;
+spxsteeppr.cpp:   double coPen;
+spxsteeppr.cpp:   double coPrefValue;
+spxsteeppr.cpp:SPxId SPxSteepPR::selectEnterSparseCoDim(double& best, double tol)
+spxsteeppr.cpp:   const double* p             = pref.get_const_ptr();
+spxsteeppr.cpp:   const double* test          = thesolver->test().get_const_ptr();
+spxsteeppr.cpp:   const double* penalty_ptr   = penalty.get_const_ptr();
+spxsteeppr.cpp:   double x;
+spxsteeppr.cpp:   double pen;
+spxsteeppr.cpp:   double prefValue;
+spxsteeppr.cpp:SPxId SPxSteepPR::selectEnterDenseDim(double& best, double tol)
+spxsteeppr.cpp:   const double* cp            = coPref.get_const_ptr();
+spxsteeppr.cpp:   const double* coTest        = thesolver->coTest().get_const_ptr();
+spxsteeppr.cpp:   const double* coPenalty_ptr = coPenalty.get_const_ptr();
+spxsteeppr.cpp:   double x;
+spxsteeppr.cpp:SPxId SPxSteepPR::selectEnterDenseCoDim(double& best, double tol)
+spxsteeppr.cpp:   const double* p             = pref.get_const_ptr();
+spxsteeppr.cpp:   const double* test          = thesolver->test().get_const_ptr();
+spxsteeppr.cpp:   const double* penalty_ptr   = penalty.get_const_ptr();
+spxsteeppr.cpp:   double x;
+spxsteeppr.cpp:      double x;
+spxsteeppr.h:   double pi_p;
+spxsteeppr.h:   DataArray < double > coPref;
+spxsteeppr.h:   DataArray < double > pref;
+spxsteeppr.h:   DataArray < double > leavePref;
+spxsteeppr.h:   void setupPrefsX(double mult, double /*tie*/, double /*cotie*/, double shift, double coshift);
+spxsteeppr.h:   int buildBestPriceVectorLeave( double feastol );
+spxsteeppr.h:   int selectLeaveX(double tol);
+spxsteeppr.h:   int selectLeaveSparse(double tol);
+spxsteeppr.h:   int selectLeaveHyper(double tol);
+spxsteeppr.h:   SPxId buildBestPriceVectorEnterDim(double& best, double feastol);
+spxsteeppr.h:   SPxId buildBestPriceVectorEnterCoDim(double& best, double feastol);
+spxsteeppr.h:   SPxId selectEnterX(double tol);
+spxsteeppr.h:   SPxId selectEnterSparseDim(double& best, double tol);
+spxsteeppr.h:   SPxId selectEnterSparseCoDim(double& best, double tol);
+spxsteeppr.h:   SPxId selectEnterDenseDim(double& best, double tol);
+spxsteeppr.h:   SPxId selectEnterDenseCoDim(double& best, double tol);
+spxsteeppr.h:   SPxId selectEnterHyperDim(double& best, double feastol);
+spxsteeppr.h:   SPxId selectEnterHyperCoDim(double& best, double feastol);
+spxsumst.cpp:   double x;
+spxsumst.cpp:   double* wrk = work.get_ptr();
+spxsumst.cpp:   const double* lhs = base.lhs().get_const_ptr();
+spxsumst.cpp:   const double* rhs = base.rhs().get_const_ptr();
+spxsumst.cpp:   const double* up = base.upper().get_const_ptr();
+spxsumst.cpp:   const double* low = base.lower().get_const_ptr();
+spxvecs.cpp:            double x;
+spxvecs.cpp:         double x;
+spxvecs.cpp:         double x;
+spxvecs.cpp:         double x;
+spxvectorst.cpp:      double eps = base.epsilon();
+spxvectorst.cpp:      double bias = 10000 * eps;
+spxvectorst.cpp:      double x, y;
+spxvectorst.cpp:      double x, y, len;
+spxweightpr.cpp:   const double* test = thesolver->fTest().get_const_ptr();
+spxweightpr.cpp:   double type = 1 - 2 * (thesolver->rep() == SPxSolver::COLUMN ? 1 : 0);
+spxweightpr.cpp:   double best = type * infinity;
+spxweightpr.cpp:   double x;
+spxweightpr.cpp:   const double* test = thesolver->fTest().get_const_ptr();
+spxweightpr.cpp:   double type = 1 - 2 * (thesolver->rep() == SPxSolver::COLUMN);
+spxweightpr.cpp:   double best = type * infinity;
+spxweightpr.cpp:   double x;
+spxweightpr.cpp:   double best = infinity;
+spxweightpr.cpp:   double x;
+spxweightpr.h:   const double* penalty;
+spxweightpr.h:   const double* coPenalty;
+spxweightpr.h:   double objlength;
+spxweightst.cpp:   const double*      weight;   ///< the weights to compare
+spxweightst.cpp:   double operator()(int i1, int i2) const
+spxweightst.cpp:   const DataArray<double>& rowWeight,
+spxweightst.cpp:   const DataArray<double>& colWeight)
+spxweightst.cpp:      double max = 0;
+spxweightst.cpp:               double x = bVec.value(j);
+spxweightst.cpp:               double x = bVec.value(j);
+spxweightst.cpp:   double maxabs = 1.0;
+spxweightst.cpp:      const double ax            = 1e-3 / obj.maxAbs();
+spxweightst.cpp:      const double bx            = 1.0 / maxabs;
+spxweightst.cpp:      const double nne           = ax / lhs.dim();  // 1e-4 * ax;
+spxweightst.cpp:      const double c_fixed       = 1e+5;
+spxweightst.cpp:      const double r_fixed       = 0; // TK20010103: was 1e+4 (maros-r7)
+spxweightst.cpp:      const double c_dbl_bounded = 1e+1;
+spxweightst.cpp:      const double r_dbl_bounded = 0;
+spxweightst.cpp:      const double c_bounded     = 1e+1;
+spxweightst.cpp:      const double r_bounded     = 0;
+spxweightst.cpp:      const double c_free        = -1e+4;
+spxweightst.cpp:      const double r_free        = -1e+5;
+spxweightst.cpp:         double n = nne * (bse.colVector(i).size() - 1);
+spxweightst.cpp:         double x = ax * obj[i];
+spxweightst.cpp:         double u = bx * up [i];
+spxweightst.cpp:         double l = bx * low[i];
+spxweightst.cpp:               double u = bx * rhs[i];
+spxweightst.cpp:               double l = bx * lhs[i];
+spxweightst.cpp:      const double ax            = 1.0  / obj.maxAbs();
+spxweightst.cpp:      const double bx            = 1e-2 / maxabs;
+spxweightst.cpp:      const double nne           = 1e-4 * bx;
+spxweightst.cpp:      const double c_fixed       = 1e+5;
+spxweightst.cpp:      const double r_fixed       = 1e+4;
+spxweightst.cpp:      const double c_dbl_bounded = 1;
+spxweightst.cpp:      const double r_dbl_bounded = 0;
+spxweightst.cpp:      const double c_bounded     = 0;
+spxweightst.cpp:      const double r_bounded     = 0;
+spxweightst.cpp:      const double c_free        = -1e+4;
+spxweightst.cpp:      const double r_free        = -1e+5;
+spxweightst.cpp:         double n = nne * (bse.colVector(i).size() - 1);
+spxweightst.cpp:         double x = ax  * obj[i];
+spxweightst.cpp:         double u = bx  * up [i];
+spxweightst.cpp:         double l = bx  * low[i];
+spxweightst.cpp:         const double len1 = 1; // (bse.rowVector(i).length() + bse.epsilon());
+spxweightst.cpp:         double n    = 0;  // nne * (bse.rowVector(i).size() - 1);
+spxweightst.cpp:         double u    = bx * len1 * rhs[i];
+spxweightst.cpp:         double l    = bx * len1 * lhs[i];
+spxweightst.cpp:         double x    = ax * len1 * (obj * bse.rowVector(i));
+spxweightst.h:   DataArray < double > * weight;
+spxweightst.h:   DataArray < double > * coWeight;
+spxweightst.h:   DataArray < double > rowWeight;
+spxweightst.h:   DataArray < double > colWeight;
+ssvectorbase.h:   double length() const
+ssvectorbase.h:      return sqrt((double)length2());
+ssvector.h:typedef SSVectorBase<double> SSVector;
+ssvector.h:typedef SSVectorBase<double> SSVectorReal;
+statistics.cpp:      double solTime = solvingTime->time();
+statistics.cpp:      double totTime = readingTime->time() + solTime;
+statistics.cpp:      double otherTime = solTime - syncTime->time() - transformTime->time() - preprocessingTime->time() - simplexTime->time() - rationalTime->time();
+statistics.cpp:         os << " (" << 100*double((iterations - iterationsFromBasis))/double(iterations) << "%)";
+statistics.cpp:         os << " (" << 100*double(iterationsFromBasis)/double(iterations) << "%)";
+statistics.cpp:         os << " (" << 100*double(iterationsPrimal)/double(iterations) << "%)";
+statistics.cpp:         os << " (" << 100*double((iterations - iterationsPrimal))/double(iterations) << "%)";
+statistics.cpp:         os << double(iterations) / double(luFactorizations) << " iterations per factorization\n";
+statistics.cpp:         os << double(luSolves) / double(iterations) << " solves per iteration\n";
+statistics.h:      double luSolveTime;
+statistics.h:      double luFactorizationTime;
+svectorbase.h:   double length() const
+svectorbase.h:      return sqrt((double)length2());
+svectorbase.h:double SVectorBase<double>::operator*(const SVectorBase<S>& w) const
+svectorbase.h:   double x = 0;
+svectorbase.h:   SVectorBase<double>::Element* e = m_elem;
+svector.h:typedef SVectorBase< double > SVector;
+svector.h:typedef SVectorBase< double > SVectorReal;
+svsetbase.h:    *  The management of nonzeros is done by a double linked list IdList<DLPSV>, where the SVectorBase%s are kept in the
+svsetbase.h:   double factor;          ///< sparse vector memory enlargment factor
+svsetbase.h:   SVSetBase<R>(int pmax = -1, int pmemmax = -1, double pfac = 1.1, double pmemFac = 1.2)
+svset.h:typedef SVSetBase<double> SVSet;
+timer.h:       double utime, stime, rtime;
+timer.h:   virtual double stop() = 0;
+timer.h:   virtual double time() const = 0;
+timer.h:   virtual double lastTime() const = 0;
+tmp:         else if( lowerReal(i) <= double(-realParam(SoPlex::INFTY)) && upperReal(i) >= double(realParam(SoPlex::INFTY)) )
+tmp:         else if( lowerReal(i) <= double(-realParam(SoPlex::INFTY)) )
+todouble.sh:sed -i "s/^Real\*/double\*/g" $FILE
+todouble.sh:sed -i "s/^Real\&/double\&/g" $FILE
+todouble.sh:sed -i "s/^Real)/double)/g" $FILE
+todouble.sh:sed -i "s/^Real>/double>/g" $FILE
+todouble.sh:sed -i "s/^Real /double /g" $FILE
+todouble.sh:sed -i "s/\([^A-Za-z]\)Real\*/\1double\*/g" $FILE
+todouble.sh:sed -i "s/\([^A-Za-z]\)Real\&/\1double\&/g" $FILE
+todouble.sh:sed -i "s/\([^A-Za-z]\)Real)/\1double)/g" $FILE
+todouble.sh:sed -i "s/\([^A-Za-z]\)Real>/\1double>/g" $FILE
+todouble.sh:sed -i "s/\([^A-Za-z]\)Real /\1double /g" $FILE
+unitvector.h:   double value(int n) const
+updatevector.h:   double     theval;      ///< update multiplicator 
+updatevector.h:   UpdateVector(int p_dim /*=0*/, double p_eps /*=1e-16*/)
+updatevector.h:   double& value()
+updatevector.h:   double value() const
+usertimer.cpp:double UserTimer::stop()
+usertimer.cpp:double UserTimer::time() const
+usertimer.cpp:double UserTimer::lastTime() const
+usertimer.h:   mutable double lasttime;
+usertimer.h:   double ticks2sec(long ticks) const
+usertimer.h:   virtual double stop();
+usertimer.h:   virtual double time() const;
+usertimer.h:   virtual double lastTime() const;
+vectorbase.h: *  double or Rational values.
+vectorbase.h:   double length() const
+vectorbase.h:      return sqrt((double)length2());
+vectorbase.h:/// Assignment operator (specialization for double).
+vectorbase.h:VectorBase<double>& VectorBase<double>::operator=(const VectorBase<double>& vec)
+vectorbase.h:      memcpy(val, vec.val, (unsigned int)dimen*sizeof(double));
+vectorbase.h:/// Set vector to 0 (specialization for double).
+vectorbase.h:void VectorBase<double>::clear()
+vectorbase.h:      memset(val, 0, (unsigned int)dimen * sizeof(double));
+vector.h:typedef VectorBase< double > Vector;
+vector.h:typedef VectorBase< double > VectorReal;
+wallclocktimer.cpp:double WallclockTimer::stop()
+wallclocktimer.cpp:double WallclockTimer::time() const
+wallclocktimer.cpp:double WallclockTimer::lastTime() const
+wallclocktimer.h:   mutable double lasttime;
+wallclocktimer.h:   double wall2sec(long s, long us) const
+wallclocktimer.h:      return (double)s+ 0.000001 * (double)us;
+wallclocktimer.h:   virtual double stop();
+wallclocktimer.h:   virtual double time() const;
+wallclocktimer.h:   virtual double lastTime() const;

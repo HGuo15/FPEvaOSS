@@ -1,0 +1,5 @@
+localVar: stab1  at _ZN6soplex9SPxFastRT11selectLeaveERdd double -> float
+localVar: stab  at _ZN6soplex9SPxFastRT11selectLeaveERdd double -> float
+localVar: bestDelta1  at _ZN6soplex9SPxFastRT11selectEnterERdi double -> float
+localVar: stab2  at _ZN6soplex9SPxFastRT11selectEnterERdi double -> float
+localVar: bestDelta  at _ZN6soplex9SPxFastRT11selectEnterERdi double -> float

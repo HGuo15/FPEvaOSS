@@ -1,0 +1,45 @@
+            bestViolation = Real(sumMaxViolation);
+               _realLP->changeElement(rowIndex, liftingColumnIndex, Real(newValue));
+               _realLP->changeElement(rowIndex, liftingColumnIndex, Real(newValue));
+         _realLP->changeObj(c, Real(_feasObj[c]));
+         _changeLhsReal(i, Real(lhs));
+         _changeRhsReal(i, Real(rhs));
+         _changeRangeReal(i, Real(lhs), Real(rhs));
+         _changeLowerReal(i, Real(lower));
+         _changeUpperReal(i, Real(upper));
+         _changeBoundsReal(i, Real(lower), Real(upper));
+         _realLP->changeObj(i, Real(obj));
+         _changeElementReal(i, j, Real(val));
+         success &= setRealParam((RealParam)i, _currentSettings->_realParamValues[i], quiet, init);
+               if( sscanf(paramValueString, "%" REAL_FORMAT, &value) == 1 && setRealParam((SoPlex::RealParam)param, value) )
+               if( sscanf(paramValueString, "%" REAL_FORMAT, &value) == 1 && setRealParam((SoPlex::RealParam)param, value) )
+   return x * maxObj() * Real(spxSense());
+      else if (Real(factor->memory()) > lastFill * Real(nzCount))
+   lastFill   = fillFactor * Real(factor->memory()) / Real(nzCount > 0 ? nzCount : 1);
+   lastNzCount = int(nonzeroFactor * Real(nzCount > 0 ? nzCount : 1));
+   svec *= Real(sense);
+            shiftUBbound(i, (*theFvec)[i] + Real(mult));
+            shiftLBbound(i, (*theFvec)[i] - Real(mult));
+            shiftUCbound(i, (*theCoPvec)[i] + Real(mult));
+            shiftLCbound(i, (*theCoPvec)[i] - Real(mult));
+            shiftUPbound(i, (*thePvec)[i] + Real(mult));
+            shiftLPbound(i, (*thePvec)[i] - Real(mult));
+         p_up[i] = vec[i] + Real(mult);
+         p_low[i] = vec[i] - Real(mult);
+            p_up[i] = vec[i] + Real(mult);
+            p_low[i] = vec[i] - Real(mult);
+         p_up[i] = vec[i] + Real(mult);
+         p_low[i] = vec[i] - Real(mult);
+            p_up[i] = vec[i] + Real(mult);
+            p_low[i] = vec[i] - Real(mult);
+         p_up[i] = vec[i] + Real(mult);
+         p_low[i] = vec[i] - Real(mult);
+            p_up[i] = vec[i] + Real(mult);
+            p_low[i] = vec[i] - Real(mult);
+         p_up[i] = vec[i] + Real(mult);
+         p_low[i] = vec[i] - Real(mult);
+            p_up[i] = vec[i] + Real(mult);
+            p_low[i] = vec[i] - Real(mult);
+   p_vector *= Real(spxSense());
+   //      p[i] += rtie * thesolver->rowVector(i).size() / Real(thesolver->nCols());
+   //      cp[i] += ctie * thesolver->colVector(i).size() / Real(thesolver->nRows());
