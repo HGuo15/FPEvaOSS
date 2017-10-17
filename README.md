@@ -20,7 +20,7 @@ Steps to run FPEvaOSS and reproduce the results:
 
 3. delete the "precimonious" directory in your home directory using "rm -rf precimonious" 
 
-4. Dowanload precimonious and soplex from this repository in Bitbucket/Github to your home directory
+4. Dowanload precimonious and soplex from this repository to your home directory
 
 5. run the following commands to reproduce the results(this may take one hour to complete),
    
